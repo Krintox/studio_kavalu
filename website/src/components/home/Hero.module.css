@@ -1,0 +1,521 @@
+.hero {
+  position: relative;
+  height: 100svh;
+  min-height: 680px;
+}
+
+.stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  column-gap: var(--gutter);
+  align-items: center;
+  padding: calc(var(--nav-h) + 1vh) var(--margin) 6vh;
+}
+
+/* ---------- copy ---------- */
+
+.copy {
+  position: relative;
+  z-index: 6;
+  padding-bottom: 4vh;
+}
+
+.title {
+  font-size: var(--t-hero);
+  line-height: 0.96;
+  max-width: 10.5em;
+  text-wrap: balance;
+}
+
+.title em {
+}
+
+.road {
+  position: relative;
+  display: inline-block;
+}
+
+/* a pen stroke under "road.", drawn in after the headline arrives */
+.scribble {
+  position: absolute;
+  left: -3%;
+  bottom: -0.16em;
+  width: 108%;
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.scribble path {
+  fill: none;
+  stroke: var(--on-accent); /* her pen: oxblood on light paper, powder blue on the plum desk */
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sub {
+  margin-top: clamp(1.6rem, 3vh, 2.6rem);
+  max-width: 31rem;
+}
+
+.sub p {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--on-soft);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  height: 3rem;
+  padding: 0 1.45rem;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  transition:
+    background-color var(--d-quick) ease,
+    color var(--d-quick) ease,
+    border-color var(--d-quick) ease,
+    transform var(--d-quick) var(--e-quick);
+}
+
+.primary {
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+}
+
+.primary:hover {
+  background: var(--btn-hover);
+}
+
+.secondary {
+  border: 1px solid var(--line-strong);
+  color: var(--on-strong);
+}
+
+.secondary:hover {
+  border-color: var(--on-strong);
+}
+
+.primary:active,
+.secondary:active {
+  transform: scale(0.97);
+}
+
+/* ---------- the album page ---------- */
+
+.album {
+  position: relative;
+  height: min(74vh, 720px);
+  min-height: 460px;
+}
+
+.tilt {
+  position: relative;
+  rotate: var(--tilt, 0deg);
+}
+
+/* Perforated stamp paper: holes centred on the edges via a repeating radial mask. */
+.perf {
+  --r: 5px;
+  position: relative;
+  padding: 12px 12px 12px;
+  background: var(--paper);
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.perfBlue {
+  --r: 3.5px;
+  padding: 8px;
+  background: var(--blue-2);
+  /* an object: its own inks, on any ground */
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --on-accent: var(--oxblood);
+}
+
+.window {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.window img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.frame {
+  opacity: 0;
+}
+
+.frame[data-on="true"] {
+  opacity: 1;
+}
+
+.duo {
+  filter: url("#duo-plum");
+}
+
+.center,
+.twin {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  width: clamp(230px, 21.5vw, 340px);
+  translate: -50% -50%;
+}
+
+.center {
+  z-index: 4;
+  margin: 0;
+}
+
+.center .tilt,
+.twin .tilt {
+  filter: var(--shadow-stamp);
+}
+
+.center .perf {
+  padding-bottom: 2.6rem;
+}
+
+.twin {
+  z-index: 2;
+  translate: -88% -34%;
+}
+
+.label {
+  position: absolute;
+  left: 14px;
+  right: 12px;
+  bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-strong);
+}
+
+.labelLink {
+  display: inline-flex;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.fig {
+  color: var(--on-faint);
+  flex: none;
+}
+
+.figTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.labelLink:hover .figTitle {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pause {
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  font-size: 0.55rem;
+  line-height: 1;
+  color: var(--on-strong);
+  transition: background-color var(--d-quick) ease;
+}
+
+.pause:hover {
+  background: var(--wash);
+}
+
+/* Handwritten aside to the right of the stamp, with a pen stroke curling back to it. */
+.hint {
+  position: absolute;
+  left: calc(100% + 2.4rem);
+  top: 58%;
+  width: 7.5rem;
+  rotate: -4deg;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--on-strong);
+  pointer-events: none;
+}
+
+.hint::before {
+  content: "";
+  position: absolute;
+  right: calc(100% + 0.3rem);
+  top: 0.15rem;
+  width: 2rem;
+  height: 1.4rem;
+  border-top: 1.3px solid currentColor;
+  border-left: 1.3px solid currentColor;
+  border-top-left-radius: 100% 100%;
+  opacity: 0.75;
+  /* --pen (0 → 1) draws the curve from the words towards the stamp; 1 when nothing animates it */
+  clip-path: inset(0 0 0 calc((1 - var(--pen, 1)) * 100%));
+}
+
+.hint::after {
+  content: "";
+  position: absolute;
+  right: calc(100% + 1.95rem);
+  top: 1.15rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.3px solid currentColor;
+  border-bottom: 1.3px solid currentColor;
+  rotate: 45deg;
+  /* the arrowhead is the last stroke of the pen */
+  opacity: calc(0.75 * clamp(0, (var(--pen, 1) - 0.85) * 6.67, 1));
+}
+
+/* without the flip-book there is nothing to stop */
+@media (prefers-reduced-motion: reduce) {
+  .hint {
+    display: none;
+  }
+}
+
+.sat1 {
+  position: absolute;
+  left: 3%;
+  top: 4%;
+  width: clamp(92px, 8.6vw, 140px);
+  z-index: 5;
+  filter: var(--shadow-stamp);
+}
+
+.polaroid {
+  position: absolute;
+  right: -1%;
+  top: 2%;
+  width: clamp(150px, 14.5vw, 232px);
+  z-index: 5;
+}
+
+.polaroid .tilt {
+  padding: 9px 9px 2.2rem;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.polaroidImg {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.polaroidImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.polaroidNote {
+  position: absolute;
+  left: 0.8rem;
+  bottom: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--on-strong);
+}
+
+.clip {
+  position: absolute;
+  top: -1.4rem;
+  left: 18%;
+  width: 1.05rem;
+  height: 2.9rem;
+  rotate: -6deg;
+  z-index: 2;
+}
+
+.definition {
+  position: absolute;
+  left: -3%;
+  bottom: 4%;
+  width: clamp(200px, 17.5vw, 276px);
+  z-index: 6;
+}
+
+.defCard {
+  position: relative;
+  padding: 1rem 1.15rem 1.1rem;
+  background: var(--paper-note);
+  box-shadow: var(--shadow-paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* a strip of tape across the top edge */
+.defCard::before {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  left: 50%;
+  width: 4.6rem;
+  height: 1.35rem;
+  translate: -50% 0;
+  rotate: -3deg;
+  background: rgb(171 205 214 / 0.7);
+  clip-path: polygon(3% 0, 97% 4%, 100% 50%, 96% 100%, 2% 96%, 0 48%);
+}
+
+.defWord {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--on-strong);
+}
+
+.defSay {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--on-faint);
+}
+
+.defText {
+  margin-top: 0.35rem;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 0.98rem;
+  line-height: 1.35;
+  color: var(--on);
+}
+
+.defText i {
+  font-family: var(--f-mono);
+  font-style: normal;
+  font-size: 0.7rem;
+  color: var(--on-faint);
+  margin-right: 0.2rem;
+}
+
+.sticker {
+  position: absolute;
+  right: 3%;
+  bottom: 9%;
+  z-index: 6;
+}
+
+/* ---------- scroll cue ---------- */
+
+.cue {
+  position: absolute;
+  left: var(--margin);
+  bottom: 3.4vh;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  color: var(--on-soft);
+}
+
+.cueLine {
+  width: 3.2rem;
+  height: 1px;
+  background: currentColor;
+}
+
+
+
+
+
+/* ---------- small screens: a calm, unpinned page ---------- */
+
+@media (max-width: 899px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+  }
+  .stage {
+    position: relative;
+    grid-template-columns: 1fr;
+    padding: calc(var(--nav-h) + 1.5rem) var(--margin) 3rem;
+    row-gap: 2.5rem;
+  }
+  .title {
+    font-size: clamp(2.7rem, 1.2rem + 7.5vw, 4.4rem);
+  }
+  .album {
+    height: 118vw;
+    max-height: 640px;
+    min-height: 0;
+  }
+  .center,
+  .twin {
+    width: 52vw;
+  }
+  .hint {
+    display: none;
+  }
+  .cue {
+    display: none;
+  }
+}

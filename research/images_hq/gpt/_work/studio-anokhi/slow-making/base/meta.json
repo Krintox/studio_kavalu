@@ -1,0 +1,28 @@
+{
+  "rel": "studio-anokhi/slow-making",
+  "src": "C:\\shashank\\shashank\\fnf\\ananya_residency\\studio_kavalu\\website\\public\\work\\studio-anokhi\\slow-making.jpg",
+  "src_size": [
+    216,
+    260
+  ],
+  "tag": "base",
+  "prompt": "Improve the quality of my photo and make it clearer and high resolution. It must stay exactly the same picture: same framing and crop, same aspect ratio (portrait, width:height = 54:65, about 0.831:1), same colours and light, the same people with the same faces and expressions, every object in the same place, and all text and logos letter for letter. Do not add, remove, restyle or reinterpret anything; only make it sharp and detailed. Details that must stay exactly as in the input: close-up of a potter's clay-covered hands shaping a terracotta pot on a wheel with a thin wooden tool, warm brown tones, soft background; small white sans-serif text near the top reads exactly 'A glimpse of slow making'.",
+  "started": "2026-10-24 13:13:26",
+  "create_image_mode": true,
+  "sent": "2026-10-24 13:13:47",
+  "elapsed_s": 35,
+  "assistant_text": "",
+  "saved": [
+    {
+      "path": "C:\\shashank\\shashank\\fnf\\ananya_residency\\studio_kavalu\\research\\images_hq\\gpt\\_work\\studio-anokhi\\slow-making\\base\\raw_0.png",
+      "ct": "image/png",
+      "size": [
+        1143,
+        1376
+      ],
+      "alt": "Generated image 1",
+      "src": "blob:https://chatgpt.com/2d511752-92a8-458a-bc48-eff7ba935751"
+    }
+  ],
+  "ended": "2026-10-24 13:14:23"
+}

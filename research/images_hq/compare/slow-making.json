@@ -1,0 +1,69 @@
+{
+  "rel": "studio-anokhi/slow-making",
+  "method": "gpt-base",
+  "output": "research/images_hq/gpt/studio-anokhi/slow-making.png",
+  "size": [
+    1137,
+    1369
+  ],
+  "src_size": [
+    216,
+    260
+  ],
+  "ssim": 0.8236,
+  "ssim_half": 0.9027,
+  "ncc": 0.9666,
+  "dE_mean": 5.39,
+  "dE_p95": 14.45,
+  "rgb_bias": [
+    0.4,
+    -0.5,
+    -1.3
+  ],
+  "registration": {
+    "sx": 5.263975542689957,
+    "sy": 5.247352523128911,
+    "tx": 5.106668669115882,
+    "ty": 2.316066933247252e-05,
+    "ncc_reg": 0.9788,
+    "coverage": 1.0,
+    "anisotropy": 1.0032
+  },
+  "crop": {
+    "box": [
+      5.1,
+      0.0,
+      1142.1,
+      1364.3
+    ],
+    "missing_px": {
+      "left": 0.0,
+      "top": 0.0,
+      "right": 0.0,
+      "bottom": 0.0
+    },
+    "out_size": [
+      1137,
+      1369
+    ]
+  },
+  "raw": "research/images_hq/gpt/_work/studio-anokhi/slow-making/base/raw_0.png",
+  "raw_size": [
+    1143,
+    1376
+  ],
+  "aligned": "research/images_hq/gpt/_work/studio-anokhi/slow-making/base.aligned.png",
+  "before_colour_match": {
+    "ssim": 0.8152,
+    "ssim_half": 0.9017,
+    "ncc": 0.9615,
+    "dE_mean": 6.1,
+    "dE_p95": 15.66,
+    "rgb_bias": [
+      2.9,
+      1.3,
+      -0.3
+    ]
+  },
+  "colour_match": "2nd-order RGB polynomial fitted to the source (robust), applied globally"
+}

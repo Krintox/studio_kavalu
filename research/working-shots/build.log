@@ -1,0 +1,38 @@
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 37ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 7.0s
+  Running TypeScript ...
+  Finished TypeScript in 7.1s ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/16) ...
+  Generating static pages using 13 workers (4/16) 
+  Generating static pages using 13 workers (8/16) 
+  Generating static pages using 13 workers (12/16) 
+✓ Generating static pages using 13 workers (16/16) in 1123ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/brief
+├ ○ /icon.svg
+├ ○ /robots.txt
+├ ○ /scrapbook
+├ ○ /sitemap.xml
+├ ƒ /start
+├ ○ /studio
+├ ○ /work
+└   /work/[slug]
+  ├ ● /work/studio-anokhi
+  ├ ● /work/nivritti
+  ├ ● /work/not-so-onam
+  └ ● [+2 more paths]
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+exit 0

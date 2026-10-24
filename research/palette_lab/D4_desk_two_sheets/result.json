@@ -1,0 +1,34 @@
+{
+ "iteration": "D4_desk_two_sheets",
+ "note": "plum desk; the house view and the four roads on large blue sheets",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 63.4,
+    "blue": 17.8,
+    "cream": 9.3,
+    "oxblood": 0.7,
+    "other": 8.8
+   },
+   "plum_blue_all": 81.2,
+   "plum_blue_own": 89.0,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 63.4,
+      "blue": 17.8,
+      "cream": 9.3,
+      "oxblood": 0.7,
+      "other": 8.8
+     },
+     "screens": 13,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

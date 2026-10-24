@@ -1,0 +1,92 @@
+{
+ "/": {
+  "height": 9860,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div.RfVVuW_piece RfVVuW_polaroid r=520",
+   "div.RfVVuW_tilt r=531",
+   "div.RfVVuW_paper r=531",
+   "div.RfVVuW_window r=523",
+   "img. r=523",
+   "div.RfVVuW_piece RfVVuW_taped r=782"
+  ],
+  "hidden": 0,
+  "errors": []
+ },
+ "/work": {
+  "height": 5105,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div._8VJaIG_pin _8VJaIG_deco r=460",
+   "div. r=460",
+   "div. r=460",
+   "div._8VJaIG_tilt r=463",
+   "figure.lgxtKa_piece lgxtKa_image undefined r=463",
+   "div.lgxtKa_paper r=463"
+  ],
+  "hidden": 0,
+  "errors": []
+ },
+ "/studio": {
+  "height": 8362,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div._8VJaIG_pin _8VJaIG_deco r=460",
+   "div. r=460",
+   "div. r=460",
+   "div._8VJaIG_tilt r=463",
+   "figure.lgxtKa_piece lgxtKa_image undefined r=463",
+   "div.lgxtKa_paper r=463"
+  ],
+  "hidden": 0,
+  "errors": []
+ },
+ "/work/studio-anokhi": {
+  "height": 8950,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div._8VJaIG_pin _8VJaIG_deco r=460",
+   "div. r=460",
+   "div. r=460",
+   "div._8VJaIG_tilt r=463",
+   "figure.lgxtKa_piece lgxtKa_image undefined r=463",
+   "div.lgxtKa_paper r=463"
+  ],
+  "hidden": 0,
+  "errors": []
+ },
+ "/work/nivritti": {
+  "height": 7147,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div._8VJaIG_pin _8VJaIG_deco r=460",
+   "div. r=460",
+   "div. r=460",
+   "div._8VJaIG_tilt r=463",
+   "figure.lgxtKa_piece lgxtKa_image undefined r=463",
+   "div.lgxtKa_paper r=463"
+  ],
+  "hidden": 0,
+  "errors": []
+ },
+ "/work/not-so-onam": {
+  "height": 4047,
+  "docW": 390,
+  "vw": 390,
+  "wide": [
+   "div._8VJaIG_pin _8VJaIG_deco r=460",
+   "div. r=460",
+   "div. r=460",
+   "div._8VJaIG_tilt r=463",
+   "figure.lgxtKa_piece lgxtKa_image undefined r=463",
+   "div.lgxtKa_paper r=463"
+  ],
+  "hidden": 0,
+  "errors": []
+ }
+}

@@ -1,0 +1,1766 @@
+[
+  {
+    "name": "Lotta Nieminen Studio",
+    "url": "https://www.lottanieminen.com/",
+    "bucket": "A",
+    "location": "New York, USA",
+    "notes": "Founder-led; split-screen full-bleed product and fashion photography with minimal (S)/L.N. labels; work leads.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Perky Bros",
+    "url": "https://perkybros.com/",
+    "bucket": "A",
+    "location": "Nashville, USA",
+    "notes": "Cream page with hand-drawn running-horse doodle loader; warm, crafted, image-led project grid.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Studio Frith",
+    "url": "https://studiofrith.com/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Frith Kerr's founder-led studio; kinetic typographic intro, video-led work.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Studio Feixen",
+    "url": "https://www.studiofeixen.ch/",
+    "bucket": "A",
+    "location": "Lucerne, Switzerland",
+    "notes": "Isometric wall of printed matter and posters; shop, fonts and quick-links dock; playful, tactile print feel.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Bureau Borsche",
+    "url": "https://bureauborsche.com/",
+    "bucket": "A",
+    "location": "Munich, Germany",
+    "notes": "Dense grid of project tiles with frosted label tabs; fashion/culture identities, archive-like browsing.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Folch",
+    "url": "https://www.folchstudio.com/",
+    "bucket": "A",
+    "location": "Barcelona, Spain",
+    "notes": "Ultra-minimal serif text home; editorial projects, education and foundry sections.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "DutchScot",
+    "url": "https://dutch.scot/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Hospitality-heavy portfolio (restaurants, cafes, hotels); video intro, long scrolling project index.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Here Design",
+    "url": "https://www.heredesign.com/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Huge serif 'Here.' on warm off-white; food, drink and craft brands; journal section.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "B&B Studio",
+    "url": "https://bandb-studio.co.uk/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Food and drink packaging specialists; macro product hero (Fever-Tree), clean case-study list.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Robot Food",
+    "url": "https://www.robot-food.com/",
+    "bucket": "A",
+    "location": "Leeds, UK",
+    "notes": "Food and drink brand agency; Barba page transitions, video-heavy case studies, sector filters.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "HATO",
+    "url": "https://hato.co/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Black minimal shell with store and publishing; experimental, archive-style project index.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "OK-RM",
+    "url": "https://www.ok-rm.co.uk/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Founder duo; dark serif statement then numbered image carousel and book shop; quiet, editorial.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Bielke&Yang",
+    "url": "https://bielkeyang.com/",
+    "bucket": "A",
+    "location": "Oslo, Norway",
+    "notes": "Cream background, large serif statement, pill navigation; calm, warm identity portfolio.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Studio Mut",
+    "url": "https://www.studiomut.com/",
+    "bucket": "A",
+    "location": "Bolzano, Italy",
+    "notes": "Giant M-U-T letters over blue sector tiles (food, fashion, tourism); playful index by industry.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Toormix",
+    "url": "https://toormix.com/",
+    "bucket": "A",
+    "location": "Barcelona, Spain",
+    "notes": "Yellow cards with 3D glyphs per team member; marquee, bold and playful studio site.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Mucca",
+    "url": "https://www.mucca.com/",
+    "bucket": "A",
+    "location": "New York, USA",
+    "notes": "Food, drink and hospitality branding; condensed bold headline, Squarespace image grid.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "StudioBand",
+    "url": "https://www.studioband.com.au/",
+    "bucket": "A",
+    "location": "Adelaide, Australia",
+    "notes": "Dark editorial grid with red type, project tiles and search prompt overlay.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Christopher Doyle & Co",
+    "url": "https://christopherdoyle.co/",
+    "bucket": "A",
+    "location": "Sydney, Australia",
+    "notes": "Founder-led identity studio; minimal Nuxt site with just projects and profile.",
+    "source": "https://httpster.net/type/design-and-illustration/page/2/",
+    "http": 200
+  },
+  {
+    "name": "Glasfurd & Walker",
+    "url": "https://glasfurdandwalker.com/",
+    "bucket": "A",
+    "location": "Vancouver, Canada",
+    "notes": "Restaurant, hotel and F&B brand worlds; giant condensed serif word lists, Barba transitions.",
+    "source": "https://httpster.net/type/design-and-illustration/page/2/",
+    "http": 200
+  },
+  {
+    "name": "Commission Studio",
+    "url": "https://www.commission.studio/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Luxury/fashion clients (Zegna, Tiffany, Aesop); image-first case list with 'View' hovers.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Unspoken Agreement",
+    "url": "https://www.unspokenagreement.com/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Boutique studio; warm orange 3D hero, floating pill nav, playful project reveals.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Beth-Emily",
+    "url": "https://www.beth-emily.com/",
+    "bucket": "A",
+    "location": "Melbourne, Australia",
+    "notes": "Small strategy-led practice; campaign-photo hero, GSAP ScrollTrigger reveals.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Poch Studio",
+    "url": "https://poch.studio/",
+    "bucket": "A",
+    "location": "",
+    "notes": "'Studio of a few friends'; Framer site with custom cursor and video-heavy project grid.",
+    "source": "https://minimal.gallery/poch-studio/",
+    "http": 200
+  },
+  {
+    "name": "smalltribe",
+    "url": "https://smalltribe.studio/",
+    "bucket": "A",
+    "location": "Leipzig, Germany",
+    "notes": "Boutique branding studio; calm Framer layout, live clock, soft service cards.",
+    "source": "https://minimal.gallery/smalltribe/",
+    "http": 200
+  },
+  {
+    "name": "Studio Gruhl",
+    "url": "https://www.studiogruhl.com/",
+    "bucket": "A",
+    "location": "Berlin, Germany",
+    "notes": "Subculture-rooted studio; dark video hero, marquee, index/projects toggle.",
+    "source": "https://minimal.gallery/studio-gruhl-2/",
+    "http": 200
+  },
+  {
+    "name": "Ofform",
+    "url": "https://offormdesign.com/",
+    "bucket": "A",
+    "location": "Paris, France",
+    "notes": "Editorial Paris studio; full-bleed outdoor poster photography, curated 'selected works' list.",
+    "source": "https://minimal.gallery/ofform/",
+    "http": 200
+  },
+  {
+    "name": "Goodside",
+    "url": "https://www.goodside.studio/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Big serif wordmark over a scattered photo collage of products (wine box, clipboard).",
+    "source": "https://minimal.gallery/goodside/",
+    "http": 200
+  },
+  {
+    "name": "Super Keen",
+    "url": "https://www.superkeen.studio/",
+    "bucket": "A",
+    "location": "New York, USA",
+    "notes": "Independent culture studio; live NYC clock, image strip, annual report and news posts.",
+    "source": "https://minimal.gallery/super-keen/",
+    "http": 200
+  },
+  {
+    "name": "République Studio",
+    "url": "https://www.republique.studio/",
+    "bucket": "A",
+    "location": "Paris, France",
+    "notes": "Art-direction duo; minimal white shell with highlights/index toggle and filterable categories.",
+    "source": "https://minimal.gallery/republique-studio/",
+    "http": 200
+  },
+  {
+    "name": "Studio GD",
+    "url": "https://www.studiogd.dk/",
+    "bucket": "A",
+    "location": "Copenhagen, Denmark",
+    "notes": "Motion-led identities; text-first home that opens into dense video work grid.",
+    "source": "https://minimal.gallery/studio-gd/",
+    "http": 200
+  },
+  {
+    "name": "Hey",
+    "url": "https://heystudio.es/",
+    "bucket": "A",
+    "location": "Barcelona, Spain",
+    "notes": "Founder-led; homepage is a playable Pong game, colourful illustrative identity work.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Savvy Studio",
+    "url": "https://savvy-studio.net/",
+    "bucket": "A",
+    "location": "Mexico City, Mexico",
+    "notes": "Hospitality/lifestyle (Casa Bosques); off-white gallery, single centered image, small caps captions.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Agence Foudre",
+    "url": "https://www.agencefoudre.com/",
+    "bucket": "A",
+    "location": "Paris, France",
+    "notes": "Paris social-media agency; bold green/pink condensed type, Lenis smooth scroll, Barba transitions.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=8",
+    "http": 200
+  },
+  {
+    "name": "Odds Studio",
+    "url": "https://odds-studio.com/",
+    "bucket": "A",
+    "location": "Paris, France",
+    "notes": "Founder duo for bakeries/restaurants; chunky wordmark, pixel car, typewriter-mono copy.",
+    "source": "https://itsnicethat.com/articles/odds-studio-graphic-design-discover-200824",
+    "http": 200
+  },
+  {
+    "name": "Present",
+    "url": "https://www.presentstudio.co/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Women-led brand + Shopify studio; serif editorial headline over warm food photography.",
+    "source": "https://sanity.io/agency-partners/present",
+    "http": 200
+  },
+  {
+    "name": "Happy Happy Creative",
+    "url": "https://www.happyhappycreative.com/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Brand styling and content studio for founder-led food brands; butter-yellow, red serif.",
+    "source": "search: independent creative studio brand identity social media content photography for food and lifestyle brands",
+    "http": 200
+  },
+  {
+    "name": "Nido Creative Studio",
+    "url": "https://www.nidocreativestudio.com/",
+    "bucket": "A",
+    "location": "Oslo, Norway",
+    "notes": "Identity + photography for restaurants and makers; blush tones, soft macro imagery.",
+    "source": "search: independent creative studio brand identity social media content photography for food and lifestyle brands",
+    "http": 200
+  },
+  {
+    "name": "Meor Studio",
+    "url": "https://meorstudio.co.uk/",
+    "bucket": "A",
+    "location": "St Ives, Cornwall, UK",
+    "notes": "Brand and marketing for food, hospitality, lifestyle; card-reveal intro, custom cursor.",
+    "source": "search: independent creative studio brand identity social media content photography for food and lifestyle brands",
+    "http": 200
+  },
+  {
+    "name": "Boc.Studio",
+    "url": "https://boc.studio/",
+    "bucket": "A",
+    "location": "Barcelona, Spain",
+    "notes": "Full-bleed showreel video with red ticker band; identity + motion; image-rich grid.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Little Plains",
+    "url": "https://www.littleplains.com/",
+    "bucket": "A",
+    "location": "New York, USA",
+    "notes": "Ex-Gin Lane team; animated doodle loader, searchable project/artifact index with filters.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Quatrième Étage",
+    "url": "https://quatriemeetage.studio/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Two-person art/culture practice; stark white, text-first site.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Smörgåsbord",
+    "url": "https://smorgasbord.studio/",
+    "bucket": "A",
+    "location": "Amsterdam / Cardiff",
+    "notes": "Duo-led; classical bust over huge type, Astro site with 190+ images.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Heure Bleue",
+    "url": "https://heurebleue.studio/",
+    "bucket": "A",
+    "location": "Hautes-Alpes, France",
+    "notes": "Photo/video content studio for hotels, food, lifestyle; full-bleed landscape photography.",
+    "source": "https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Studio OL",
+    "url": "https://ol.studio/",
+    "bucket": "A",
+    "location": "Los Angeles, USA",
+    "notes": "Founder-led culture/design/storytelling practice; huge serif wordmark on cream, editorial sections.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "A Practice for Everyday Life",
+    "url": "https://www.apracticeforeverydaylife.com/",
+    "bucket": "A",
+    "location": "London, UK",
+    "notes": "Full-bleed photographic heroes, case studies plus type-design section; quietly editorial.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "Maison AUGE",
+    "url": "https://maisonauge.com/",
+    "bucket": "A",
+    "location": "",
+    "notes": "Luxury studio (identity, packaging, spatial); spaced-letter marquee, video case studies.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Studio Sorted",
+    "url": "https://www.studiosorted.com/",
+    "bucket": "B",
+    "location": "Bengaluru, India",
+    "notes": "Founder's friend's studio. Yellow, hand-drawn illustration, 'Branding for the Seriously Fun.' Instagram @studiosorted.",
+    "source": "https://www.designrush.com/agency/profile/studio-sorted ; https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Studio N°7 (Studio Number Seven)",
+    "url": "https://www.studionumberseven.com/",
+    "bucket": "B",
+    "location": "India",
+    "notes": "Founder's friend's studio. Live page is 'Coming Soon'; distressed serif on paper texture. Instagram @studionumberseven_.",
+    "source": "search: \"Studio Number Seven\" branding OR design (result: studionumberseven.com)",
+    "http": 200
+  },
+  {
+    "name": "Animal",
+    "url": "https://www.weareanimal.co/",
+    "bucket": "B",
+    "location": "New Delhi, India",
+    "notes": "Independent agency (Delhi/NY/Toronto); bold 'Relevance is ruthless' headline over video case studies.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Lopez Design",
+    "url": "https://thisislopez.com/",
+    "bucket": "B",
+    "location": "Gurugram, India",
+    "notes": "Large-scale brand consultancy; full-bleed red hero, ScrollTrigger reveals, image-heavy work grid.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Codesign",
+    "url": "https://www.codesign.in/",
+    "bucket": "B",
+    "location": "Gurugram, India",
+    "notes": "Identity studio; case studies, self-initiated projects and UnBox festival archive.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Elephant Design",
+    "url": "https://elephantdesign.com/",
+    "bucket": "B",
+    "location": "Pune, India",
+    "notes": "Veteran design-innovation firm; dark gradient hero with oversized headline.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Itu Chaudhuri Design",
+    "url": "https://icdindia.com/",
+    "bucket": "B",
+    "location": "New Delhi, India",
+    "notes": "Identity/editorial studio; warm blush hero with identity marks, yellow hatched rule.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Studio Bigfat",
+    "url": "https://studiobigfat.com/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Cargo site; black grid of packaging/illustration (Subko Cacao, Nike Diwali), mono captions.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Studio Ping Pong",
+    "url": "https://studiopingpong.com/",
+    "bucket": "B",
+    "location": "Bengaluru, India",
+    "notes": "Yellow interactive canvas: letter balls and a paint-tool palette; playful copy and shop.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Opposite",
+    "url": "https://oppositehq.com/",
+    "bucket": "B",
+    "location": "Goa, India",
+    "notes": "Swiggy/Sugar/Simba identities; giant outlined wordmark, clean case list.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "November",
+    "url": "https://www.nvmbr.in/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Type-led duo; 'Type-Toggle' lets you re-set the whole site in their fonts.",
+    "source": "https://corevoice.in/design-studios/ ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Beyondesign",
+    "url": "https://beyondesign.in/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "All-women branding and packaging studio; Framer site with Lenis smooth scroll.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Wishbox Studio",
+    "url": "https://wishboxstudio.in/",
+    "bucket": "B",
+    "location": "Delhi, India",
+    "notes": "Branding + PR for hospitality and F&B; GSAP scroll sections, marquee client wall.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Locopopo",
+    "url": "https://locopopo.com/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Founder-led illustration-first brand studio (Lokesh Karekar); illustration and packaging portfolio.",
+    "source": "https://eyeondesign.aiga.org/the-realities-of-running-a-design-studio-in-mumbai/",
+    "http": 200
+  },
+  {
+    "name": "designmill",
+    "url": "https://www.designmill.in/",
+    "bucket": "B",
+    "location": "India",
+    "notes": "Split hero: editorial serif-italic statement beside warm candid photo; branding, packaging, web.",
+    "source": "https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Squadron 14",
+    "url": "https://squadron14.com/",
+    "bucket": "B",
+    "location": "New Delhi, India",
+    "notes": "Culture-focused identities; kraft-paper book mockup hero, Webflow + GSAP.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Whoamama",
+    "url": "https://whoamama.com/",
+    "bucket": "B",
+    "location": "Chennai, India",
+    "notes": "19-year branding/packaging studio; clean headline, big case imagery (Myntra).",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Studio ABD",
+    "url": "https://studioabd.in/",
+    "bucket": "B",
+    "location": "Bengaluru, India",
+    "notes": "Product design, branding, packaging; dark product-photography hero.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "The Turtle Story",
+    "url": "https://www.theturtlestory.com/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Branding, packaging and space design; bold headline, Squarespace project grid.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Therefore Design",
+    "url": "https://www.thereforedesign.co.in/",
+    "bucket": "B",
+    "location": "Pune, India",
+    "notes": "FMCG packaging agency; video hero, packaging tools and quizzes.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Confetti Design",
+    "url": "https://www.confetti.design/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Retail/D2C branding and packaging; 400+ image portfolio, Lenis + GSAP.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "KL11",
+    "url": "https://kl11.in/",
+    "bucket": "B",
+    "location": "Kozhikode, India",
+    "notes": "Small Kerala studio; black text-first home with project tabs and gradient bar.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "LOCAL",
+    "url": "https://www.wedesignlocal.com/",
+    "bucket": "B",
+    "location": "India",
+    "notes": "'Nomadic' studio rooted in local stories; colourful illustrated packaging thumbnails.",
+    "source": "https://corevoice.in/design-studios/",
+    "http": 200
+  },
+  {
+    "name": "Bombay Duck Designs",
+    "url": "https://www.bombayduckdesigns.com/",
+    "bucket": "B",
+    "location": "Mumbai, India",
+    "notes": "Sibling-run; green flower badge, big-type project index with inline book/object images.",
+    "source": "https://eyeondesign.aiga.org/the-realities-of-running-a-design-studio-in-mumbai/ (Instagram link); site confirmed by fetch",
+    "http": 200
+  },
+  {
+    "name": "Pentagram",
+    "url": "https://www.pentagram.com/",
+    "bucket": "C",
+    "location": "London / New York",
+    "notes": "Partner-led giant; hero carousel of projects, deep searchable archive and news.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Koto",
+    "url": "https://koto.com/",
+    "bucket": "C",
+    "location": "London / global",
+    "notes": "Next.js + Sanity; dark shell, marquee, video-led case studies.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Collins",
+    "url": "https://www.wearecollins.com/",
+    "bucket": "C",
+    "location": "New York / San Francisco",
+    "notes": "Dark, video-first (Mux) case studies; Nuxt + Sanity build.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "DixonBaxi",
+    "url": "https://www.dixonbaxi.com/",
+    "bucket": "C",
+    "location": "London, UK",
+    "notes": "Home is an 'Ask us anything' conversational prompt; minimal cream canvas.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Porto Rocha",
+    "url": "https://www.portorocha.com/",
+    "bucket": "C",
+    "location": "New York / London",
+    "notes": "Sidebar project list with live clock and large preview image; index-with-preview pattern.",
+    "source": "https://minimal.gallery/porto-rocha/",
+    "http": 200
+  },
+  {
+    "name": "Mother Design",
+    "url": "https://www.motherdesign.com/",
+    "bucket": "C",
+    "location": "London / New York",
+    "notes": "Logo set in Japanese katakana on black; custom cursor, image-led work.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Ragged Edge",
+    "url": "https://www.raggededge.com/",
+    "bucket": "C",
+    "location": "London, UK",
+    "notes": "WebGL/canvas intro, Barba page transitions, bold typographic case studies.",
+    "source": "known reference; confirmed by fetch (homepage title matches) ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Wolff Olins",
+    "url": "https://www.wolffolins.com/",
+    "bucket": "C",
+    "location": "London / New York",
+    "notes": "Full-bleed cinematic video hero, marquee, custom cursor.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Base Design",
+    "url": "https://www.basedesign.com/",
+    "bucket": "C",
+    "location": "Brussels / New York",
+    "notes": "Feed / Projects / Index toggles; dense mixed-media tile wall.",
+    "source": "https://minimal.gallery/base-design/",
+    "http": 200
+  },
+  {
+    "name": "Studio Dumbar/DEPT",
+    "url": "https://studiodumbar.com/",
+    "bucket": "C",
+    "location": "Rotterdam, Netherlands",
+    "notes": "3D chrome logo, GSAP + Lenis smooth scroll, motion-identity case studies.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Order",
+    "url": "https://order.design/",
+    "bucket": "C",
+    "location": "New York, USA",
+    "notes": "Cargo site; dark UI with filterable identity/packaging/website tabs (Salt Lick tea).",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Made Thought",
+    "url": "https://www.madethought.com/",
+    "bucket": "C",
+    "location": "London / New York",
+    "notes": "Serif wordmark, Barba page transitions, image-rich case studies.",
+    "source": "https://httpster.net/type/design-and-illustration/page/3/",
+    "http": 200
+  },
+  {
+    "name": "JKR",
+    "url": "https://www.jkrglobal.com/",
+    "bucket": "C",
+    "location": "London / global",
+    "notes": "Dark loader with fading wordmark; video-first case studies, custom cursor.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Manual",
+    "url": "https://manual.studio/",
+    "bucket": "C",
+    "location": "San Francisco, USA",
+    "notes": "Serif manifesto headline over product imagery; Astro + Sanity.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Mucho",
+    "url": "https://wearemucho.com/",
+    "bucket": "C",
+    "location": "Barcelona / SF / NY",
+    "notes": "Full-bleed kinetic type video, Lenis + Barba transitions.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "&Walsh",
+    "url": "https://andwalsh.com/",
+    "bucket": "C",
+    "location": "New York, USA",
+    "notes": "Jessica Walsh; chrome ampersand, saturated portrait photography, WebGL bits.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Anagrama",
+    "url": "https://www.anagrama.com/",
+    "bucket": "C",
+    "location": "Mexico City, Mexico",
+    "notes": "'Online showroom' with live clock; dense multi-column project grid.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Lundgren+Lindqvist",
+    "url": "https://www.lundgrenlindqvist.se/",
+    "bucket": "C",
+    "location": "Gothenburg, Sweden",
+    "notes": "Textured, tactile imagery tiles with mono captions; 200+ image grid.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Snask",
+    "url": "https://www.snask.com/",
+    "bucket": "C",
+    "location": "Stockholm, Sweden",
+    "notes": "Irreverent video hero, 'We are your future romance'; playful voice.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Turner Duckworth",
+    "url": "https://www.turnerduckworth.com/",
+    "bucket": "C",
+    "location": "London / San Francisco",
+    "notes": "Red duotone overlay on packaging grid; huge condensed wordmark.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Gretel",
+    "url": "https://gretelny.com/",
+    "bucket": "C",
+    "location": "New York, USA",
+    "notes": "Quiet type-led home, 'New Work' feature with large photography.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Universal Favourite",
+    "url": "https://www.universalfavourite.com.au/",
+    "bucket": "C",
+    "location": "Sydney, Australia",
+    "notes": "Serif statement, iridescent 3D sphere, Lenis + Swup page transitions.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Locomotive",
+    "url": "https://locomotive.ca/",
+    "bucket": "D",
+    "location": "Montréal, Canada",
+    "notes": "Makers of Locomotive Scroll; Awwwards SOTM; smooth-scroll and transition benchmark.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2 ; https://minimal.gallery/locomotive/",
+    "http": 403
+  },
+  {
+    "name": "Lusion",
+    "url": "https://lusion.co/",
+    "bucket": "D",
+    "location": "Bristol, UK",
+    "notes": "Awwwards SOTM (v3); real-time 3D WebGL scenes, tilted card transitions.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Obys",
+    "url": "https://obys.agency/",
+    "bucket": "D",
+    "location": "Kharkiv, Ukraine / EU",
+    "notes": "Awwwards SOTD; vertical film-strip of projects with bracket focus, canvas effects.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=6",
+    "http": 200
+  },
+  {
+    "name": "Cuberto",
+    "url": "https://cuberto.com/",
+    "bucket": "D",
+    "location": "USA",
+    "notes": "Known for magnetic cursor and hover effects; Lenis smooth scroll, WebGL details.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Immersive Garden",
+    "url": "https://immersive-g.com/",
+    "bucket": "D",
+    "location": "Paris, France",
+    "notes": "Awwwards SOTM; WebGL scenes, Lenis scroll, curved page-wipe transitions.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/ ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Rejouice",
+    "url": "https://www.rejouice.com/",
+    "bucket": "D",
+    "location": "Paris, France",
+    "notes": "Massive wordmark, video reels, marquee and custom cursor.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Exo Ape",
+    "url": "https://www.exoape.com/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Awwwards SOTM; full-bleed photography under giant type, smooth image transitions.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "basement.studio",
+    "url": "https://basement.studio/",
+    "bucket": "D",
+    "location": "Buenos Aires, Argentina",
+    "notes": "Dark, WebGL 3D, lab section; playful dev-led interactions.",
+    "source": "https://minimal.gallery/basement-studio/",
+    "http": 200
+  },
+  {
+    "name": "14islands",
+    "url": "https://www.14islands.com/",
+    "bucket": "D",
+    "location": "Stockholm, Sweden",
+    "notes": "Calm grey canvas, canvas/WebGL accents, smooth project transitions.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Unseen Studio",
+    "url": "https://unseen.co/",
+    "bucket": "D",
+    "location": "Bristol, UK",
+    "notes": "Awwwards SOTM; WebGL canvas, soft pastel loader, motion-rich case studies.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Active Theory",
+    "url": "https://activetheory.net/",
+    "bucket": "D",
+    "location": "Los Angeles, USA",
+    "notes": "Awwwards SOTM (v6); fully WebGL immersive site from their own toolset.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Dogstudio",
+    "url": "https://dogstudio.co/",
+    "bucket": "D",
+    "location": "Namur, Belgium / Chicago, USA",
+    "notes": "Awwwards SOTM; dog-mascot loader, dark cinematic case studies.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=3",
+    "http": 200
+  },
+  {
+    "name": "Resn",
+    "url": "https://resn.co.nz/",
+    "bucket": "D",
+    "location": "Wellington, New Zealand",
+    "notes": "Awwwards SOTM; refractive 3D crystal intro, experimental interactions.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=4",
+    "http": 200
+  },
+  {
+    "name": "Akaru",
+    "url": "https://www.akaru.fr/",
+    "bucket": "D",
+    "location": "Lyon, France",
+    "notes": "Awwwards SOTM; WebGL + Nuxt, split-panel loader, motion-rich Lyon agency site.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/",
+    "http": 200
+  },
+  {
+    "name": "The Line Studio",
+    "url": "https://thelinestudio.com/",
+    "bucket": "D",
+    "location": "London, UK",
+    "notes": "Awwwards SOTM; animation studio, full-bleed animated reel, Lenis scroll.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/",
+    "http": 200
+  },
+  {
+    "name": "Noomo Agency",
+    "url": "https://noomoagency.com/",
+    "bucket": "D",
+    "location": "Los Angeles, USA",
+    "notes": "Awwwards Site of the Year list; 3D storytelling, ScrollTrigger scenes.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_year/",
+    "http": 200
+  },
+  {
+    "name": "Synchronized",
+    "url": "https://synchronized.studio/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Awwwards Site of the Year list; WebGL, percentage loader, marquee.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_year/",
+    "http": 200
+  },
+  {
+    "name": "Phantom",
+    "url": "https://www.phantom.land/",
+    "bucket": "D",
+    "location": "London, UK / Auckland, NZ",
+    "notes": "Awwwards portfolio winner; WebGL kinetic grids that evolve on scroll.",
+    "source": "https://www.awwwards.com/websites/winner_category_portfolio/ ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Fiddle.Digital",
+    "url": "https://fiddle.digital/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Awwwards portfolio winner; makers of StringTune scroll library, smooth index.",
+    "source": "https://www.awwwards.com/websites/winner_category_portfolio/",
+    "http": 200
+  },
+  {
+    "name": "Salt and Pepper",
+    "url": "https://snp.agency/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Awwwards portfolio winner; three.js/WebGL, GSAP, Webflow.",
+    "source": "https://www.awwwards.com/websites/winner_category_portfolio/",
+    "http": 200
+  },
+  {
+    "name": "Studio Null",
+    "url": "https://www.madebynull.com/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Awwwards portfolio winner; glass 3D prism, WebGL, experimental type specimens.",
+    "source": "https://www.awwwards.com/websites/winner_category_portfolio/ ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Studio Freight",
+    "url": "https://studiofreight.com/",
+    "bucket": "D",
+    "location": "",
+    "notes": "Scattered off-white masonry of project images, serif tagline; Lenis smooth scroll.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Watson",
+    "url": "https://watson.la/",
+    "bucket": "D",
+    "location": "Los Angeles, USA",
+    "notes": "Awwwards SOTM; canvas-rendered, minimal LA studio site.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/",
+    "http": 200
+  },
+  {
+    "name": "Merci-Michel",
+    "url": "https://www.merci-michel.com/",
+    "bucket": "D",
+    "location": "Paris, France",
+    "notes": "Gamification/advergame studio; WebGL playful interactions.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Makemepulse",
+    "url": "https://www.makemepulse.com/",
+    "bucket": "D",
+    "location": "Paris, France",
+    "notes": "three.js + GSAP + Lenis; immersive case studies.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Hello Monday",
+    "url": "https://www.hellomonday.com/",
+    "bucket": "D",
+    "location": "New York / Copenhagen",
+    "notes": "Hand-drawn line characters, serif headline, 'days until Monday' counter; charming motion.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Chipsa",
+    "url": "https://chipsa.design/",
+    "bucket": "D",
+    "location": "",
+    "notes": "WebGL/3D/CGI-led studio; elaborate animation per project.",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Studio Namma",
+    "url": "https://studionamma.com/",
+    "bucket": "D",
+    "location": "Paris, France",
+    "notes": "Awwwards SOTD; Webflow + GSAP + Lenis + Swup, draggable elements, line animations.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=6",
+    "http": 200
+  },
+  {
+    "name": "hi, 6 — Scrapbook (Hicard Studio)",
+    "url": "https://scrapbook.hicard.studio/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Literal digital scrapbook: scanned tickets and paper ephemera for a studio's 6th anniversary.",
+    "source": "https://www.framer.com/gallery/categories/agency",
+    "http": 200
+  },
+  {
+    "name": "Collage Department",
+    "url": "https://collagedepartment.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Collage-led creative agency (Olya Titova); B&W collage hero, 100+ image collage gallery.",
+    "source": "https://www.awwwards.com/websites/collage/",
+    "http": 200
+  },
+  {
+    "name": "Aralesk — Collages & Motion",
+    "url": "https://www.aralesk.es/",
+    "bucket": "E",
+    "location": "Spain",
+    "notes": "Collage artist; three.js/GSAP animated collage pieces.",
+    "source": "https://www.awwwards.com/websites/collage/",
+    "http": 200
+  },
+  {
+    "name": "Steph Jeong Scrapbook",
+    "url": "https://jeongsteph.design/",
+    "bucket": "E",
+    "location": "Brooklyn, USA",
+    "notes": "Designer portfolio framed as 'Scrapbook '20'; 'draw me a stache' doodle interaction.",
+    "source": "https://www.awwwards.com/websites/scrapbook/",
+    "http": 200
+  },
+  {
+    "name": "Mr. Panda's Paper Portfolio",
+    "url": "https://www.mr-pandas-psychologically-safe-portfolio.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Awwwards SOTD; paper-craft portfolio, scroll/drag to navigate.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=8",
+    "http": 200
+  },
+  {
+    "name": "Aimee Xu's Papercraft World",
+    "url": "https://aimees-papercraft-world.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Awwwards SOTD; textured kraft papers, torn edges, three.js papercraft scenes.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=5",
+    "http": 200
+  },
+  {
+    "name": "Miranda — Paper Portfolio",
+    "url": "https://www.niccolomiranda.com/",
+    "bucket": "E",
+    "location": "Amsterdam, Netherlands",
+    "notes": "Awwwards SOTM; tilted newspaper-paper layout, drag sideways to browse.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Ponpon Mania",
+    "url": "https://ponpon-mania.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Awwwards SOTM; interactive comic, WebGL hand-drawn chapters.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/",
+    "http": 200
+  },
+  {
+    "name": "Grit Pictures",
+    "url": "https://grit.pictures/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Sticker-outlined cut-out illustrations on black; scrapbook/tattoo-flash collage.",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "KARO",
+    "url": "https://www.karocrafts.com/",
+    "bucket": "E",
+    "location": "New York, USA",
+    "notes": "Artist/designer shop; tactile, handmade aesthetic, smiley loader, Shopify.",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Adrien Lamy",
+    "url": "https://adrienlamy.fr/",
+    "bucket": "E",
+    "location": "Paris, France",
+    "notes": "Creative developer; collage layouts and bold type (Muzli).",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Working Stiff Films",
+    "url": "https://stiff.madebybuzzworthy.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Cream paper-textured background, script logo, draggable work strip.",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Cosmos",
+    "url": "https://www.cosmos.so/",
+    "bucket": "E",
+    "location": "New York, USA",
+    "notes": "Moodboard platform; search by colour, collections of saved images.",
+    "source": "https://httpster.net/",
+    "http": 200
+  },
+  {
+    "name": "Are.na",
+    "url": "https://www.are.na/",
+    "bucket": "E",
+    "location": "",
+    "notes": "'Toolkit for assembling new worlds from scraps'; moodboard/channel metaphor.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "mmm.page",
+    "url": "https://mmm.page/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Drag-and-drop scrapbook-style site builder; marker-swash wordmark, scattered objects.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Poolsuite",
+    "url": "https://poolsuite.net/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Retro Mac-style desktop: windowed player on pastel background.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "PostHog",
+    "url": "https://posthog.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Full desktop-OS metaphor: app icons and windows on illustrated grass wallpaper.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Lynn Fisher",
+    "url": "https://lynnandtonic.com/",
+    "bucket": "E",
+    "location": "Phoenix, USA",
+    "notes": "Annual handcrafted redesigns; paper-texture backdrop, serif title, numbered menu.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Beci Orpin",
+    "url": "https://beciorpin.com/",
+    "bucket": "E",
+    "location": "Melbourne, Australia",
+    "notes": "Hand-made textured illustrated objects floating on pale yellow; hidden pet-rock game.",
+    "source": "https://httpster.net/type/craft/",
+    "http": 200
+  },
+  {
+    "name": "Chrissie Abbott",
+    "url": "https://chrissieabbott.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Retro emoji nav, collage-like image grid, Cargo draggable layout.",
+    "source": "https://httpster.net/style/retro/",
+    "http": 200
+  },
+  {
+    "name": "Kinfolk",
+    "url": "https://www.kinfolk.com/",
+    "bucket": "E",
+    "location": "Copenhagen, Denmark",
+    "notes": "Slow-living magazine; editorial cover hero, Lenis + Swup transitions.",
+    "source": "https://httpster.net/type/magazine/",
+    "http": 200
+  },
+  {
+    "name": "Openhouse Magazine",
+    "url": "https://openhouse-magazine.com/",
+    "bucket": "E",
+    "location": "Barcelona, Spain",
+    "notes": "Art/design/culture magazine; image-led editorial stories, shop and studios.",
+    "source": "https://httpster.net/type/magazine/",
+    "http": 200
+  },
+  {
+    "name": "Emergence Magazine",
+    "url": "https://emergencemagazine.org/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Illustrated, immersive long-form stories; Barba transitions.",
+    "source": "https://httpster.net/type/magazine/",
+    "http": 200
+  },
+  {
+    "name": "Deem Journal",
+    "url": "https://www.deemjournal.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Design journal on Cargo; full-bleed photo heroes, stories, symposium.",
+    "source": "https://httpster.net/type/magazine/",
+    "http": 200
+  },
+  {
+    "name": "Hole & Corner",
+    "url": "https://www.holeandcorner.com/",
+    "bucket": "E",
+    "location": "London, UK",
+    "notes": "Craft and heritage magazine; maker stories, food, travel.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Apartamento",
+    "url": "https://www.apartamentomagazine.com/",
+    "bucket": "E",
+    "location": "Barcelona, Spain",
+    "notes": "Everyday interiors magazine; warm video hero, archive and shop.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Present & Correct",
+    "url": "https://www.presentandcorrect.com/",
+    "bucket": "E",
+    "location": "London, UK",
+    "notes": "Stationery shop: paper clips, typewriters, ephemera flatlays; exactly the brief's props.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Field Notes",
+    "url": "https://fieldnotesbrand.com/",
+    "bucket": "E",
+    "location": "Chicago, USA",
+    "notes": "Memo-book brand with kraft covers; tactile product storytelling.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Ikai Asai",
+    "url": "https://www.ikaiasai.com/",
+    "bucket": "E",
+    "location": "India",
+    "notes": "Indian art, craft and design editorial platform; clean editorial grid.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "davesocozy",
+    "url": "https://davesocozy.com/",
+    "bucket": "E",
+    "location": "Philadelphia, USA",
+    "notes": "Handmade collage artist; explorable 3D room of objects, 'a table to cut your own'.",
+    "source": "https://onepagelove.com/tag/collage",
+    "http": 200
+  },
+  {
+    "name": "Tim Van Damme (Max Voltar)",
+    "url": "https://timvandamme.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Photocopied-zine one-pager: textured paper, halftone photos, red-marker doodles.",
+    "source": "https://onepagelove.com/tim-van-damme-max-voltar",
+    "http": 200
+  },
+  {
+    "name": "Katrine Mehl",
+    "url": "https://katrinemehl.com/",
+    "bucket": "E",
+    "location": "Denmark",
+    "notes": "Paper metaphor: a smooth sheet crumples as you scroll.",
+    "source": "https://onepagelove.com/tag/paper",
+    "http": 200
+  },
+  {
+    "name": "Paper Tiger",
+    "url": "https://www.papertiger.com/",
+    "bucket": "E",
+    "location": "",
+    "notes": "Awwwards SOTD; layered coloured paper sheets, bold condensed type.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=9",
+    "http": 403
+  },
+  {
+    "name": "Subko",
+    "url": "https://www.subko.coffee/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Cinematic landscape video, serif caps; coffee, bakehouse and cacao storytelling.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Bombay Sweet Shop",
+    "url": "https://bombaysweetshop.com/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Playful illustrated mithai brand; festive banners, round category stickers.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Nicobar",
+    "url": "https://www.nicobar.com/",
+    "bucket": "F",
+    "location": "New Delhi, India",
+    "notes": "Moody editorial fashion photography, India-rooted lifestyle.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Paper Boat",
+    "url": "https://paperboatdrinks.com/",
+    "bucket": "F",
+    "location": "Bengaluru, India",
+    "notes": "Hand-drawn nostalgic illustrations; pastel folder-tab nav (drinks, food, memories).",
+    "source": "search: Paper Boat drinks official website Hector Beverages",
+    "http": 200
+  },
+  {
+    "name": "ARAKU Coffee",
+    "url": "https://www.arakucoffee.in/",
+    "bucket": "F",
+    "location": "Bengaluru, India",
+    "notes": "Huge serif wordmark over misty valley video; seed-to-cup story.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Good Earth",
+    "url": "https://www.goodearth.in/",
+    "bucket": "F",
+    "location": "New Delhi, India",
+    "notes": "Indian craft-luxury design house; campaign-led homepage.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Raw Mango",
+    "url": "https://www.rawmango.com/",
+    "bucket": "F",
+    "location": "New Delhi, India",
+    "notes": "Fresco-backdrop editorial portraits; textiles with strong art direction.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Phool",
+    "url": "https://phool.co/",
+    "bucket": "F",
+    "location": "Kanpur, India",
+    "notes": "Truck-art borders, vivid Hindi type, festive product photography.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Doodlage",
+    "url": "https://doodlage.in/",
+    "bucket": "F",
+    "location": "New Delhi, India",
+    "notes": "Upcycled fashion; candid lifestyle editorial photography.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Bombay Perfumery",
+    "url": "https://www.bombayperfumery.com/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Soft, airy product still-lifes on wood; restrained luxury.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Paul And Mike",
+    "url": "https://www.paulandmike.co/",
+    "bucket": "F",
+    "location": "India",
+    "notes": "Farm-to-bar chocolate; colourful packaging, festive campaigns.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "The Bombay Canteen",
+    "url": "https://www.thebombaycanteen.com/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Restaurant site; warm interiors photography, menus, events.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Bhaane",
+    "url": "https://www.bhaane.com/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Colour-block fashion editorial; has a 'zine' section.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "The Whole Truth",
+    "url": "https://thewholetruthfoods.com/",
+    "bucket": "F",
+    "location": "Mumbai, India",
+    "notes": "Bold type with hand-drawn scribbles, sparkles and arrows; honest copy.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Diaspora Co.",
+    "url": "https://www.diasporaco.com/",
+    "bucket": "F",
+    "location": "Oakland, USA",
+    "notes": "South Asian spice brand; saturated pink/orange, recipe content.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Graza",
+    "url": "https://www.graza.co/",
+    "bucket": "F",
+    "location": "USA",
+    "notes": "Illustrated squeeze-bottle packaging, playful retro type.",
+    "source": "https://httpster.net/type/food-drink/",
+    "http": 200
+  },
+  {
+    "name": "Fishwife",
+    "url": "https://www.eatfishwife.com/",
+    "bucket": "F",
+    "location": "Los Angeles, USA",
+    "notes": "Illustrated tins, pill buttons, WebGL/Pixi touches; joyful D2C.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Ghia",
+    "url": "https://drinkghia.com/",
+    "bucket": "F",
+    "location": "USA",
+    "notes": "Oxblood/plum palette, Mediterranean art direction.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Brightland",
+    "url": "https://www.brightland.co/",
+    "bucket": "F",
+    "location": "California, USA",
+    "notes": "Warm still-life photography, illustrated bottles, press logos.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "East Fork",
+    "url": "https://eastfork.com/",
+    "bucket": "F",
+    "location": "Asheville, USA",
+    "notes": "Speckled pottery close-ups; warm craft storytelling (pottery reference).",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Heath Ceramics",
+    "url": "https://www.heathceramics.com/",
+    "bucket": "F",
+    "location": "Sausalito, USA",
+    "notes": "Ceramics and tile; warm editorial table scenes.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Studio Arhoj",
+    "url": "https://www.arhoj.com/",
+    "bucket": "F",
+    "location": "Copenhagen, Denmark",
+    "notes": "Playful ceramic creatures, quirky voice, colourful shop.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "LRNCE",
+    "url": "https://lrnce.com/",
+    "bucket": "F",
+    "location": "Marrakech, Morocco",
+    "notes": "Moodboard-like hero: textiles, sketches and swatches pinned to a board.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Toast",
+    "url": "https://www.toa.st/",
+    "bucket": "F",
+    "location": "London, UK",
+    "notes": "Calm editorial lifestyle photography, journal content.",
+    "source": "known reference; confirmed by fetch (homepage title matches)",
+    "http": 200
+  },
+  {
+    "name": "Synchrodogs / Synchrostudio",
+    "url": "https://synchrodogs.com/",
+    "bucket": "G",
+    "location": "Ukraine",
+    "notes": "Awwwards SOTM; photographer duo; dark brown column of images, WebGL.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_month/?page=2",
+    "http": 200
+  },
+  {
+    "name": "Hugo Ahlberg",
+    "url": "https://hugoahlberg.com/",
+    "bucket": "G",
+    "location": "Bay Area, USA",
+    "notes": "Photography/3D/cinematography; dark info layout, Cargo marquee.",
+    "source": "https://minimal.gallery/hugo-ahlberg/",
+    "http": 200
+  },
+  {
+    "name": "Félix Péault",
+    "url": "https://www.felixpeault.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Photographer of 'unordinary moments'; Svelte + Sanity image-led site.",
+    "source": "https://minimal.gallery/felix-peault/ ; https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Rich Stapleton",
+    "url": "https://richstapleton.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Photographer; centred single-image slideshow, generous white space.",
+    "source": "https://minimal.gallery/rich-stapleton/ ; https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Sam Thies",
+    "url": "https://samthies.com/",
+    "bucket": "G",
+    "location": "Australia",
+    "notes": "Filmmaker/photographer; 180+ image visual stories, Lenis.",
+    "source": "https://minimal.gallery/sam-thies/ ; https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Stephen Kent Johnson",
+    "url": "https://stephenkentjohnson.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Interiors photographer; dense mosaic wall of 280 images.",
+    "source": "https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Angela Ricciardi",
+    "url": "https://www.angelaricciardi.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Artist/photographer; single framed image with counter, archive view.",
+    "source": "https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Gil Huybrecht",
+    "url": "https://gilhuybrecht.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Awwwards SOTD; editorial websites designer; Lenis, video.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=2 ; https://www.siteinspire.com/websites/category/design-and-art-direction",
+    "http": 200
+  },
+  {
+    "name": "Jason Bergh",
+    "url": "https://www.jasonbergh.com/",
+    "bucket": "G",
+    "location": "Seattle, USA",
+    "notes": "Awwwards SOTD; cinematic serif-italic titles over film stills.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=8 ; https://minimal.gallery/jason-bergh/",
+    "http": 200
+  },
+  {
+    "name": "Marianna von Fedak",
+    "url": "https://mariannavonfedak.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Creative director; 215 images, Lenis + Barba transitions.",
+    "source": "https://minimal.gallery/marianna-von-fedak/",
+    "http": 200
+  },
+  {
+    "name": "Loli Laboureau",
+    "url": "https://www.lolilaboureau.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Collage portfolio: cut-out objects and pop-up windows over B&W photography; Framer.",
+    "source": "https://minimal.gallery/loli-laboureau/",
+    "http": 200
+  },
+  {
+    "name": "Mark Clennon",
+    "url": "https://www.markclennon.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Photographer/director; vertical photo strips, stills/motion/diary.",
+    "source": "https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Julia Noni",
+    "url": "https://julianoni.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Fashion photographer; centred editorial images, [selected] [works].",
+    "source": "https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Juan Mora",
+    "url": "https://juanmora.co/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Awwwards SOTD; infinite draggable lab field, poster cloth effects.",
+    "source": "https://www.awwwards.com/websites/sites_of_the_day/?page=6",
+    "http": 200
+  },
+  {
+    "name": "Gianluca Gradogna",
+    "url": "https://gianlucagradogna.com/",
+    "bucket": "G",
+    "location": "Florence, Italy",
+    "notes": "Awwwards portfolio winner; infinite scroll, subtle transitions.",
+    "source": "https://www.awwwards.com/websites/winner_category_portfolio/ ; https://muz.li/blog/top-100-most-creative-and-unique-portfolio-websites-of-2025/",
+    "http": 200
+  },
+  {
+    "name": "Heena Chung",
+    "url": "https://heenachung.info/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Designer archive; thumbnail-size toggle (S/M/L) over video grid.",
+    "source": "https://minimal.gallery/heena-chung/",
+    "http": 200
+  },
+  {
+    "name": "Camille Mormal",
+    "url": "https://camillemormal.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Art director; full-bleed editorial imagery, '+' project navigator.",
+    "source": "https://minimal.gallery/camille-mormal/ ; https://httpster.net/type/design-and-illustration/page/2/",
+    "http": 200
+  },
+  {
+    "name": "Kai Blamey Nguyen",
+    "url": "https://kaiblamey.com/",
+    "bucket": "G",
+    "location": "",
+    "notes": "Cinematographer; full-bleed still with overlaid project index list.",
+    "source": "https://minimal.gallery/kai-blamey/ ; https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  },
+  {
+    "name": "Daniel Blue",
+    "url": "https://danielblue.com/",
+    "bucket": "G",
+    "location": "San Francisco Bay Area, USA",
+    "notes": "Interiors photographer; spaced text index of projects.",
+    "source": "https://www.siteinspire.com/websites/category/photography",
+    "http": 200
+  }
+]

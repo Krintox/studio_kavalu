@@ -1,0 +1,321 @@
+.spreads {
+  position: relative;
+  margin-top: -1px; /* close the seam with the hero's plate */
+}
+
+.spread {
+  position: relative;
+  height: 300vh;
+  background: var(--p-bg);
+  color: var(--p-ink);
+}
+
+/* Each spread after the first slides over the last 100vh of the one before it. */
+.spread + .spread {
+  margin-top: -100vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.inner {
+  position: absolute;
+  inset: 0;
+  background: var(--p-bg);
+  transform-origin: 50% 40%;
+}
+
+/* a spread on one of the palette's grounds is that ground's own paper, so it needs no grain on top */
+.spread[data-surface] .inner {
+  background: var(--surface-tex) 0 0 / var(--tex-size), var(--surface);
+}
+
+.spread[data-surface] .inner::after {
+  content: none;
+}
+
+.spread[data-surface] .cta {
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  background: rgb(10 2 6);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- type ---------- */
+
+.head {
+  position: absolute;
+  inset: calc(var(--nav-h) + 1rem) var(--margin) auto;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+}
+
+.count span {
+  opacity: 0.55;
+}
+
+.deliverables {
+  text-align: right;
+  line-height: 1.7;
+}
+
+.text {
+  position: absolute;
+  left: var(--margin);
+  bottom: clamp(2rem, 6vh, 4.5rem);
+  z-index: 20;
+  max-width: min(38rem, 44vw);
+}
+
+.sector {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  opacity: 0.75;
+}
+
+.title {
+  margin-top: 0.9rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-spread);
+  line-height: 0.9;
+  letter-spacing: var(--track-d2);
+  text-wrap: balance;
+}
+
+.summary {
+  margin-top: 1.25rem;
+  max-width: 28rem;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  opacity: 0.88;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.6rem;
+  height: 3rem;
+  padding: 0 1.4rem;
+  border-radius: 999px;
+  background: var(--p-ink);
+  color: var(--p-bg);
+  font-size: 0.9375rem;
+  transition:
+    transform var(--d-quick) var(--e-quick),
+    gap var(--d-base) var(--e-settle);
+}
+
+.cta:hover {
+  gap: 0.95rem;
+}
+
+.cta:active {
+  transform: scale(0.97);
+}
+
+/* ---------- the collage ---------- */
+
+.collage {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.piece {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--w);
+  translate: -50% -50%;
+  will-change: transform;
+}
+
+.tilt {
+  position: relative;
+  rotate: var(--tilt);
+  filter: var(--shadow-stamp-dark);
+}
+
+.paper {
+  position: relative;
+}
+
+.window {
+  position: relative;
+  aspect-ratio: var(--ratio);
+  overflow: hidden;
+  background: color-mix(in oklch, var(--p-bg), white 12%);
+}
+
+.window img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* perforated stamp */
+.stamp .paper {
+  --r: 5px;
+  padding: 11px;
+  background: var(--paper);
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* polaroid: square window, deep bottom margin */
+.polaroid .paper {
+  padding: 8px 8px 2.1rem;
+  background: var(--paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.clip {
+  position: absolute;
+  top: -1.5rem;
+  left: 20%;
+  width: 1rem;
+  height: 2.8rem;
+  rotate: -7deg;
+  z-index: 2;
+}
+
+/* plain print */
+.print .paper {
+  background: var(--paper);
+  padding: 0;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* a print held on with a strip of tape */
+.taped .paper::before {
+  content: "";
+  position: absolute;
+  top: -0.65rem;
+  left: 50%;
+  z-index: 2;
+  width: 4.4rem;
+  height: 1.3rem;
+  translate: -50% 0;
+  rotate: 4deg;
+  background: rgb(243 243 231 / 0.62);
+  clip-path: polygon(3% 0, 97% 5%, 100% 52%, 96% 100%, 2% 95%, 0 46%);
+}
+
+/* ---------- small screens: no stacking, a swipeable row of pictures ---------- */
+
+@media (max-width: 899px) {
+  .spread {
+    height: auto;
+  }
+  .spread + .spread {
+    margin-top: 0;
+  }
+  .sticky {
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+  .inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: calc(var(--nav-h) + 1rem) 0 3rem;
+  }
+  .head {
+    position: relative;
+    inset: auto;
+    padding-inline: var(--margin);
+  }
+  .collage {
+    position: relative;
+    order: 3;
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 2.5rem var(--margin) 1.5rem;
+    scrollbar-width: none;
+  }
+  .piece {
+    position: relative;
+    left: auto;
+    top: auto;
+    translate: none;
+    flex: 0 0 62vw;
+    width: 62vw;
+    scroll-snap-align: center;
+  }
+  .text {
+    position: relative;
+    order: 2;
+    left: auto;
+    bottom: auto;
+    max-width: none;
+    padding: 2rem var(--margin) 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spread {
+    height: auto;
+    min-height: 100vh;
+  }
+  .spread + .spread {
+    margin-top: 0;
+  }
+  .sticky {
+    position: relative;
+    height: 100vh;
+  }
+}

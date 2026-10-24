@@ -1,0 +1,944 @@
+{
+ "about": [
+  {
+   "label": "Anybody 150/900",
+   "iou": 0.7699,
+   "lsEm": 0.062,
+   "natAspect": 7.11,
+   "loaded": true
+  },
+  {
+   "label": "Anybody 125/900",
+   "iou": 0.7699,
+   "lsEm": 0.062,
+   "natAspect": 7.11,
+   "loaded": true
+  },
+  {
+   "label": "Panchang 800",
+   "iou": 0.7491,
+   "lsEm": -0.085,
+   "natAspect": 8.16,
+   "loaded": true
+  },
+  {
+   "label": "Climate Crisis",
+   "iou": 0.7254,
+   "lsEm": 0.097,
+   "natAspect": 6.96,
+   "loaded": true
+  },
+  {
+   "label": "Archivo 125/900",
+   "iou": 0.7023,
+   "lsEm": 0.078,
+   "natAspect": 7.01,
+   "loaded": true
+  },
+  {
+   "label": "Goldman 700",
+   "iou": 0.6917,
+   "lsEm": 0.057,
+   "natAspect": 7.08,
+   "loaded": true
+  },
+  {
+   "label": "Panchang 700",
+   "iou": 0.6721,
+   "lsEm": -0.065,
+   "natAspect": 8.02,
+   "loaded": true
+  },
+  {
+   "label": "Syne 800",
+   "iou": 0.667,
+   "lsEm": -0.247,
+   "natAspect": 9.37,
+   "loaded": true
+  },
+  {
+   "label": "Boxing",
+   "iou": 0.6599,
+   "lsEm": 0.039,
+   "natAspect": 7.27,
+   "loaded": true
+  },
+  {
+   "label": "Unbounded 900",
+   "iou": 0.5904,
+   "lsEm": 0.224,
+   "natAspect": 6.13,
+   "loaded": true
+  },
+  {
+   "label": "Dela Gothic One",
+   "iou": 0.5814,
+   "lsEm": 0.103,
+   "natAspect": 6.88,
+   "loaded": true
+  },
+  {
+   "label": "Zen Dots",
+   "iou": 0.5764,
+   "lsEm": 0.081,
+   "natAspect": 7.01,
+   "loaded": true
+  },
+  {
+   "label": "Clash Display 700",
+   "iou": 0.5601,
+   "lsEm": 0.265,
+   "natAspect": 5.63,
+   "loaded": true
+  },
+  {
+   "label": "Saira 125/900",
+   "iou": 0.5448,
+   "lsEm": 0.255,
+   "natAspect": 5.75,
+   "loaded": true
+  },
+  {
+   "label": "Orbitron 900",
+   "iou": 0.5426,
+   "lsEm": 0.253,
+   "natAspect": 5.8,
+   "loaded": true
+  },
+  {
+   "label": "Mona Sans 125/900",
+   "iou": 0.5235,
+   "lsEm": 0.282,
+   "natAspect": 5.67,
+   "loaded": true
+  },
+  {
+   "label": "Rubik 900",
+   "iou": 0.5186,
+   "lsEm": 0.302,
+   "natAspect": 5.45,
+   "loaded": true
+  },
+  {
+   "label": "Days One",
+   "iou": 0.5074,
+   "lsEm": 0.258,
+   "natAspect": 5.8,
+   "loaded": true
+  },
+  {
+   "label": "Archivo Black",
+   "iou": 0.5008,
+   "lsEm": 0.239,
+   "natAspect": 5.88,
+   "loaded": true
+  },
+  {
+   "label": "Saira 125/800",
+   "iou": 0.4992,
+   "lsEm": 0.256,
+   "natAspect": 5.75,
+   "loaded": true
+  },
+  {
+   "label": "Rubik Mono One",
+   "iou": 0.4925,
+   "lsEm": 0.081,
+   "natAspect": 6.99,
+   "loaded": true
+  },
+  {
+   "label": "Hubot Sans 125/900",
+   "iou": 0.4908,
+   "lsEm": 0.086,
+   "natAspect": 6.99,
+   "loaded": true
+  },
+  {
+   "label": "Titan One",
+   "iou": 0.4797,
+   "lsEm": 0.338,
+   "natAspect": 5.25,
+   "loaded": true
+  },
+  {
+   "label": "Alfa Slab One",
+   "iou": 0.4756,
+   "lsEm": 0.37,
+   "natAspect": 5.26,
+   "loaded": true
+  },
+  {
+   "label": "Krona One",
+   "iou": 0.4738,
+   "lsEm": 0.217,
+   "natAspect": 6.19,
+   "loaded": true
+  },
+  {
+   "label": "Black Ops One",
+   "iou": 0.4713,
+   "lsEm": 0.219,
+   "natAspect": 5.88,
+   "loaded": true
+  },
+  {
+   "label": "Audiowide",
+   "iou": 0.454,
+   "lsEm": 0.245,
+   "natAspect": 5.85,
+   "loaded": true
+  },
+  {
+   "label": "Passion One 900",
+   "iou": 0.4513,
+   "lsEm": 0.307,
+   "natAspect": 5.15,
+   "loaded": true
+  },
+  {
+   "label": "Kanit 900",
+   "iou": 0.44,
+   "lsEm": 0.298,
+   "natAspect": 5.31,
+   "loaded": true
+  },
+  {
+   "label": "Bowlby One",
+   "iou": 0.4397,
+   "lsEm": 0.37,
+   "natAspect": 5.22,
+   "loaded": true
+  },
+  {
+   "label": "Lexend Mega 900",
+   "iou": 0.4287,
+   "lsEm": 0.019,
+   "natAspect": 7.43,
+   "loaded": true
+  },
+  {
+   "label": "Exo 2 900",
+   "iou": 0.4267,
+   "lsEm": 0.363,
+   "natAspect": 5.03,
+   "loaded": true
+  },
+  {
+   "label": "Rammetto One",
+   "iou": 0.4255,
+   "lsEm": 0.337,
+   "natAspect": 5.51,
+   "loaded": true
+  },
+  {
+   "label": "Lexend Giga 900",
+   "iou": 0.4242,
+   "lsEm": 0.047,
+   "natAspect": 7.24,
+   "loaded": true
+  },
+  {
+   "label": "Cabinet Grotesk 900",
+   "iou": 0.4191,
+   "lsEm": 0.34,
+   "natAspect": 5.08,
+   "loaded": true
+  },
+  {
+   "label": "Technor 900",
+   "iou": 0.417,
+   "lsEm": 0.257,
+   "natAspect": 5.61,
+   "loaded": true
+  },
+  {
+   "label": "Changa One",
+   "iou": 0.4154,
+   "lsEm": 0.353,
+   "natAspect": 4.88,
+   "loaded": true
+  },
+  {
+   "label": "Montserrat 900",
+   "iou": 0.4144,
+   "lsEm": 0.299,
+   "natAspect": 5.52,
+   "loaded": true
+  },
+  {
+   "label": "Encode Sans 125/900",
+   "iou": 0.4104,
+   "lsEm": 0.261,
+   "natAspect": 5.84,
+   "loaded": true
+  },
+  {
+   "label": "Red Hat Display 900",
+   "iou": 0.4085,
+   "lsEm": 0.328,
+   "natAspect": 5.3,
+   "loaded": true
+  },
+  {
+   "label": "Nippo 700",
+   "iou": 0.4071,
+   "lsEm": 0.334,
+   "natAspect": 5.18,
+   "loaded": true
+  },
+  {
+   "label": "Poppins 900",
+   "iou": 0.4047,
+   "lsEm": 0.352,
+   "natAspect": 5.15,
+   "loaded": true
+  },
+  {
+   "label": "Prompt 900",
+   "iou": 0.3895,
+   "lsEm": 0.372,
+   "natAspect": 5.01,
+   "loaded": true
+  },
+  {
+   "label": "Lexend 900",
+   "iou": 0.3852,
+   "lsEm": 0.242,
+   "natAspect": 5.9,
+   "loaded": true
+  },
+  {
+   "label": "Bricolage 800",
+   "iou": 0.3846,
+   "lsEm": 0.317,
+   "natAspect": 5.25,
+   "loaded": true
+  },
+  {
+   "label": "Russo One",
+   "iou": 0.3762,
+   "lsEm": 0.325,
+   "natAspect": 5.29,
+   "loaded": true
+  },
+  {
+   "label": "Outfit 900",
+   "iou": 0.3727,
+   "lsEm": 0.349,
+   "natAspect": 5.2,
+   "loaded": true
+  },
+  {
+   "label": "Bungee",
+   "iou": 0.3685,
+   "lsEm": 0.33,
+   "natAspect": 5.36,
+   "loaded": true
+  },
+  {
+   "label": "Oxanium 800",
+   "iou": 0.3604,
+   "lsEm": 0.34,
+   "natAspect": 5.1,
+   "loaded": true
+  },
+  {
+   "label": "Technor 700",
+   "iou": 0.3543,
+   "lsEm": 0.276,
+   "natAspect": 5.47,
+   "loaded": true
+  },
+  {
+   "label": "Bai Jamjuree 700",
+   "iou": 0.3521,
+   "lsEm": 0.365,
+   "natAspect": 5.02,
+   "loaded": true
+  },
+  {
+   "label": "Paytone One",
+   "iou": 0.3495,
+   "lsEm": 0.349,
+   "natAspect": 5.14,
+   "loaded": true
+  },
+  {
+   "label": "Sora 800",
+   "iou": 0.3468,
+   "lsEm": 0.375,
+   "natAspect": 5.13,
+   "loaded": true
+  },
+  {
+   "label": "Excon 900",
+   "iou": 0.3407,
+   "lsEm": 0.417,
+   "natAspect": 4.77,
+   "loaded": true
+  },
+  {
+   "label": "Turret Road 800",
+   "iou": 0.3398,
+   "lsEm": 0.363,
+   "natAspect": 4.97,
+   "loaded": true
+  },
+  {
+   "label": "Styro 900",
+   "iou": 0.3386,
+   "lsEm": 0.592,
+   "natAspect": 3.52,
+   "loaded": true
+  },
+  {
+   "label": "Lilita One",
+   "iou": 0.3382,
+   "lsEm": 0.415,
+   "natAspect": 4.66,
+   "loaded": true
+  },
+  {
+   "label": "Chakra Petch 700",
+   "iou": 0.3314,
+   "lsEm": 0.368,
+   "natAspect": 4.93,
+   "loaded": true
+  },
+  {
+   "label": "Michroma",
+   "iou": 0.325,
+   "lsEm": 0.126,
+   "natAspect": 6.76,
+   "loaded": true
+  },
+  {
+   "label": "Expose 900",
+   "iou": 0.3234,
+   "lsEm": 0.461,
+   "natAspect": 4.33,
+   "loaded": true
+  },
+  {
+   "label": "Righteous",
+   "iou": 0.3202,
+   "lsEm": 0.396,
+   "natAspect": 4.83,
+   "loaded": true
+  },
+  {
+   "label": "Satoshi 900",
+   "iou": 0.3148,
+   "lsEm": 0.402,
+   "natAspect": 4.94,
+   "loaded": true
+  },
+  {
+   "label": "Familjen Grotesk 700",
+   "iou": 0.3135,
+   "lsEm": 0.361,
+   "natAspect": 4.89,
+   "loaded": true
+  },
+  {
+   "label": "Tilt Warp",
+   "iou": 0.3121,
+   "lsEm": 0.396,
+   "natAspect": 4.78,
+   "loaded": true
+  },
+  {
+   "label": "Manrope 800",
+   "iou": 0.3112,
+   "lsEm": 0.394,
+   "natAspect": 4.93,
+   "loaded": true
+  },
+  {
+   "label": "Squada One",
+   "iou": 0.2835,
+   "lsEm": 0.526,
+   "natAspect": 3.62,
+   "loaded": true
+  },
+  {
+   "label": "Big Shoulders Display 900",
+   "iou": 0.2498,
+   "lsEm": 0.727,
+   "natAspect": 3.11,
+   "loaded": true
+  }
+ ],
+ "home": [
+  {
+   "label": "Anybody 150/900",
+   "iou": 0.763,
+   "lsEm": 0.072,
+   "natAspect": 7.11,
+   "loaded": true
+  },
+  {
+   "label": "Anybody 125/900",
+   "iou": 0.763,
+   "lsEm": 0.072,
+   "natAspect": 7.11,
+   "loaded": true
+  },
+  {
+   "label": "Panchang 800",
+   "iou": 0.7427,
+   "lsEm": -0.075,
+   "natAspect": 8.16,
+   "loaded": true
+  },
+  {
+   "label": "Climate Crisis",
+   "iou": 0.7039,
+   "lsEm": 0.109,
+   "natAspect": 6.96,
+   "loaded": true
+  },
+  {
+   "label": "Goldman 700",
+   "iou": 0.6938,
+   "lsEm": 0.065,
+   "natAspect": 7.08,
+   "loaded": true
+  },
+  {
+   "label": "Archivo 125/900",
+   "iou": 0.6899,
+   "lsEm": 0.088,
+   "natAspect": 7.01,
+   "loaded": true
+  },
+  {
+   "label": "Panchang 700",
+   "iou": 0.67,
+   "lsEm": -0.055,
+   "natAspect": 8.02,
+   "loaded": true
+  },
+  {
+   "label": "Syne 800",
+   "iou": 0.6639,
+   "lsEm": -0.238,
+   "natAspect": 9.37,
+   "loaded": true
+  },
+  {
+   "label": "Boxing",
+   "iou": 0.661,
+   "lsEm": 0.048,
+   "natAspect": 7.27,
+   "loaded": true
+  },
+  {
+   "label": "Zen Dots",
+   "iou": 0.5787,
+   "lsEm": 0.091,
+   "natAspect": 7.01,
+   "loaded": true
+  },
+  {
+   "label": "Unbounded 900",
+   "iou": 0.5703,
+   "lsEm": 0.235,
+   "natAspect": 6.13,
+   "loaded": true
+  },
+  {
+   "label": "Dela Gothic One",
+   "iou": 0.5656,
+   "lsEm": 0.114,
+   "natAspect": 6.88,
+   "loaded": true
+  },
+  {
+   "label": "Clash Display 700",
+   "iou": 0.5464,
+   "lsEm": 0.275,
+   "natAspect": 5.63,
+   "loaded": true
+  },
+  {
+   "label": "Saira 125/900",
+   "iou": 0.5408,
+   "lsEm": 0.265,
+   "natAspect": 5.75,
+   "loaded": true
+  },
+  {
+   "label": "Orbitron 900",
+   "iou": 0.5327,
+   "lsEm": 0.264,
+   "natAspect": 5.8,
+   "loaded": true
+  },
+  {
+   "label": "Mona Sans 125/900",
+   "iou": 0.5163,
+   "lsEm": 0.293,
+   "natAspect": 5.67,
+   "loaded": true
+  },
+  {
+   "label": "Rubik 900",
+   "iou": 0.5118,
+   "lsEm": 0.312,
+   "natAspect": 5.45,
+   "loaded": true
+  },
+  {
+   "label": "Saira 125/800",
+   "iou": 0.4965,
+   "lsEm": 0.266,
+   "natAspect": 5.75,
+   "loaded": true
+  },
+  {
+   "label": "Rubik Mono One",
+   "iou": 0.4852,
+   "lsEm": 0.091,
+   "natAspect": 6.99,
+   "loaded": true
+  },
+  {
+   "label": "Days One",
+   "iou": 0.4823,
+   "lsEm": 0.268,
+   "natAspect": 5.8,
+   "loaded": true
+  },
+  {
+   "label": "Archivo Black",
+   "iou": 0.4817,
+   "lsEm": 0.249,
+   "natAspect": 5.88,
+   "loaded": true
+  },
+  {
+   "label": "Hubot Sans 125/900",
+   "iou": 0.4749,
+   "lsEm": 0.097,
+   "natAspect": 6.99,
+   "loaded": true
+  },
+  {
+   "label": "Black Ops One",
+   "iou": 0.4725,
+   "lsEm": 0.228,
+   "natAspect": 5.88,
+   "loaded": true
+  },
+  {
+   "label": "Titan One",
+   "iou": 0.4662,
+   "lsEm": 0.348,
+   "natAspect": 5.25,
+   "loaded": true
+  },
+  {
+   "label": "Krona One",
+   "iou": 0.4619,
+   "lsEm": 0.228,
+   "natAspect": 6.19,
+   "loaded": true
+  },
+  {
+   "label": "Alfa Slab One",
+   "iou": 0.4606,
+   "lsEm": 0.382,
+   "natAspect": 5.26,
+   "loaded": true
+  },
+  {
+   "label": "Audiowide",
+   "iou": 0.4528,
+   "lsEm": 0.256,
+   "natAspect": 5.85,
+   "loaded": true
+  },
+  {
+   "label": "Passion One 900",
+   "iou": 0.4458,
+   "lsEm": 0.316,
+   "natAspect": 5.15,
+   "loaded": true
+  },
+  {
+   "label": "Bowlby One",
+   "iou": 0.4322,
+   "lsEm": 0.382,
+   "natAspect": 5.22,
+   "loaded": true
+  },
+  {
+   "label": "Kanit 900",
+   "iou": 0.4302,
+   "lsEm": 0.307,
+   "natAspect": 5.31,
+   "loaded": true
+  },
+  {
+   "label": "Lexend Mega 900",
+   "iou": 0.4182,
+   "lsEm": 0.03,
+   "natAspect": 7.43,
+   "loaded": true
+  },
+  {
+   "label": "Exo 2 900",
+   "iou": 0.4141,
+   "lsEm": 0.373,
+   "natAspect": 5.03,
+   "loaded": true
+  },
+  {
+   "label": "Cabinet Grotesk 900",
+   "iou": 0.4132,
+   "lsEm": 0.35,
+   "natAspect": 5.08,
+   "loaded": true
+  },
+  {
+   "label": "Rammetto One",
+   "iou": 0.4132,
+   "lsEm": 0.349,
+   "natAspect": 5.51,
+   "loaded": true
+  },
+  {
+   "label": "Lexend Giga 900",
+   "iou": 0.4122,
+   "lsEm": 0.057,
+   "natAspect": 7.24,
+   "loaded": true
+  },
+  {
+   "label": "Technor 900",
+   "iou": 0.4117,
+   "lsEm": 0.266,
+   "natAspect": 5.61,
+   "loaded": true
+  },
+  {
+   "label": "Encode Sans 125/900",
+   "iou": 0.4072,
+   "lsEm": 0.272,
+   "natAspect": 5.84,
+   "loaded": true
+  },
+  {
+   "label": "Montserrat 900",
+   "iou": 0.4068,
+   "lsEm": 0.309,
+   "natAspect": 5.52,
+   "loaded": true
+  },
+  {
+   "label": "Nippo 700",
+   "iou": 0.4064,
+   "lsEm": 0.343,
+   "natAspect": 5.18,
+   "loaded": true
+  },
+  {
+   "label": "Red Hat Display 900",
+   "iou": 0.3979,
+   "lsEm": 0.338,
+   "natAspect": 5.3,
+   "loaded": true
+  },
+  {
+   "label": "Changa One",
+   "iou": 0.3972,
+   "lsEm": 0.362,
+   "natAspect": 4.88,
+   "loaded": true
+  },
+  {
+   "label": "Poppins 900",
+   "iou": 0.3877,
+   "lsEm": 0.362,
+   "natAspect": 5.15,
+   "loaded": true
+  },
+  {
+   "label": "Lexend 900",
+   "iou": 0.3794,
+   "lsEm": 0.252,
+   "natAspect": 5.9,
+   "loaded": true
+  },
+  {
+   "label": "Prompt 900",
+   "iou": 0.379,
+   "lsEm": 0.382,
+   "natAspect": 5.01,
+   "loaded": true
+  },
+  {
+   "label": "Russo One",
+   "iou": 0.3739,
+   "lsEm": 0.336,
+   "natAspect": 5.29,
+   "loaded": true
+  },
+  {
+   "label": "Bricolage 800",
+   "iou": 0.3735,
+   "lsEm": 0.327,
+   "natAspect": 5.25,
+   "loaded": true
+  },
+  {
+   "label": "Oxanium 800",
+   "iou": 0.3722,
+   "lsEm": 0.35,
+   "natAspect": 5.1,
+   "loaded": true
+  },
+  {
+   "label": "Bungee",
+   "iou": 0.3585,
+   "lsEm": 0.341,
+   "natAspect": 5.36,
+   "loaded": true
+  },
+  {
+   "label": "Technor 700",
+   "iou": 0.3566,
+   "lsEm": 0.285,
+   "natAspect": 5.47,
+   "loaded": true
+  },
+  {
+   "label": "Outfit 900",
+   "iou": 0.356,
+   "lsEm": 0.359,
+   "natAspect": 5.2,
+   "loaded": true
+  },
+  {
+   "label": "Turret Road 800",
+   "iou": 0.3501,
+   "lsEm": 0.373,
+   "natAspect": 4.97,
+   "loaded": true
+  },
+  {
+   "label": "Bai Jamjuree 700",
+   "iou": 0.3493,
+   "lsEm": 0.375,
+   "natAspect": 5.02,
+   "loaded": true
+  },
+  {
+   "label": "Paytone One",
+   "iou": 0.3395,
+   "lsEm": 0.359,
+   "natAspect": 5.14,
+   "loaded": true
+  },
+  {
+   "label": "Lilita One",
+   "iou": 0.3377,
+   "lsEm": 0.426,
+   "natAspect": 4.66,
+   "loaded": true
+  },
+  {
+   "label": "Sora 800",
+   "iou": 0.3371,
+   "lsEm": 0.386,
+   "natAspect": 5.13,
+   "loaded": true
+  },
+  {
+   "label": "Excon 900",
+   "iou": 0.3335,
+   "lsEm": 0.428,
+   "natAspect": 4.77,
+   "loaded": true
+  },
+  {
+   "label": "Chakra Petch 700",
+   "iou": 0.3286,
+   "lsEm": 0.378,
+   "natAspect": 4.93,
+   "loaded": true
+  },
+  {
+   "label": "Styro 900",
+   "iou": 0.3265,
+   "lsEm": 0.603,
+   "natAspect": 3.52,
+   "loaded": true
+  },
+  {
+   "label": "Michroma",
+   "iou": 0.3253,
+   "lsEm": 0.137,
+   "natAspect": 6.76,
+   "loaded": true
+  },
+  {
+   "label": "Righteous",
+   "iou": 0.3188,
+   "lsEm": 0.406,
+   "natAspect": 4.83,
+   "loaded": true
+  },
+  {
+   "label": "Expose 900",
+   "iou": 0.3151,
+   "lsEm": 0.471,
+   "natAspect": 4.33,
+   "loaded": true
+  },
+  {
+   "label": "Manrope 800",
+   "iou": 0.3053,
+   "lsEm": 0.405,
+   "natAspect": 4.93,
+   "loaded": true
+  },
+  {
+   "label": "Familjen Grotesk 700",
+   "iou": 0.3049,
+   "lsEm": 0.37,
+   "natAspect": 4.89,
+   "loaded": true
+  },
+  {
+   "label": "Satoshi 900",
+   "iou": 0.3021,
+   "lsEm": 0.413,
+   "natAspect": 4.94,
+   "loaded": true
+  },
+  {
+   "label": "Tilt Warp",
+   "iou": 0.3014,
+   "lsEm": 0.406,
+   "natAspect": 4.78,
+   "loaded": true
+  },
+  {
+   "label": "Squada One",
+   "iou": 0.2731,
+   "lsEm": 0.535,
+   "natAspect": 3.62,
+   "loaded": true
+  },
+  {
+   "label": "Big Shoulders Display 900",
+   "iou": 0.251,
+   "lsEm": 0.738,
+   "natAspect": 3.11,
+   "loaded": true
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "rel": "nivritti/logo-orange",
+  "method": "html",
+  "output": "research/images_hq/html/nivritti/logo-orange.png",
+  "size": [
+    2013,
+    2400
+  ],
+  "src_size": [
+    290,
+    346
+  ],
+  "ssim": 0.9242,
+  "ssim_half": 0.9647,
+  "ncc": 0.9574,
+  "dE_mean": 3.2,
+  "dE_p95": 13.71,
+  "rgb_bias": [
+    1.7,
+    0.2,
+    -0.2
+  ]
+}

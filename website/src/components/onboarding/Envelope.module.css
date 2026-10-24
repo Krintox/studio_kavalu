@@ -1,0 +1,217 @@
+.wrap {
+  display: grid;
+  place-items: center;
+  padding: 3.5rem 0 1rem;
+}
+
+.env {
+  --w: min(23rem, 82vw);
+  position: relative;
+  width: var(--w);
+  aspect-ratio: 1.55;
+  perspective: 900px;
+}
+
+.back {
+  position: absolute;
+  inset: 0;
+  background: #efe7d2;
+  border-radius: 4px;
+  box-shadow: var(--shadow-lift);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.letter {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 6%;
+  height: 80%;
+  z-index: 2;
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  padding: 1.2rem 1.1rem;
+  background: var(--paper);
+  box-shadow: 0 1px 2px rgb(39 6 23 / 0.15);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.letter span {
+  display: block;
+  height: 2px;
+  background: rgb(57 13 38 / 0.18);
+}
+
+.letter span:nth-child(2) {
+  width: 82%;
+}
+
+.letter span:nth-child(4) {
+  width: 46%;
+}
+
+/* the front pocket: two side triangles and a bottom one, cut from one sheet */
+.pocket {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: #f6efdc;
+  clip-path: polygon(0 0, 50% 56%, 100% 0, 100% 100%, 0 100%);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgb(57 13 38 / 0.06);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.flap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60%;
+  z-index: 4;
+  background: #ebe1c9;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: 50% 0;
+  backface-visibility: visible;
+  filter: drop-shadow(0 2px 2px rgb(39 6 23 / 0.15));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.address {
+  position: absolute;
+  left: 14%;
+  bottom: 14%;
+  z-index: 5;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  color: var(--on-strong);
+}
+
+.address :global(.hand) {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+}
+
+.stamp {
+  position: absolute;
+  right: 6%;
+  top: 9%;
+  z-index: 6;
+  width: 22%;
+  rotate: 5deg;
+  filter: drop-shadow(0 3px 4px rgb(39 6 23 / 0.3));
+}
+
+.stampInner {
+  --r: 3px;
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 0.5rem 0.5rem;
+  background: var(--plum);
+  color: var(--cream);
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.stampMark {
+  width: 58%;
+  height: auto;
+}
+
+.stampRef {
+  font-family: var(--f-mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.postmark {
+  position: absolute;
+  right: 18%;
+  top: 2%;
+  z-index: 7;
+  width: 30%;
+  aspect-ratio: 1;
+  color: rgb(57 13 38 / 0.72);
+  mix-blend-mode: multiply;
+  rotate: -14deg;
+}
+
+.postmark svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.postmark circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.postmark text {
+  fill: currentColor;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  letter-spacing: 1.2px;
+}
+
+/* cancellation waves trailing off the postmark */
+.waves {
+  position: absolute;
+  left: -95%;
+  top: 34%;
+  width: 95%;
+  height: 32%;
+  background: repeating-linear-gradient(transparent 0 5px, currentColor 5px 7px);
+  -webkit-mask: radial-gradient(120% 100% at 100% 50%, #000 40%, transparent 72%);
+  mask: radial-gradient(120% 100% at 100% 50%, #000 40%, transparent 72%);
+  opacity: 0.8;
+}

@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: var(--cream);
+  color: var(--on);
+  scrollbar-gutter: stable;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: var(--f-text);
+  font-size: var(--t-body);
+  line-height: 1.55;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "calt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--cream);
+  background-image: var(--tex-cream);
+  background-size: var(--tex-size);
+  overflow-x: clip;
+}
+
+/* Tilted paper and pieces waiting to animate in must never widen the page (phones zoom out if they do).
+   clip, unlike hidden, creates no scroll container, so position: sticky inside keeps working. */
+main,
+footer {
+  overflow-x: clip;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+::selection {
+  background: var(--sel-bg, var(--plum));
+  color: var(--sel-fg, var(--cream));
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus, var(--on-strong));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* on dark paper the outline is powder blue; light cards inside dark sections set it back to plum */
+.on-dark,
+[data-tone="dark"] {
+  --focus: var(--blue);
+}
+
+/* the studio's cursor (components/Cursor.tsx) replaces the system one only while it is active, on a
+   fine pointer; fields keep the native caret */
+html.has-cursor,
+html.has-cursor * {
+  cursor: none;
+}
+
+html.has-cursor :is(input, textarea, [contenteditable="true"]) {
+  cursor: text;
+}
+
+html.has-cursor select {
+  cursor: default;
+}
+
+/* ---------- shared typography ---------- */
+
+.display {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  letter-spacing: var(--track-d3);
+  line-height: 1;
+  color: var(--on-strong);
+}
+
+/* No italic or coloured word in a heading: the device reads as a generated page
+   (research/type/KAVALU_FONT_SHORTLIST.md §1.1). Emphasis, at most once a page, is her own hand mark. */
+:is(h1, h2, h3, h4, blockquote, .display) em {
+  font-style: normal;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* a label in the grotesk, sentence case: only where a heading needs one (no eyebrow over every heading) */
+.eyebrow {
+  font-family: var(--f-text);
+  font-size: var(--t-small);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--on-soft);
+}
+
+.hand {
+  font-family: var(--f-hand);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.kn {
+  font-family: var(--f-kn);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--margin);
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  background: var(--plum);
+  color: var(--cream);
+  border-radius: 999px;
+  transform: translateY(-200%);
+  transition: transform var(--d-base) var(--e-settle);
+}
+
+.skip-link:focus-visible {
+  transform: none;
+}
+
+/* ---------- paper surfaces ---------- */
+
+.paper-grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.paper-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: var(--grain-alpha);
+  background-size: 384px;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+}
+
+.paper-worn {
+  position: relative;
+  isolation: isolate;
+}
+
+.paper-worn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: var(--worn);
+  background-size: 512px;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

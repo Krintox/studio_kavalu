@@ -1,0 +1,34 @@
+{
+ "iteration": "L1_cream_open",
+ "note": "cream hero, prints on blue spreads, the torn cream sheet, blue roads and letter, one plum founder",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 23.8,
+    "blue": 35.6,
+    "cream": 27.4,
+    "oxblood": 0.7,
+    "other": 12.5
+   },
+   "plum_blue_all": 59.4,
+   "plum_blue_own": 67.9,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 23.8,
+      "blue": 35.6,
+      "cream": 27.4,
+      "oxblood": 0.7,
+      "other": 12.5
+     },
+     "screens": 14,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

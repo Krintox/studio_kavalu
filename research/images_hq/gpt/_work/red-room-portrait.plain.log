@@ -1,0 +1,33 @@
+PROMPT: Improve the quality of my photo and make it clearer. Keep it exactly the same photo.
+create-image mode: True
+[   5s] state=complete stop=False gen=0 cur= x
+[  10s] state=complete stop=False gen=0 cur= x
+[  15s] state=complete stop=False gen=0 cur= x
+[  20s] state=complete stop=False gen=0 cur= x
+[  25s] state=complete stop=False gen=0 cur= x
+[  30s] state=complete stop=False gen=0 cur= x
+[  35s] state=complete stop=False gen=0 cur= x
+[  40s] state=complete stop=False gen=0 cur= x
+[  45s] state=complete stop=False gen=0 cur= x
+[  50s] state=complete stop=False gen=0 cur= x
+[  55s] state=complete stop=False gen=0 cur= x
+[  60s] state=complete stop=False gen=0 cur= x
+[  65s] state=complete stop=False gen=0 cur= x
+[  70s] state=complete stop=False gen=0 cur= x
+[  75s] state=complete stop=False gen=0 cur= x
+[  80s] state=complete stop=False gen=0 cur= x
+[  85s] state=complete stop=False gen=0 cur= x
+[  90s] state=complete stop=False gen=0 cur= x
+[  95s] state=complete stop=False gen=0 cur= x
+[ 100s] state=complete stop=False gen=0 cur= x
+[ 105s] state=complete stop=False gen=0 cur= x
+[ 110s] state=complete stop=False gen=0 cur= x
+[ 115s] state=complete stop=False gen=0 cur= x
+[ 120s] state=complete stop=False gen=0 cur= x
+[ 125s] state=complete stop=False gen=0 cur= x
+assistant finished without an image
+[]
+ASSISTANT: ChatGPT said:
+
+We’re so sorry, but the prompt may violate our guardrails around nudity, sexuality, or erotic content. If you think we got it wrong, please retry or edit your prompt.
+exit 6

@@ -1,0 +1,26 @@
+.page {
+  padding: calc(var(--nav-h) + var(--s-xl)) 0 var(--section-y);
+}
+
+.head {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: clamp(2rem, 5vh, 3.5rem);
+}
+
+.title {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-1);
+  line-height: 0.95;
+  letter-spacing: var(--track-d2);
+  color: var(--on-strong);
+}
+
+.title em {
+}
+
+.lede {
+  max-width: 34rem;
+  color: var(--on-soft);
+}

@@ -1,0 +1,28 @@
+{
+  "rel": "nivritti/sign-street",
+  "src": "C:\\shashank\\shashank\\fnf\\ananya_residency\\studio_kavalu\\website\\public\\work\\nivritti\\sign-street.jpg",
+  "src_size": [
+    770,
+    400
+  ],
+  "tag": "base",
+  "prompt": "Improve the quality of my photo and make it clearer and high resolution. It must stay exactly the same picture: same framing and crop, same aspect ratio (landscape, width:height = 77:40, about 1.925:1), same colours and light, the same people with the same faces and expressions, every object in the same place, and all text and logos letter for letter. Do not add, remove, restyle or reinterpret anything; only make it sharp and detailed. Details that must stay exactly as in the input: a hanging rectangular off-white shop sign with a thin dark frame, fixed to a cream building with an arched doorway, wrought-iron balconies, cables and a dark green awning; the sign shows a sketched mountain logo and the word 'NIVRITTI' in dark grey serif capitals; trees on the right; muted, slightly faded film colours.",
+  "started": "2026-10-24 13:22:27",
+  "create_image_mode": true,
+  "sent": "2026-10-24 13:22:49",
+  "elapsed_s": 40,
+  "assistant_text": "",
+  "saved": [
+    {
+      "path": "C:\\shashank\\shashank\\fnf\\ananya_residency\\studio_kavalu\\research\\images_hq\\gpt\\_work\\nivritti\\sign-street\\base\\raw_0.png",
+      "ct": "image/png",
+      "size": [
+        1740,
+        904
+      ],
+      "alt": "Generated image 1",
+      "src": "blob:https://chatgpt.com/d93e8248-3837-4ded-b016-83c5c9eddff3"
+    }
+  ],
+  "ended": "2026-10-24 13:23:31"
+}

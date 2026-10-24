@@ -1,0 +1,108 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+}
+
+.root[data-open="true"] {
+  pointer-events: auto;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(39 6 23 / 0.42);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  transition: opacity var(--d-base) ease;
+}
+
+.root[data-open="true"] .backdrop {
+  opacity: 1;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(44rem, 100vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  box-shadow: -30px 0 60px rgb(39 6 23 / 0.28);
+  transform: translateX(104%);
+  transition: transform var(--d-move) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.root[data-open="true"] .panel {
+  transform: none;
+}
+
+.root:not([data-open="true"]) .panel {
+  transition-duration: var(--d-base);
+  transition-timing-function: var(--e-travel);
+}
+
+.bar {
+  position: relative;
+  z-index: 3; /* above the scrolling body, so Close is always reachable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem clamp(1.25rem, 4vw, 2.6rem);
+  border-bottom: 1px solid var(--line);
+}
+
+.barMark {
+  display: flex;
+  gap: 0.7rem;
+  align-items: baseline;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+}
+
+.barMark :global(.kn) {
+  font-size: 1.15rem;
+  letter-spacing: 0;
+  color: var(--on-strong);
+}
+
+.close {
+  touch-action: manipulation;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 2.6rem;
+  padding: 0 1.1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: var(--t-small);
+  color: var(--on-strong);
+}
+
+.close:hover {
+  border-color: var(--on-strong);
+}
+
+.body {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 2rem clamp(1.25rem, 4vw, 2.6rem) 3rem;
+}

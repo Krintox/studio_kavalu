@@ -1,0 +1,310 @@
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  height: var(--nav-h);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-inline: var(--margin);
+  color: var(--on-strong);
+  transition:
+    transform var(--d-base) var(--e-settle),
+    background-color var(--d-quick) ease,
+    color var(--d-quick) ease;
+}
+
+.nav[data-hidden="true"] {
+  transform: translateY(-110%);
+}
+
+/* Once the page has moved, the bar gets its own sheet of paper so it reads over anything. */
+.nav[data-solid="true"] {
+  background: rgb(243 243 231 / 0.86);
+  -webkit-backdrop-filter: blur(10px) saturate(1.1);
+  backdrop-filter: blur(10px) saturate(1.1);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.nav[data-tone="dark"] {
+  color: var(--cream);
+}
+
+/* over a dark section the sheet is deep plum instead, so text under the bar never shows through */
+.nav[data-tone="dark"][data-solid="true"] {
+  background: rgb(39 6 23 / 0.62);
+  box-shadow: 0 1px 0 rgb(243 243 231 / 0.08);
+}
+
+/* over powder blue the sheet is blue, so the bar belongs to the page under it */
+.nav[data-ground="blue"][data-solid="true"] {
+  background: rgb(171 205 214 / 0.86);
+  box-shadow: 0 1px 0 rgb(39 6 23 / 0.12);
+}
+
+.logo {
+  justify-self: start;
+  color: inherit;
+}
+
+.logo svg {
+  display: block;
+  height: 2.3rem;
+  width: auto;
+}
+
+.links {
+  display: flex;
+  gap: clamp(1.25rem, 2.4vw, 2.5rem);
+  font-size: 0.9375rem;
+}
+
+.link {
+  position: relative;
+  padding-block: 0.4rem;
+}
+
+/* The active page gets a tiny fork under it: one stem, two branches. */
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.1rem;
+  width: 9px;
+  height: 6px;
+  translate: -50% 0;
+  background:
+    linear-gradient(currentColor 0 0) 50% 100% / 1px 3px no-repeat,
+    linear-gradient(to top right, transparent calc(50% - 0.6px), currentColor calc(50% - 0.6px) calc(50% + 0.6px), transparent calc(50% + 0.6px)) 100% 0 / 50% 50% no-repeat,
+    linear-gradient(to top left, transparent calc(50% - 0.6px), currentColor calc(50% - 0.6px) calc(50% + 0.6px), transparent calc(50% + 0.6px)) 0 0 / 50% 50% no-repeat;
+  opacity: 0;
+  transform: translateY(3px);
+  transition:
+    opacity var(--d-quick) ease,
+    transform var(--d-base) var(--e-settle);
+}
+
+.link:hover::after,
+.link[aria-current="page"]::after {
+  opacity: 1;
+  transform: none;
+}
+
+.right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.clock {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  opacity: 0.75;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 2.6rem;
+  padding: 0 1.1rem 0 1.25rem;
+  border-radius: 999px;
+  background: var(--plum);
+  color: var(--cream);
+  font-size: var(--t-small);
+  white-space: nowrap;
+  transition:
+    background-color var(--d-quick) ease,
+    transform var(--d-quick) var(--e-quick);
+}
+
+.cta:hover {
+  background: var(--oxblood);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.cta:active {
+  transform: scale(0.97);
+}
+
+.nav[data-tone="dark"] .cta {
+  background: var(--cream);
+  color: var(--on-strong);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.ctaDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--blue);
+  /* an object: its own inks, on any ground */
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --on-accent: var(--oxblood);
+}
+
+.menuButton {
+  display: none;
+  height: 2.6rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  font-size: var(--t-small);
+}
+
+@media (max-width: 899px) {
+  .nav {
+    grid-template-columns: 1fr auto;
+  }
+  .links,
+  .clock {
+    display: none;
+  }
+  .right {
+    gap: 0.5rem;
+  }
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+  }
+  .cta {
+    padding: 0 0.95rem;
+  }
+  .ctaLong {
+    display: none;
+  }
+}
+
+/* the smallest phones (320–374px): the lockup and both pills must keep their own space */
+@media (max-width: 374px) {
+  .logo svg {
+    height: 1.9rem;
+  }
+  .right {
+    gap: 0.35rem;
+  }
+  .cta,
+  .menuButton {
+    padding: 0 0.75rem;
+  }
+}
+
+/* ---------- mobile menu: a stack of folder tabs ---------- */
+
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgb(39 6 23 / 0.35);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--d-quick) ease;
+}
+
+.sheet[data-open="true"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tabs {
+  display: grid;
+  transform: translateY(12%);
+  transition: transform var(--d-move) var(--e-settle);
+}
+
+.sheet[data-open="true"] .tabs {
+  transform: none;
+}
+
+.tab {
+  --c: var(--cream);
+  position: relative;
+  margin-top: -1.1rem;
+  padding: 1.35rem var(--margin) 2.1rem;
+  background: var(--c);
+  color: var(--on-strong);
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 -10px 22px -16px rgb(39 6 23 / 0.6);
+}
+
+.tab:first-child {
+  margin-top: 0;
+}
+
+.tab a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.tab small {
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tabFoot {
+  padding: 1.4rem var(--margin) calc(1.4rem + env(safe-area-inset-bottom));
+  background: var(--deep);
+  color: var(--cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--t-small);
+  margin-top: -1.1rem;
+  border-radius: 14px 14px 0 0;
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: var(--margin);
+  height: 2.6rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--on-strong);
+  font-size: var(--t-small);
+}

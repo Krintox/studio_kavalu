@@ -1,0 +1,878 @@
+/* ---------- layouts ---------- */
+
+.form {
+  --paper: var(--paper-note);
+  color: var(--on);
+}
+
+.formPage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.formDrawer .main {
+  padding-bottom: 1rem;
+}
+
+.main {
+  min-width: 0;
+}
+
+/* ---------- progress: the road with five junctions ---------- */
+
+.progress {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.progressLine {
+  position: absolute;
+  left: 0.45rem;
+  right: 0.45rem;
+  top: 0.45rem;
+  height: 1px;
+  background: var(--line-strong);
+}
+
+.progressLine span {
+  position: absolute;
+  inset: 0;
+  background: var(--plum);
+  transform-origin: 0 50%;
+  transition: transform var(--d-move) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.progress ol {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress li > * {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-faint);
+}
+
+.progress li:last-child > * {
+  justify-items: end;
+}
+
+.progress li:not(:first-child):not(:last-child) > * {
+  justify-items: center;
+}
+
+.progress i {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--line-strong);
+  transition:
+    background-color var(--d-base) ease,
+    border-color var(--d-base) ease,
+    transform var(--d-base) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.progress li[data-state="done"] i {
+  background: var(--plum);
+  border-color: var(--on-strong);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.progress li[data-state="now"] i {
+  border: 3px solid var(--on-strong);
+  transform: scale(1.15);
+}
+
+.progress li[data-state="now"] > * {
+  color: var(--on-strong);
+}
+
+.progress button:hover span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- steps ---------- */
+
+.step {
+  display: grid;
+  gap: 1.6rem;
+  animation: stepIn 520ms var(--e-settle) both;
+}
+
+@keyframes stepIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+}
+
+.kicker {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+}
+
+.kicker :global(.kn) {
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  color: var(--on-strong);
+}
+
+.stepTitle {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  font-size: var(--t-sheet);
+  line-height: 1;
+  letter-spacing: var(--track-d5);
+  color: var(--on-strong);
+  outline: none;
+}
+
+.stepTitle:focus,
+.stepTitle:focus-visible,
+.sentTitle:focus,
+.sentTitle:focus-visible {
+  outline: none;
+}
+
+.stepTitle em {
+}
+
+.intro {
+  max-width: 34rem;
+  margin-top: -0.6rem;
+  color: var(--on-soft);
+}
+
+.small {
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.02em;
+  color: var(--on-faint);
+  margin-top: -0.6rem;
+}
+
+.note {
+  padding: 0.9rem 1rem;
+  background: var(--cream-2);
+  border-left: 2px solid var(--on-strong);
+  font-size: 0.95rem;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* ---------- groups and chips (real radios / checkboxes underneath) ---------- */
+
+.group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.legend {
+  padding: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--on-strong);
+  margin-bottom: 0.15rem;
+}
+
+.help {
+  margin-top: -0.35rem;
+  font-size: var(--t-small);
+  color: var(--on-soft);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip,
+.roadChip {
+  position: relative;
+  display: block;
+}
+
+.chip input,
+.roadChip input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chip span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--paper);
+  font-size: 0.9375rem;
+  transition:
+    background-color var(--d-quick) ease,
+    color var(--d-quick) ease,
+    border-color var(--d-quick) ease;
+}
+
+.chip b,
+.roadChip b {
+  font-weight: 400;
+}
+
+.chip:hover span {
+  border-color: var(--on-strong);
+}
+
+.chip input:checked + span {
+  background: var(--plum);
+  border-color: var(--on-strong);
+  color: var(--cream);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+/* selection is shown by a tick as well as colour */
+.chip input:checked + span::before {
+  content: "✓";
+  font-size: 0.8rem;
+}
+
+.chip input:focus-visible + span,
+.roadChip input:focus-visible + span {
+  outline: 2px solid var(--on-strong);
+  outline-offset: 3px;
+}
+
+.roadChips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.roadChip span {
+  display: grid;
+  gap: 0.2rem;
+  min-height: 4.6rem;
+  height: 100%;
+  padding: 0.9rem 1.1rem 0.9rem 2.9rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--paper);
+  transition:
+    background-color var(--d-quick) ease,
+    color var(--d-quick) ease,
+    border-color var(--d-quick) ease,
+    transform var(--d-quick) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.roadChip span::before {
+  content: "";
+  position: absolute;
+  left: 1.05rem;
+  top: 1.05rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 3px;
+  border: 1.5px solid currentColor;
+  opacity: 0.6;
+}
+
+.roadChip b {
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: var(--on-strong);
+}
+
+.roadChip small {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  color: var(--on-soft);
+}
+
+.roadChip:hover span {
+  border-color: var(--on-strong);
+}
+
+.roadChip input:checked + span {
+  background: var(--plum);
+  border-color: var(--on-strong);
+  color: var(--cream);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.roadChip input:checked + span b,
+.roadChip input:checked + span small {
+  color: var(--cream);
+}
+
+.roadChip input:checked + span::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  font-size: 0.75rem;
+  background: var(--cream);
+  color: var(--on-strong);
+  border-color: var(--cream);
+  opacity: 1;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.error {
+  font-size: var(--t-small);
+  color: var(--error);
+}
+
+/* ---------- text inputs ---------- */
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--on-strong);
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--on-faint);
+}
+
+.input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--paper);
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--on);
+  transition:
+    border-color var(--d-quick) ease,
+    box-shadow var(--d-quick) ease;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.input:hover {
+  border-color: var(--on-strong);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--on-strong);
+  box-shadow: 0 0 0 3px rgb(171 205 214 / 0.65);
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--error);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 7rem;
+  field-sizing: content;
+}
+
+select.input {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--plum) 50%), linear-gradient(135deg, var(--plum) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.2rem) 55%,
+    calc(100% - 0.85rem) 55%;
+  background-size: 0.35rem 0.35rem;
+  background-repeat: no-repeat;
+  background-color: var(--paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.currency {
+  display: inline-flex;
+  justify-self: start;
+  padding: 0.2rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  margin-bottom: -0.6rem;
+}
+
+.currency button {
+  min-height: 2.2rem;
+  padding: 0 0.95rem;
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--on-soft);
+}
+
+.currency button[aria-pressed="true"] {
+  background: var(--plum);
+  color: var(--cream);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.decoy {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ---------- bottom bar ---------- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 3rem;
+  padding: 0 1.45rem;
+  border-radius: 999px;
+  font-size: 0.9375rem;
+  transition:
+    background-color var(--d-quick) ease,
+    transform var(--d-quick) var(--e-quick),
+    opacity var(--d-quick) ease;
+}
+
+.primary {
+  background: var(--plum);
+  color: var(--cream);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.primary:hover {
+  background: var(--oxblood);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.primary:active {
+  transform: scale(0.97);
+}
+
+.primary[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.primary small {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.secondary {
+  border: 1px solid var(--line-strong);
+  color: var(--on-strong);
+}
+
+.secondary:hover {
+  border-color: var(--on-strong);
+}
+
+.back {
+  font-size: 0.9375rem;
+  color: var(--on-soft);
+  min-height: 2.75rem;
+}
+
+.back:hover {
+  color: var(--on-strong);
+}
+
+.talk {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin-top: 1.6rem;
+  font-size: 0.9rem;
+  color: var(--on-soft);
+}
+
+.talk a {
+  color: var(--on-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.failed {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--error);
+  border-radius: 6px;
+  background: var(--error-wash);
+  font-size: 0.95rem;
+}
+
+.failedActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+}
+
+.failedActions a,
+.failedActions button {
+  color: var(--on-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 0.9rem;
+}
+
+/* ---------- the letter ---------- */
+
+.aside {
+  position: sticky;
+  top: calc(var(--nav-h) + 1.5rem);
+}
+
+.asideLabel {
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-faint);
+  margin-bottom: 0.9rem;
+}
+
+.letter {
+  position: relative;
+  display: grid;
+  gap: 0.85rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  background:
+    repeating-linear-gradient(transparent 0 calc(1.75em - 1px), rgb(171 205 214 / 0.45) calc(1.75em - 1px) 1.75em) 0 4.6em / 100% auto,
+    var(--paper);
+  box-shadow: var(--shadow-paper);
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  color: var(--on);
+  rotate: 0.6deg;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.aside .letter {
+  rotate: 1.2deg;
+}
+
+.letterCompact {
+  font-size: 0.95rem;
+  rotate: 0deg;
+  box-shadow: none;
+  border: 1px solid var(--line);
+}
+
+.letterDate {
+  justify-self: end;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.02em;
+  color: var(--on-faint);
+}
+
+.salute {
+  font-style: italic;
+}
+
+.filled {
+  font-weight: 500;
+  color: var(--on-strong);
+}
+
+.filled em {
+}
+
+.blank {
+  display: inline-block;
+  height: 1em;
+  vertical-align: -0.15em;
+  border-bottom: 1.5px dashed rgb(57 13 38 / 0.3);
+}
+
+.signoff {
+  margin-top: 0.4rem;
+}
+
+.signName {
+  font-family: var(--f-hand);
+  font-size: 1.35rem;
+  color: var(--on-strong);
+}
+
+.review {
+  margin-top: 0.6rem;
+}
+
+.strip {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.strip summary {
+  cursor: pointer;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+  margin-bottom: 0.8rem;
+}
+
+/* ---------- sent ---------- */
+
+.sent {
+  display: grid;
+  gap: 1.1rem;
+  text-align: center;
+  justify-items: center;
+}
+
+.sentPage {
+  max-width: 44rem;
+  margin-inline: auto;
+}
+
+.sentTitle {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  font-size: var(--t-sheet);
+  line-height: 1.05;
+  letter-spacing: var(--track-d5);
+  color: var(--on-strong);
+  outline: none;
+  max-width: 18ch;
+}
+
+.sentLede {
+  color: var(--on-soft);
+}
+
+.sent .note {
+  text-align: left;
+  max-width: 34rem;
+}
+
+.nextTitle {
+  margin-top: 1rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-faint);
+}
+
+.nextSteps {
+  counter-reset: s;
+  display: grid;
+  gap: 0.55rem;
+  max-width: 32rem;
+  text-align: left;
+}
+
+.nextSteps li {
+  counter-increment: s;
+  display: grid;
+  grid-template-columns: 1.8rem minmax(0, 1fr);
+  font-size: 0.95rem;
+}
+
+.nextSteps li::before {
+  content: counter(s, decimal-leading-zero);
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  color: var(--oxblood);
+  padding-top: 0.2rem;
+}
+
+.nextSteps b {
+  font-weight: 500;
+  color: var(--on-strong);
+}
+
+.sentActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 960px) {
+  .formPage {
+    grid-template-columns: 1fr;
+  }
+  .aside {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .roadChips,
+  .pair {
+    grid-template-columns: 1fr;
+  }
+  .progress li > * > span {
+    display: none;
+  }
+  .progress li[data-state="now"] > * > span {
+    display: inline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step {
+    animation: none;
+  }
+}

@@ -1,0 +1,146 @@
+/* Grounds (BRAND_DESIGN.md §4). Every section stands on one of the palette's grounds, set with
+   data-surface (lib/surfaces.ts holds which section stands on which). The ground decides the inks of
+   everything printed straight onto it: text, rules, buttons, the focus ring, the selection.
+   Paper objects (stamps, prints, cards, sheets) carry their own inks and reset these, so a cream card
+   reads the same on plum as on blue. */
+
+:root,
+[data-surface="cream"] {
+  --surface: var(--cream);
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --btn-bg: var(--plum);
+  --btn-fg: var(--cream);
+  --btn-hover: var(--oxblood);
+  --wash: var(--cream-2); /* a hover tint on this ground */
+  --on-accent: var(--oxblood); /* a second ink: eyebrows, small marks */
+  --surface-tex: var(--tex-cream);
+  --surface-blend: normal;
+}
+
+/* powder blue takes the plum inks: deep plum text 11:1, plum 9.9:1, the soft inks 6.5:1 and 4.7:1 */
+[data-surface="blue"] {
+  --surface: var(--blue);
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --btn-bg: var(--plum);
+  --btn-fg: var(--cream);
+  --btn-hover: var(--deep);
+  --wash: var(--blue-2);
+  --on-accent: var(--oxblood);
+  /* small blue things (stickers) laid on this ground turn plum, or they would vanish into it */
+  --blue-object: var(--plum);
+  --blue-object-ink: var(--blue);
+  --surface-tex: var(--tex-blue);
+  --surface-blend: normal;
+}
+
+/* the dark grounds print in cream, with powder blue for the button and the focus ring */
+[data-surface="plum"],
+[data-surface="deep"],
+[data-surface="oxblood"] {
+  --surface: var(--plum);
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --btn-bg: var(--blue);
+  --btn-fg: var(--deep);
+  --btn-hover: var(--cream);
+  --wash: rgb(243 243 231 / 0.08);
+  --on-accent: var(--blue);
+  --surface-tex: var(--tex-plum);
+  --surface-blend: normal;
+  --focus: var(--blue);
+  --sel-bg: var(--blue);
+  --sel-fg: var(--deep);
+}
+
+[data-surface="deep"] {
+  --surface: var(--deep);
+  --surface-tex: var(--tex-deep);
+}
+
+[data-surface="oxblood"] {
+  --surface: var(--oxblood);
+  --surface-tex: var(--tex-oxblood);
+}
+
+/* Each ground is paper with its colour baked in (research/textures_v3: the mean stays within dE00 0.21
+   of the hex at 1024 px and 0.27 at 512, so text contrast holds), over the flat colour while it loads.
+   The paper is pinned to the page (--page-y, set by GroundSheet), so two neighbouring sections on one
+   ground read as one sheet instead of meeting in a cut. */
+[data-surface] {
+  background-color: var(--surface);
+  background-image: var(--surface-tex);
+  background-size: var(--tex-size);
+  background-position: 0 calc(-1 * var(--page-y, 0px));
+  background-blend-mode: var(--surface-blend, normal);
+  color: var(--on);
+}
+
+/* pale blue: a reading sheet (the colour research's K4: ink 12.8 : 1, deep plum 13.5 : 1). There is no
+   baked pale-blue paper, so the neutral tile is multiplied over pale blue lifted by 1 / the tile's mean
+   (0.980), which brings the sheet back to --blue-2 on average (research/textures_v3/README.md §3.4) */
+[data-surface="blue2"] {
+  --surface: #cde4ea;
+  --surface-blend: multiply;
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-soft);
+  --line: rgb(57 13 38 / 0.16);
+  --line-strong: rgb(57 13 38 / 0.5);
+  --btn-bg: var(--plum);
+  --btn-fg: var(--cream);
+  --btn-hover: var(--deep);
+  --wash: var(--blue);
+  --on-accent: var(--oxblood);
+  --blue-object: var(--plum);
+  --blue-object-ink: var(--blue);
+  --surface-tex: var(--tex-neutral);
+}
+
+/* A large sheet of paper laid on a dark ground: a section's reading surface (lib/surfaces.ts SHEETS).
+   It keeps the page's margins round it, carries its own ground and inks, sits straight (type is never
+   tilted), casts the desk's shadow, and is held down by two strips of tape. */
+[data-sheet] {
+  position: relative;
+  width: calc(100% - 2 * var(--margin));
+  margin-inline: auto;
+  padding: var(--s-2xl) var(--s-l) var(--s-xl);
+  box-shadow: var(--shadow-desk);
+}
+
+[data-sheet="taped"]::before,
+[data-sheet="taped"]::after {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  z-index: 2;
+  width: clamp(4.5rem, 8vw, 6.5rem);
+  height: 1.55rem;
+  background: rgb(243 243 231 / 0.62);
+  clip-path: polygon(3% 0, 97% 5%, 100% 52%, 96% 100%, 2% 95%, 0 46%);
+  pointer-events: none;
+}
+
+[data-sheet="taped"]::before {
+  left: 7%;
+  rotate: -4deg;
+}
+
+[data-sheet="taped"]::after {
+  right: 7%;
+  rotate: 5deg;
+}

@@ -1,0 +1,653 @@
+.case {
+  padding-bottom: 0;
+}
+
+/* ---------- hero, in the project's own colours ---------- */
+
+.hero {
+  position: relative;
+  padding: calc(var(--nav-h) + clamp(2rem, 6vh, 4rem)) 0 0;
+}
+
+/* A project's own colours on cardstock: the neutral tile in soft-light keeps any colour's mean
+   (research/textures_v3/README.md §3.5). Its ink is used at full strength for every line, labels
+   included: some project pairs are only 5.1 : 1, with no room for a softer ink. */
+.projectGround {
+  background: var(--tex-cardstock) 0 0 / var(--tex-size), var(--p-bg);
+  background-blend-mode: soft-light, normal;
+  color: var(--p-ink);
+  --on: var(--p-ink);
+  --on-strong: var(--p-ink);
+  --on-soft: var(--p-ink);
+  --on-faint: var(--p-ink);
+  --on-accent: var(--p-ink);
+  --line: color-mix(in srgb, var(--p-ink) 22%, transparent);
+  --line-strong: color-mix(in srgb, var(--p-ink) 45%, transparent);
+  --btn-bg: var(--p-ink);
+  --btn-fg: var(--p-bg);
+  --btn-hover: var(--cream);
+  --focus: var(--p-ink);
+  --sel-bg: var(--p-ink);
+  --sel-fg: var(--p-bg);
+}
+
+.projectGround :is(.crumb, .meta dt) {
+  opacity: 1;
+}
+
+.crumb {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  opacity: 0.8;
+}
+
+.crumb a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.title {
+  margin-top: 1.2rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-mega);
+  line-height: 0.88;
+  letter-spacing: var(--track-d1);
+  text-wrap: balance;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gutter);
+  margin: clamp(2rem, 5vh, 3.5rem) 0 0;
+  padding: 1.2rem 0 clamp(2.5rem, 6vh, 4rem);
+  border-top: 1px solid var(--line-strong);
+}
+
+.meta dt {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+}
+
+.meta dd {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.coverWrap {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  max-height: 92vh;
+  width: 100%;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* A stand-in cover stays a stamp: no point blowing up a 300px picture to the full screen. */
+.coverSmall {
+  display: grid;
+  justify-items: center;
+  padding: 0 var(--margin) clamp(3rem, 8vh, 5rem);
+}
+
+.coverSmall .cover {
+  --r: 7px;
+  width: min(34rem, 86vw);
+  aspect-ratio: auto;
+  padding: 16px;
+  background: var(--paper);
+  filter: var(--shadow-stamp-dark);
+  rotate: -1.5deg;
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.coverSmall .cover img {
+  height: auto;
+}
+
+/* ---------- overview card (the oxblood card from the first site, kept) ---------- */
+
+.overviewWrap {
+  padding-block: clamp(3.5rem, 9vh, 6rem) clamp(1rem, 3vh, 2rem);
+}
+
+/* a powder-blue card clipped to the plum desk (oxblood on plum would be dark on dark, 1.2 : 1) */
+.overview {
+  position: relative;
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: clamp(1.8rem, 4vw, 3.2rem);
+  background: var(--tex-blue) 0 0 / var(--tex-size), var(--blue);
+  color: var(--deep);
+  box-shadow: var(--shadow-desk);
+  rotate: -0.4deg;
+  /* an object: its own inks, on any ground */
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --on-accent: var(--oxblood);
+  --focus: var(--plum);
+}
+
+/* the overview card is clipped to the page like everything else in the album */
+.overviewClip {
+  position: absolute;
+  top: -1.7rem;
+  left: 2.2rem;
+  z-index: 3;
+  width: 1.1rem;
+  height: 3.1rem;
+  rotate: -8deg;
+}
+
+.overviewLabel {
+  position: relative;
+  z-index: 1;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.overviewText {
+  position: relative;
+  z-index: 1;
+  margin-top: 1rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-h);
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.9rem);
+  line-height: 1.4;
+}
+
+.summary {
+  max-width: 44rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.2rem);
+  line-height: 1.3;
+  color: var(--on-strong);
+}
+
+/* ---------- blocks ---------- */
+
+.text {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: var(--gutter);
+  padding-block: clamp(3rem, 8vh, 5.5rem) clamp(1.5rem, 4vh, 2.5rem);
+}
+
+/* laid on the desk as a pale-blue reading sheet, with the desk showing above and below it */
+.text[data-sheet] {
+  margin-block: var(--s-xl);
+}
+
+.textHead {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  font-size: var(--t-3);
+  line-height: 1;
+  color: var(--rust);
+  letter-spacing: var(--track-d5);
+  text-transform: none;
+}
+
+.textBody {
+  display: grid;
+  gap: 1rem;
+  max-width: 40rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--on);
+}
+
+.textLead {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-h);
+  font-size: 1.4rem;
+  line-height: 1.35;
+  color: var(--on-strong);
+}
+
+.bleed {
+  padding-block: clamp(1.5rem, 4vh, 3rem);
+}
+
+/* ---------- mounted prints: the album treatment for every picture ---------- */
+
+.picture {
+  position: relative;
+  margin: clamp(1.5rem, 4vh, 3rem) auto;
+  padding: clamp(8px, 0.9vw, 12px);
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  rotate: var(--tilt, 0deg);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+}
+
+/* real full-width photographs stay straight and edge to edge; only a strip of tape holds them */
+.bleed .picture {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* two strips of tape across the top corners */
+.mount_tape::before,
+.mount_tape::after {
+  content: "";
+  position: absolute;
+  top: -0.7rem;
+  z-index: 3;
+  width: clamp(3.5rem, 6vw, 5.5rem);
+  height: 1.45rem;
+  background: rgb(171 205 214 / 0.62);
+  clip-path: polygon(3% 0, 97% 5%, 100% 52%, 96% 100%, 2% 95%, 0 46%);
+  box-shadow: 0 1px 2px rgb(39 6 23 / 0.1);
+}
+
+.mount_tape::before {
+  left: 8%;
+  rotate: -5deg;
+}
+
+.mount_tape::after {
+  right: 8%;
+  rotate: 4deg;
+}
+
+/* black photo corners over the print */
+.mount_corners::after {
+  content: "";
+  position: absolute;
+  inset: clamp(4px, 0.5vw, 7px);
+  z-index: 3;
+  pointer-events: none;
+  --c: clamp(1rem, 2vw, 1.6rem);
+  background:
+    linear-gradient(135deg, var(--corner) 0 50%, transparent 50%) 0 0 / var(--c) var(--c) no-repeat,
+    linear-gradient(225deg, var(--corner) 0 50%, transparent 50%) 100% 0 / var(--c) var(--c) no-repeat,
+    linear-gradient(45deg, var(--corner) 0 50%, transparent 50%) 0 100% / var(--c) var(--c) no-repeat,
+    linear-gradient(315deg, var(--corner) 0 50%, transparent 50%) 100% 100% / var(--c) var(--c) no-repeat;
+}
+
+.clip {
+  position: absolute;
+  top: -1.6rem;
+  left: 12%;
+  z-index: 3;
+  width: 1.1rem;
+  height: 3.1rem;
+  rotate: -7deg;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.size_full {
+  width: 100%;
+}
+
+.size_wide {
+  width: 100%;
+}
+
+.size_inset {
+  width: min(100%, 44rem);
+}
+
+.size_half {
+  width: 100%;
+  margin: 0;
+}
+
+/* stand-ins never grow past what they can carry */
+.isPlaceholder.size_full,
+.isPlaceholder.size_wide {
+  width: min(100%, 50rem);
+}
+
+.isPlaceholder.size_half {
+  max-width: 26rem;
+  justify-self: center;
+}
+
+/* captions are typed on a strip of paper stuck under the print */
+/* shrink-wrapped with fit-content, not display: table (a table drops the spaces between split words) */
+.caption {
+  width: fit-content;
+  margin: 0.4rem auto 0;
+  padding: 0.35rem 0.75rem 0.3rem;
+  background: var(--paper);
+  box-shadow: 0 1px 1px rgb(39 6 23 / 0.08), 0 4px 8px -4px rgb(39 6 23 / 0.25);
+  rotate: -1deg;
+  /* a typed sentence, so sentence case in typewriter ink (short labels are the ones set in capitals) */
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--on);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 3vw, 3rem);
+  align-items: start;
+  padding-block: clamp(1.5rem, 4vh, 3rem);
+}
+
+.pair .caption {
+  grid-column: 1 / -1;
+}
+
+.stampGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding-block: clamp(2rem, 5vh, 3.5rem);
+}
+
+.stamp,
+.nextStamp {
+  --r: 5px;
+  display: block;
+  padding: 11px;
+  background: var(--paper);
+  filter: var(--shadow-stamp);
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.stampWindow {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.stampWindow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* palette chips you can press to copy */
+.palette {
+  padding-block: clamp(2rem, 5vh, 3.5rem);
+}
+
+.chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.2rem;
+}
+
+.chips li {
+  rotate: var(--tilt);
+  transition: rotate var(--d-base) var(--e-settle);
+}
+
+.chips li:hover {
+  rotate: 0deg;
+}
+
+.chip {
+  display: grid;
+  width: 100%;
+  padding: 7px 7px 0.8rem;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  text-align: left;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.chipColour {
+  aspect-ratio: 1 / 0.8;
+  box-shadow: inset 0 0 0 1px rgb(39 6 23 / 0.08);
+}
+
+.chipName {
+  margin-top: 0.6rem;
+  padding-inline: 0.25rem;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1rem;
+  color: var(--on);
+}
+
+.chipHex {
+  padding-inline: 0.25rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  color: var(--on-faint);
+}
+
+.noteWrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 0.5rem;
+}
+
+.note {
+  max-width: 22rem;
+  rotate: -4deg;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: var(--oxblood);
+  padding-right: 8%;
+}
+
+.noteBy {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.quote {
+  padding-block: clamp(3rem, 8vh, 5rem);
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-size: var(--t-3);
+  line-height: 1.2;
+  color: var(--on-strong);
+  max-width: 52rem;
+}
+
+/* ---------- start a project like this ---------- */
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: clamp(3rem, 8vh, 6rem);
+  padding-block: 2rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.ctaText {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 2.2rem);
+  color: var(--on-strong);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 3rem;
+  padding: 0 1.45rem;
+  border-radius: 999px;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-size: 0.9375rem;
+  transition:
+    background-color var(--d-quick) ease,
+    gap var(--d-base) var(--e-settle),
+    transform var(--d-quick) var(--e-quick);
+}
+
+.ctaButton:hover {
+  background: var(--btn-hover);
+  gap: 0.95rem;
+}
+
+.ctaButton:active {
+  transform: scale(0.97);
+}
+
+/* ---------- next project ---------- */
+
+.next {
+  margin-top: clamp(3rem, 8vh, 6rem);
+}
+
+.nextLink {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 2rem;
+  padding: clamp(3rem, 8vh, 5rem) var(--margin);
+  overflow: hidden;
+}
+
+.nextLabel {
+  grid-column: 1 / -1;
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  opacity: 0.75;
+}
+
+.nextTitle {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-1);
+  line-height: 0.9;
+  letter-spacing: var(--track-d2);
+  transition: translate var(--d-move) var(--e-settle);
+}
+
+.nextStamp {
+  width: clamp(9rem, 16vw, 15rem);
+  rotate: 6deg;
+  transition:
+    rotate var(--d-move) var(--e-settle),
+    scale var(--d-move) var(--e-settle);
+}
+
+.nextLink:hover .nextTitle {
+  translate: 1.2rem 0;
+}
+
+.nextLink:hover .nextStamp {
+  rotate: -2deg;
+  scale: 1.06;
+}
+
+@media (max-width: 899px) {
+  .meta {
+    grid-template-columns: 1fr 1fr;
+  }
+  .text {
+    grid-template-columns: 1fr;
+  }
+  .pair {
+    grid-template-columns: 1fr;
+  }
+  .nextLink {
+    grid-template-columns: 1fr;
+  }
+}

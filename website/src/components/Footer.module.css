@@ -1,0 +1,181 @@
+/* the strip above the folders is the ground of the page they close (GroundSheet sets data-surface) */
+.footer {
+  position: relative;
+  padding-top: var(--section-y);
+  color: var(--cream);
+}
+
+/* ---------- the folder cascade ---------- */
+
+.folders {
+  position: relative;
+  display: grid;
+}
+
+/* each folder is a sheet of card stacked on the last: a shadow cast up onto the one behind and a lit
+   top edge, so the cascade reads on any ground, plum on plum included */
+.folder {
+  --c: var(--plum);
+  --t: var(--tex-plum);
+  --x: 70%;
+  position: relative;
+  height: 2.6rem;
+  margin-top: -0.2rem;
+  background: var(--t) 0 0 / var(--tex-size), var(--c);
+  box-shadow: inset 0 1px 0 rgb(243 243 231 / 0.1);
+  filter: drop-shadow(0 -5px 9px rgb(10 2 6 / 0.42));
+}
+
+.folder:first-child {
+  margin-top: 2.75rem;
+}
+
+.tab {
+  position: absolute;
+  bottom: 100%;
+  left: var(--x);
+  translate: -50% 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.75rem;
+  padding: 0 clamp(1.4rem, 3vw, 2.6rem);
+  background: var(--t, none) 0 0 / var(--tex-size), var(--c);
+  color: var(--ink-on, var(--cream));
+  border-radius: 18px 18px 0 0;
+  box-shadow: inset 0 1px 0 rgb(243 243 231 / 0.14);
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  white-space: nowrap;
+  transition: translate var(--d-base) var(--e-settle);
+}
+
+/* inverted corners where the tab meets its folder, so it reads as one cut sheet */
+.tab::before,
+.tab::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.tab::before {
+  right: 100%;
+  background: radial-gradient(circle at 0 0, transparent 17.5px, var(--c) 18px);
+}
+
+.tab::after {
+  left: 100%;
+  background: radial-gradient(circle at 100% 0, transparent 17.5px, var(--c) 18px);
+}
+
+.tab:hover,
+.tab:focus-visible {
+  translate: -50% -5px;
+}
+
+.tab small {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.light {
+  --ink-on: var(--plum);
+}
+
+/* ---------- the deepest folder: the desk and the wordmark ---------- */
+
+.body {
+  position: relative;
+  background: var(--tex-deep) 0 0 / var(--tex-size), var(--deep);
+  overflow: hidden;
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+/* her logotype, set the way the footer has always set it: STUDIO from the left edge, KAVALU to the right */
+.mark {
+  position: relative;
+  display: grid;
+  row-gap: 1.1vw;
+  margin-top: clamp(3rem, 7vw, 6.5rem);
+  padding: 0 0.5vw 1vw;
+  color: var(--blue);
+  user-select: none;
+}
+
+.studio {
+  display: block;
+  width: 89vw;
+  height: auto;
+  justify-self: start;
+  overflow: visible;
+}
+
+.kavalu {
+  display: block;
+  width: 95vw;
+  height: auto;
+  justify-self: end;
+  overflow: visible;
+}
+
+/* the Kannada name sits above the wordmark, clear of STUDIO's last letter */
+.kn {
+  position: absolute;
+  /* right edge on STUDIO's right edge (the word starts at 0.5vw and is 89vw wide) */
+  right: calc(100% - 89.5vw);
+  top: -2.6rem;
+  font-family: var(--f-kn);
+  font-size: clamp(1rem, 0.8rem + 1vw, 1.6rem);
+  font-weight: 500;
+  color: var(--cream);
+  opacity: 0.85;
+}
+
+.legal {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem var(--margin) calc(1rem + env(safe-area-inset-bottom));
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  color: rgb(243 243 231 / 0.72); /* 60% was weak by APCA (Lc -45) */
+}
+
+@media (max-width: 899px) {
+  .folder {
+    height: 2.2rem;
+  }
+  .tab {
+    height: 2.4rem;
+    padding: 0 1.1rem;
+  }
+  .tab small {
+    display: none;
+  }
+  .kn {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin: 0 0 0.4rem var(--margin);
+  }
+  .legal {
+    flex-direction: column;
+  }
+}

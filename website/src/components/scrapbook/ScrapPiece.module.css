@@ -1,0 +1,261 @@
+.piece {
+  position: relative;
+  margin: 0;
+  color: var(--on);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ---------- pictures ---------- */
+
+.image .paper {
+  position: relative;
+  padding: 7px;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.window {
+  position: relative;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.window img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.caption {
+  margin-top: 0.55rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.credit {
+  opacity: 0.7;
+}
+
+/* how each picture is held on: fix_tape · fix_clip · fix_pin · fix_corners · fix_stamp */
+
+/* tape across the top edge */
+.fix_tape .paper::before {
+  content: "";
+  position: absolute;
+  top: -0.75rem;
+  left: 50%;
+  z-index: 2;
+  width: 5rem;
+  height: 1.4rem;
+  translate: -50% 0;
+  rotate: -4deg;
+  background: rgb(171 205 214 / 0.66);
+  clip-path: polygon(3% 0, 97% 5%, 100% 52%, 96% 100%, 2% 95%, 0 46%);
+}
+
+.clip {
+  position: absolute;
+  top: -1.45rem;
+  left: 14%;
+  z-index: 3;
+  width: 1rem;
+  height: 2.8rem;
+  rotate: -9deg;
+}
+
+/* a map pin pushed through the top */
+.pin {
+  position: absolute;
+  top: -0.35rem;
+  left: 50%;
+  z-index: 3;
+  width: 0.95rem;
+  height: 0.95rem;
+  translate: -50% 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #e8a0a6, #a0182c 55%, #5d0716);
+  box-shadow: 1px 3px 4px rgb(10 2 6 / 0.35);
+}
+
+/* black photo corners */
+.fix_corners .paper {
+  background:
+    linear-gradient(135deg, var(--corner) 0 50%, transparent 50%) 0 0 / 1.1rem 1.1rem no-repeat,
+    linear-gradient(225deg, var(--corner) 0 50%, transparent 50%) 100% 0 / 1.1rem 1.1rem no-repeat,
+    linear-gradient(45deg, var(--corner) 0 50%, transparent 50%) 0 100% / 1.1rem 1.1rem no-repeat,
+    linear-gradient(315deg, var(--corner) 0 50%, transparent 50%) 100% 100% / 1.1rem 1.1rem no-repeat,
+    var(--paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.fix_corners .window {
+  z-index: 0;
+}
+
+/* perforated stamp */
+.fix_stamp .paper {
+  --r: 4.5px;
+  padding: 10px;
+  box-shadow: none;
+  -webkit-mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+  mask:
+    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) /
+      calc(3 * var(--r)) calc(3 * var(--r)),
+    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
+}
+
+.fix_stamp {
+  filter: var(--shadow-stamp-dark);
+}
+
+/* ---------- notes ---------- */
+
+.note {
+  padding: 1.1rem 1.2rem 1.2rem;
+  box-shadow: var(--shadow-paper);
+  background: var(--np, var(--paper-note));
+  color: var(--nc, var(--plum));
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.note p {
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+.paper_cream {
+  --np: var(--paper-note);
+  --nc: var(--plum);
+}
+
+.paper_blue {
+  --np: var(--blue);
+  --nc: var(--deep);
+}
+
+.paper_plum {
+  --np: var(--plum);
+  --nc: var(--cream);
+}
+
+.paper_ox {
+  --np: var(--oxblood);
+  --nc: var(--cream);
+}
+
+.by {
+  margin-top: 0.6rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* ---------- paint chips ---------- */
+
+.swatch {
+  display: grid;
+  padding: 6px 6px 0.7rem;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.chip {
+  display: block;
+  aspect-ratio: 1 / 0.82;
+  box-shadow: inset 0 0 0 1px rgb(39 6 23 / 0.08);
+}
+
+.swatchName {
+  margin-top: 0.55rem;
+  padding-inline: 0.2rem;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  color: var(--on);
+}
+
+.swatchHex {
+  padding-inline: 0.2rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.02em;
+  color: var(--on-faint);
+}
+
+/* ---------- single words ---------- */
+
+.word {
+  padding: 0.35rem 0.9rem 0.45rem;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  color: var(--on-strong);
+  white-space: nowrap;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.wordKn {
+  font-family: var(--f-kn);
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.wordEn {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-style: italic;
+  font-size: 2.3rem;
+  line-height: 1.1;
+}

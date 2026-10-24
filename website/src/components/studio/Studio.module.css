@@ -1,0 +1,334 @@
+.hero {
+  padding: calc(var(--nav-h) + var(--s-xl)) 0 var(--section-y);
+}
+
+.word {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.kn {
+  font-family: var(--f-kn);
+  font-weight: 600;
+  font-size: clamp(5rem, 2rem + 13vw, 15rem);
+  line-height: 1;
+  color: var(--on-strong);
+  font-stretch: 110%;
+}
+
+.say {
+  font-family: var(--f-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--on-soft);
+}
+
+/* a dictionary definition keeps the dictionary's italic, at reading weight (it is not a heading) */
+.definition {
+  max-width: 20ch;
+  margin-top: 0.5rem;
+  font-family: var(--f-display);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: var(--track-d5);
+  font-size: var(--t-3);
+  line-height: 1.15;
+  color: var(--oxblood);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  margin-top: clamp(3rem, 9vh, 6rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.lead {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-3);
+  line-height: 1.12;
+  letter-spacing: var(--track-d5);
+  color: var(--on-strong);
+}
+
+.introBody {
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+  font-size: 1.0625rem;
+  color: var(--on);
+}
+
+.h2 {
+  margin-top: 1rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-2);
+  line-height: 1;
+  letter-spacing: var(--track-d4);
+  color: var(--on-strong);
+}
+
+.h2 em {
+}
+
+/* ---------- the four roads, in depth ---------- */
+
+.roads {
+  padding: var(--section-y) 0;
+}
+
+.roads :global(.eyebrow) {
+  color: var(--on-accent);
+}
+
+.roads .h2 {
+  color: var(--on-strong);
+}
+
+.roadList {
+  margin-top: clamp(2rem, 6vh, 4rem);
+  border-top: 1px solid rgb(243 243 231 / 0.25);
+}
+
+.road {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1.2fr) minmax(0, 1fr) auto;
+  gap: var(--gutter);
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgb(243 243 231 / 0.25);
+}
+
+.roadHead {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.roadNo {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--blue);
+}
+
+.roadDoodle {
+  width: 3.4rem;
+  height: 3.4rem;
+  color: var(--cream);
+}
+
+.roadChoice {
+  font-family: var(--f-text);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  color: rgb(243 243 231 / 0.65);
+}
+
+.roadTitle {
+  margin-top: 0.4rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-d5);
+  font-size: var(--t-sheet);
+  line-height: 1;
+}
+
+.roadLine {
+  margin-top: 0.8rem;
+  max-width: 26rem;
+  color: rgb(243 243 231 / 0.85);
+}
+
+.roadItems {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: rgb(243 243 231 / 0.85);
+}
+
+.roadItems li::before {
+  content: "—";
+  margin-right: 0.5rem;
+  color: var(--blue);
+}
+
+.roadStart {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  height: 2.6rem;
+  padding: 0 1.1rem;
+  border: 1px solid rgb(243 243 231 / 0.4);
+  border-radius: 999px;
+  font-size: var(--t-small);
+  transition:
+    background-color var(--d-quick) ease,
+    color var(--d-quick) ease;
+}
+
+.roadStart:hover {
+  background: var(--cream);
+  color: var(--oxblood);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* ---------- process ---------- */
+
+.process {
+  padding: var(--section-y) 0;
+}
+
+.stops {
+  position: relative;
+  display: grid;
+  gap: clamp(2.5rem, 7vh, 4.5rem);
+  margin-top: clamp(2.5rem, 7vh, 4.5rem);
+  padding-left: clamp(2.5rem, 6vw, 5rem);
+}
+
+.line {
+  position: absolute;
+  left: 0.55rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 1.5px;
+  background: var(--plum);
+  transform-origin: 50% 0;
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.stop {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 18rem) minmax(0, 1fr);
+  gap: 1rem var(--gutter);
+  align-items: baseline;
+}
+
+.dot {
+  position: absolute;
+  left: calc(-1 * clamp(2.5rem, 6vw, 5rem) + 0.15rem);
+  top: 0.55rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 2px solid var(--on-strong);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.stopNo {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--oxblood);
+}
+
+.stopTitle {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  letter-spacing: var(--track-d4);
+  font-size: var(--t-quote);
+  line-height: 1;
+  color: var(--on-strong);
+}
+
+.stopText {
+  max-width: 30rem;
+  font-size: 1.0625rem;
+  color: var(--on-soft);
+}
+
+/* ---------- FAQ ---------- */
+
+.faq {
+  padding: var(--section-y) 0;
+}
+
+.faqList {
+  margin-top: 2rem;
+  border-top: 1px solid var(--line-strong);
+  max-width: 56rem;
+}
+
+.qa {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.qa summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.3rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-h);
+  font-size: clamp(1.2rem, 1rem + 0.7vw, 1.6rem);
+  color: var(--on-strong);
+}
+
+.qa summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa summary::after {
+  content: "+";
+  font-family: var(--f-mono);
+  transition: rotate var(--d-base) var(--e-settle);
+}
+
+.qa[open] summary::after {
+  rotate: 45deg;
+}
+
+.qa p {
+  max-width: 40rem;
+  padding-bottom: 1.4rem;
+  color: var(--on-soft);
+}
+
+@media (max-width: 899px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .road {
+    grid-template-columns: 1fr;
+  }
+  .roadStart {
+    justify-self: start;
+  }
+  .stop {
+    grid-template-columns: 1fr;
+  }
+}

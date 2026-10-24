@@ -1,0 +1,62 @@
+{
+ "iteration": "now",
+ "note": "today's site: cream grounds, project colours on the spreads",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 15.7,
+    "blue": 6.5,
+    "cream": 42.0,
+    "oxblood": 2.5,
+    "other": 33.3
+   },
+   "plum_blue_all": 22.2,
+   "plum_blue_own": 33.2,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 15.7,
+      "blue": 6.5,
+      "cream": 42.0,
+      "oxblood": 2.5,
+      "other": 33.3
+     },
+     "screens": 13,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  },
+  "mobile": {
+   "share_all": {
+    "plum": 10.6,
+    "blue": 11.4,
+    "cream": 55.8,
+    "oxblood": 0.7,
+    "other": 21.5
+   },
+   "plum_blue_all": 22.0,
+   "plum_blue_own": 28.0,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 10.6,
+      "blue": 11.4,
+      "cream": 55.8,
+      "oxblood": 0.7,
+      "other": 21.5
+     },
+     "screens": 12,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

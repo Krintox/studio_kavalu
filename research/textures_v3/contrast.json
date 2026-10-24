@@ -1,0 +1,154 @@
+{
+ "paper-cream": {
+  "ink": {
+   "text": "#241319",
+   "mean": 15.89,
+   "worst": 14.85
+  },
+  "plum": {
+   "text": "#390D26",
+   "mean": 14.92,
+   "worst": 13.94
+  }
+ },
+ "paper-writing-paper": {
+  "ink": {
+   "text": "#241319",
+   "mean": 16.26,
+   "worst": 15.44
+  },
+  "plum": {
+   "text": "#390D26",
+   "mean": 15.26,
+   "worst": 14.49
+  }
+ },
+ "paper-powder-blue": {
+  "plum": {
+   "text": "#390D26",
+   "mean": 9.88,
+   "worst": 9.25
+  },
+  "ink": {
+   "text": "#241319",
+   "mean": 10.53,
+   "worst": 9.86
+  }
+ },
+ "paper-deep-plum": {
+  "cream": {
+   "text": "#F3F3E7",
+   "mean": 16.7,
+   "worst": 15.91
+  },
+  "blue": {
+   "text": "#ABCDD6",
+   "mean": 11.06,
+   "worst": 10.53
+  }
+ },
+ "paper-plum": {
+  "cream": {
+   "text": "#F3F3E7",
+   "mean": 14.87,
+   "worst": 14.03
+  },
+  "blue": {
+   "text": "#ABCDD6",
+   "mean": 9.84,
+   "worst": 9.29
+  }
+ },
+ "paper-oxblood": {
+  "cream": {
+   "text": "#F3F3E7",
+   "mean": 12.83,
+   "worst": 11.97
+  },
+  "blue": {
+   "text": "#ABCDD6",
+   "mean": 8.49,
+   "worst": 7.92
+  }
+ },
+ "neutral-light-on-cream-2": {
+  "ink": {
+   "text": "#241319",
+   "mean": 14.73,
+   "worst": 14.06
+  },
+  "plum": {
+   "text": "#390D26",
+   "mean": 13.82,
+   "worst": 13.2
+  }
+ },
+ "neutral-strong-on-cream-3": {
+  "ink": {
+   "text": "#241319",
+   "mean": 13.46,
+   "worst": 12.47
+  },
+  "plum": {
+   "text": "#390D26",
+   "mean": 12.63,
+   "worst": 11.71
+  }
+ },
+ "cardstock-on-projects": {
+  "rust": {
+   "ink": {
+    "text": "#FAEBCA",
+    "mean": 5.1,
+    "worst": 4.51
+   }
+  },
+  "ink-blue": {
+   "ink": {
+    "text": "#EFE9DA",
+    "mean": 12.82,
+    "worst": 11.42
+   }
+  },
+  "magenta": {
+   "ink": {
+    "text": "#F8E9EF",
+    "mean": 6.22,
+    "worst": 5.63
+   }
+  },
+  "cocoa": {
+   "ink": {
+    "text": "#F6E7B6",
+    "mean": 12.33,
+    "worst": 11.05
+   }
+  },
+  "vermilion": {
+   "ink": {
+    "text": "#FBE3D6",
+    "mean": 5.81,
+    "worst": 5.22
+   }
+  }
+ },
+ "cardstock-on-rust": {
+  "ink": {
+   "text": "#FAEBCA",
+   "mean": 5.09,
+   "worst": 4.47
+  }
+ },
+ "cardstock-on-deep-plum": {
+  "cream": {
+   "text": "#F3F3E7",
+   "mean": 16.63,
+   "worst": 15.77
+  },
+  "blue": {
+   "text": "#ABCDD6",
+   "mean": 11.01,
+   "worst": 10.44
+  }
+ }
+}

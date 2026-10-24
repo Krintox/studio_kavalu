@@ -1,0 +1,27 @@
+paper-cream-1024: png 575.9 KB, webp 77.3 KB, dE00 png 0.014 webp 0.1, L* std 1.119, detail {'fine': 0.69, 'fibre': 0.958, 'clouds': 0.999}
+paper-writing-paper-1024: png 505.8 KB, webp 55.2 KB, dE00 png 0.004 webp 0.044, L* std 0.871, detail {'fine': 0.538, 'fibre': 0.905, 'clouds': 0.997}
+paper-powder-blue-1024: png 542.9 KB, webp 62.9 KB, dE00 png 0.021 webp 0.039, L* std 0.952, detail {'fine': 0.62, 'fibre': 0.937, 'clouds': 0.998}
+paper-deep-plum-1024: png 453.4 KB, webp 72.2 KB, dE00 png 0.008 webp 0.096, L* std 0.847, detail {'fine': 0.621, 'fibre': 0.92, 'clouds': 0.996}
+paper-plum-1024: png 429.9 KB, webp 63.8 KB, dE00 png 0.01 webp 0.205, L* std 0.788, detail {'fine': 0.538, 'fibre': 0.898, 'clouds': 0.998}
+paper-oxblood-1024: png 419.7 KB, webp 55.3 KB, dE00 png 0.019 webp 0.089, L* std 0.791, detail {'fine': 0.533, 'fibre': 0.896, 'clouds': 0.997}
+paper-neutral-light-1024: png 321.7 KB, webp 47.8 KB, mean 0.9800, cream L* std 0.824, detail {'fine': 0.551, 'fibre': 0.926, 'clouds': 0.998}
+paper-neutral-strong-1024: png 372.5 KB, webp 79.6 KB, mean 0.9711, cream L* std 1.195, detail {'fine': 0.716, 'fibre': 0.964, 'clouds': 0.999}
+cardstock-overlay-1024: png 439.9 KB, webp 78.6 KB, mean 127.500 (webp 127.619), std 6.89, detail {'fine': 0.773, 'fibre': 0.978, 'clouds': 1.0}
+paper-cream-512: png 136.9 KB, webp 22.9 KB, dE00 png 0.007 webp 0.027, L* std 0.925, detail {'fine': 0.735, 'fibre': 0.966, 'clouds': 0.999}
+paper-writing-paper-512: png 113.3 KB, webp 15.9 KB, dE00 png 0.013 webp 0.103, L* std 0.699, detail {'fine': 0.657, 'fibre': 0.944, 'clouds': 0.996}
+paper-powder-blue-512: png 135.4 KB, webp 18.9 KB, dE00 png 0.009 webp 0.064, L* std 0.769, detail {'fine': 0.685, 'fibre': 0.954, 'clouds': 0.997}
+paper-deep-plum-512: png 110.4 KB, webp 20.9 KB, dE00 png 0.003 webp 0.075, L* std 0.71, detail {'fine': 0.692, 'fibre': 0.939, 'clouds': 0.992}
+paper-plum-512: png 110.4 KB, webp 18.1 KB, dE00 png 0.011 webp 0.272, L* std 0.628, detail {'fine': 0.587, 'fibre': 0.918, 'clouds': 0.996}
+paper-oxblood-512: png 105.9 KB, webp 15.4 KB, dE00 png 0.018 webp 0.082, L* std 0.653, detail {'fine': 0.58, 'fibre': 0.916, 'clouds': 0.996}
+paper-neutral-light-512: png 85.2 KB, webp 14.9 KB, mean 0.9801, cream L* std 0.685, detail {'fine': 0.584, 'fibre': 0.947, 'clouds': 0.998}
+paper-neutral-strong-512: png 97.3 KB, webp 22.8 KB, mean 0.9713, cream L* std 0.99, detail {'fine': 0.758, 'fibre': 0.973, 'clouds': 0.998}
+cardstock-overlay-512: png 114.3 KB, webp 22.3 KB, mean 127.500 (webp 127.616), std 5.50, detail {'fine': 0.808, 'fibre': 0.983, 'clouds': 1.0}
+done in 139 s -> C:\shashank\shashank\fnf\ananya_residency\studio_kavalu\research\textures_v3\metrics.json
+wrap step 2.45 vs interior median 1.51; 23% of interior column pairs step more (a seam would be ~0%) | tear line min/max (2x px): 18.6 48.7
+torn-edge-top.png: 25.3 KB
+torn-edge-top.webp: 18.0 KB
+torn-edge-bottom.png: 25.4 KB
+torn-edge-bottom.webp: 17.9 KB
+torn-rim-top.png: 28.5 KB
+torn-rim-top.webp: 20.7 KB
+preview.jpg (1440, 22764) 7.1 MB

@@ -1,0 +1,2134 @@
+{
+ "url": "https://tlb.betteroff.studio/",
+ "title": "THE LOOKBACK",
+ "scenario": [
+  [
+   "wait",
+   5
+  ],
+  [
+   "hover",
+   500,
+   500
+  ],
+  [
+   "pump",
+   1
+  ],
+  [
+   "hover",
+   900,
+   500
+  ],
+  [
+   "pump",
+   1
+  ],
+  [
+   "wheel",
+   600,
+   24,
+   0.04
+  ],
+  [
+   "pump",
+   1.5
+  ],
+  [
+   "wheel",
+   -400,
+   16,
+   0.04
+  ],
+  [
+   "pump",
+   1.5
+  ]
+ ],
+ "moves": [
+  {
+   "el": "div.carousel__slides.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 285,
+     "to": 285,
+     "range": [
+      270,
+      285
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "div.carousel-item__content.relative",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "figure.media.media-fill",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "picture.media__picture",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "img",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  },
+  {
+   "el": "article.carousel-item.group",
+   "moves": {
+    "y": {
+     "from": 322,
+     "to": 322,
+     "range": [
+      307,
+      322
+     ],
+     "start_ms": 5067,
+     "note": "oscillates / returns"
+    }
+   }
+  }
+ ],
+ "css_web_animations": [
+  {
+   "type": "CSSAnimation",
+   "name": "noise",
+   "duration": 1000,
+   "delay": 0,
+   "easing": "linear",
+   "iterations": null,
+   "target": 12037
+  },
+  {
+   "type": "CSSTransition",
+   "name": "opacity",
+   "duration": 500,
+   "delay": 0,
+   "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+   "iterations": 1,
+   "target": 6192
+  },
+  {
+   "type": "CSSAnimation",
+   "name": "noise",
+   "duration": 1000,
+   "delay": 0,
+   "easing": "linear",
+   "iterations": null,
+   "target": 12040
+  }
+ ]
+}

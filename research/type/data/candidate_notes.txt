@@ -1,0 +1,141 @@
+# a3_notes.txt - tasks 2-5 (Studio Kavalu type research, 2026-10-24). One item per line: claim — URL. "unverified" marks anything not confirmed at source.
+
+## TASK 2 — Adobe Fonts for websites
+[2] Adobe Fonts family pages state "The full Adobe Fonts library is cleared for both personal and commercial use" and, under Website Publishing, "Create a Web Project to add any font from our service to your website" — https://fonts.adobe.com/fonts/prestige-elite
+[2] The same pages list "Self Hosting: Host web font files on your own server" among the "additional licensing and services" that must be purchased from the foundry (also Mobile Apps, Custom Services, Volume licensing), i.e. self-hosting is NOT part of Adobe Fonts — https://fonts.adobe.com/fonts/prestige-elite ; https://fonts.adobe.com/fonts/neue-haas-grotesk (buy from Monotype) ; https://fonts.adobe.com/fonts/aktiv-grotesk (buy from Dalton Maag)
+[2] The pages point to "the Adobe Fonts Licensing FAQ for full details"; that FAQ (https://helpx.adobe.com/fonts/using/font-licensing.html) and the web-project help page (https://helpx.adobe.com/fonts/using/add-fonts-website.html) returned HTTP 403 to the fetcher, so pageview limits, the active-subscription requirement and what happens when a plan lapses are unverified here — https://helpx.adobe.com/fonts/using/font-licensing.html
+[2] Available on Adobe Fonts: Neue Haas Grotesk (Monotype, Christian Schwartz); the page does not show the Display/Text split (unverified) — https://fonts.adobe.com/fonts/neue-haas-grotesk
+[2] Available: Neue Haas Unica (Monotype, Toshi Omagari) — https://fonts.adobe.com/fonts/neue-haas-unica
+[2] Available: Aktiv Grotesk (Dalton Maag; 24 styles with italics, Hairline–Black) — https://fonts.adobe.com/fonts/aktiv-grotesk
+[2] Available: Aktiv Grotesk Extended (Dalton Maag) as its own family page — https://fonts.adobe.com/fonts/aktiv-grotesk-extended
+[2] Available: Acumin (Robert Slimbach, Adobe Originals) — https://fonts.adobe.com/fonts/acumin
+[2] Available: Acumin Wide (page title "Acumin Wide", Robert Slimbach, Adobe Originals) — https://fonts.adobe.com/fonts/acumin-pro-wide
+[2] Available: Nimbus Sans (URW Type Foundry) — https://fonts.adobe.com/fonts/nimbus-sans
+[2] Nimbus Sans Extended: the URL resolves to a page titled "Nimbus Sans" with no "Extended" text, so Extended styles on Adobe Fonts are unverified — https://fonts.adobe.com/fonts/nimbus-sans-extended
+[2] Available: Franklin Gothic URW (URW Type Foundry) — https://fonts.adobe.com/fonts/franklin-gothic-urw
+[2] Available: Roc Grotesk (Kostić Type Foundry; Nikola and Zoran Kostić) — https://fonts.adobe.com/fonts/roc-grotesk
+[2] Available: Obviously (OH no Type Co., James Edmondson) — https://fonts.adobe.com/fonts/obviously
+[2] Available: Freight Text (Joshua Darden, The Freight Collection; page describes a 192-font collection) — https://fonts.adobe.com/fonts/freight-text
+[2] Freight Display: /fonts/freight-display returns 404; /fonts/freight-display-pro resolves to the umbrella "Freight" page (Joshua Darden), so Display is presumably inside the Freight collection (unverified) — https://fonts.adobe.com/fonts/freight-display-pro
+[2] Available: Adobe Caslon (Carol Twombly, Adobe Originals) — https://fonts.adobe.com/fonts/adobe-caslon
+[2] Available: Kepler (Robert Slimbach, Adobe Originals) — https://fonts.adobe.com/fonts/kepler-std
+[2] Typewriter faces available: Prestige Elite (Howard Kettler, Adobe Originals) — https://fonts.adobe.com/fonts/prestige-elite
+[2] Typewriter faces available: Letter Gothic (Roger Roberson, Adobe Originals; monospaced IBM sans) — https://fonts.adobe.com/fonts/letter-gothic
+[2] Typewriter faces available: Courier (Howard Kettler, Adobe Originals) — https://fonts.adobe.com/fonts/courier-std
+[2] Typewriter faces available: Orator (John Scheppler, Adobe Originals; caps and small caps, "designed for IBM typewriters") — https://fonts.adobe.com/fonts/orator
+[2] Typewriter faces available: ITC American Typewriter (Joel Kaden and Tony Stan; Monotype) — https://fonts.adobe.com/fonts/itc-american-typewriter
+[2] Host Grotesk is also listed on Adobe Fonts (seen in search results, page not opened) — https://fonts.adobe.com/fonts/host-grotesk
+
+## TASK 3 — Web-licence price classes (pricing pages)
+[3] Klim: "All fees are one-off, and all licences have no expiry"; Web licence "based on page views or unique users", WOFF2 only, no modifying — https://klim.co.nz/licences/
+[3] Klim prices are loaded by script ("Loading, please wait…"), so no figure was captured — https://klim.co.nz/buy/founders-grotesk/
+[3] Grilli Type: web licence priced by "projected number of unique monthly visitors" summed across sites; "All of our licensing is a one-time fee… forever"; "We only offer self-hosted web fonts"; unlimited tier "starts at $10,000 per style"; tier prices not published on the page — https://www.grillitype.com/information
+[3] Dinamo: value-based pricing by Company Size (total headcount incl. affiliates), not traffic; web licence = one domain (+subdomains), WOFF2, "There's no limit on the amount of web traffic"; perpetual; "You're welcome to self-host and subset the fonts"; publicly traded or >€100m revenue firms are excluded from standard licences — https://abcdinamo.com/licenses
+[3] Dinamo Diatype prices are not visible without the script-driven shop — https://abcdinamo.com/buy/diatype
+[3] Pangram Pangram: Web licence must cover "anticipated total monthly pageviews of all domains, microsites and/or subdomains" (FAQ example: up to 10k/month) — https://pangrampangram.com/pages/faq
+[3] LICENCE TRAP — Pangram Pangram EULA §2.1 grants rights "for a period of one year from the date of checkout (the License Period)", after which "the License must be renewed"; §3.7 forbids making the files publicly available — https://pangrampangram.com/pages/eula
+[3] Pangram Pangram free fonts: "free to try for personal use as long as it is not used in a commercial project" (portfolio and school use allowed) — so not usable on a studio's commercial site — https://pangrampangram.com/pages/faq
+[3] Pangram Neue Montreal shop data: "Full Family (14 Styles + Variable)" variants at US$430 and US$1,710 (tier labels not exposed); single styles US$30–120 — https://pangrampangram.com/products/neue-montreal.json
+[3] Commercial Type: Graphik family $400 each (Graphik, Compact, Condensed… Wide), whole collection $1,300, "One-time fee for perpetual use" — https://commercialtype.com/catalog/graphik
+[3] Commercial Type: webfont price "based on the number of unique visitors expected each month"; webfont licences "all perpetual"; self-hosting recommended, third-party font hosting services not permitted — https://commercialtype.com/faqs
+[3] Swiss Typefaces: Personal (single-user) licence or Company licence priced by employees ("Entry price covers up to 25 employees"); "no limitation in time" — https://www.swisstypefaces.com/licensing/
+[3] Swiss Typefaces: Suisse (all 61 styles) shown as 500 CHF → 50 CHF student offer on a "lifetime Personal license" (regular company prices not shown) — https://www.swisstypefaces.com/fonts/suisse/
+[3] Colophon Foundry's own site now routes buyers to MyFonts and Monotype Fonts (Colophon is sold through Monotype) — https://www.colophon-foundry.org/
+[3] Apercu on MyFonts: styles "from $60.00 USD", complete family (16 fonts) US$768 at the entry licence — https://www.myfonts.com/collections/apercu-font-colophon-foundry
+[3] Lineto: Akkurat prices are on a script-driven pricing page, not captured — https://lineto.com/typefaces/akkurat/pricing
+[3] Optimo: page returned HTTP 403 (bot wall; not circumvented) — https://optimo.ch/typefaces/plain
+[3] Displaay: "The only factor that determines license price is… company size" (minimum 3 people); "perpetual, one-time fee"; web use covers domains; self-hosting via CSS @font-face — https://displaay.net/help/licenses
+[3] Displaay Roobert: single style €55; full family uprights+italics (12 styles) shown as €264 and €660 (two figures, unlabelled, probably sale vs list) — https://displaay.net/typeface/roobert/
+[3] Linotype Neue Haas Grotesk on MyFonts: styles from US$33.99; Family Pack (16 fonts) US$344.99; Complete Family from US$438.99 (entry licence) — https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype
+
+## TASK 4 — Free alternatives to paid studio favourites (published claims, then my judgement)
+[4] Typewolf does not publish free alternatives openly: its Helvetica page says "Closest Free Alternative on Google Fonts: See my PDF guide" — https://www.typewolf.com/helvetica
+[4] Typewolf's free-alternatives list is a paid product: "The Definitive Guide to Free Fonts", US$39, said to give "the closest free alternative to every font featured on Typewolf (over 1,000)" — https://www.typewolf.com/free-fonts
+[4] Typewolf "Top 10 Helvetica Alternatives" (all commercial): Aktiv Grotesk, Univers, Untitled Sans, Suisse International, Neue Haas Unica, Acumin, Neue Haas Grotesk, Nimbus Sans, Akzidenz Grotesk, Folio — https://www.typewolf.com/top-10-helvetica-alternatives
+[4] Typewolf Helvetica page: "Closest Match on Adobe Fonts" = Neue Haas Grotesk (affiliate link) — https://www.typewolf.com/helvetica
+[4] FontAlternatives.com is a one-person project ("A project by Mladen Ruzicic"); its scores are either an unnamed reviewer's "expert editorial assessment" or a "deterministic weighted sum" of catalogue tags (classification 40, traits 25, use-case 20, language 10, variable 5) — not a visual comparison — https://fontalternatives.com/methodology/
+[4] FontAlternatives, Suisse Int'l: no page (404) — https://fontalternatives.com/alternatives/suisse-intl/
+[4] FontAlternatives, Neue Montreal: Inter 88%, Geist 85%, DM Sans 82%, Work Sans 80%, Space Grotesk 78%, Plus Jakarta Sans 76%, Source Sans 3 72% — https://fontalternatives.com/alternatives/neue-montreal/
+[4] FontAlternatives, Söhne: Inter 90%, Geist 85%, Work Sans 82%, DM Sans 78%, Satoshi 78%, Plus Jakarta Sans 76%, Source Sans 3 74%, Public Sans 72% — https://fontalternatives.com/alternatives/sohne/
+[4] FontAlternatives, Founders Grotesk: Inter 82%, Work Sans 80%, Familjen Grotesk 78%, DM Sans 76%, Libre Franklin 74%, Source Sans 3 72%, Public Sans 70% — https://fontalternatives.com/alternatives/founders-grotesk/
+[4] FontAlternatives, GT America: Inter 86%, Work Sans 83%, IBM Plex Sans 80%, DM Sans 78%, Libre Franklin 76% ("shares GT America's American gothic roots"), Barlow 74%, Source Sans 3 72% — https://fontalternatives.com/alternatives/gt-america/
+[4] FontAlternatives, Graphik: Inter 88%, Work Sans 85%, IBM Plex Sans 82%, DM Sans 80%, Source Sans 3 78%, Libre Franklin 76%, Barlow 73% — https://fontalternatives.com/alternatives/graphik/
+[4] FontAlternatives, Akkurat: Inter 90%, Work Sans 82%, DM Sans 80%, Source Sans 3 78%, Public Sans 76%, Libre Franklin 74%, Geist 72%, Switzer 72%, Nacelle 68% — https://fontalternatives.com/alternatives/akkurat/
+[4] FontAlternatives, Helvetica: Nimbus Sans 92% (URW metric-compatible clone), Inter 88%, Liberation Sans 84%, Roboto 80%, Source Sans 3 75%, Libre Franklin 72%, Work Sans 68% — https://fontalternatives.com/alternatives/helvetica/
+[4] FontAlternatives also has a Neue Haas Grotesk page (not opened) — https://fontalternatives.com/alternatives/neue-haas-grotesk/
+[4] FontAlternatives, Circular: Inter 85%, Nunito 82%, Poppins 78%, DM Sans 75%, Jost 72%, Montserrat 70%, Montserrat Alternates 68% — https://fontalternatives.com/alternatives/circular/
+[4] FontAlternatives, Apercu: Inter 82%, Work Sans 78%, Space Grotesk 76%, DM Sans 74%, Familjen Grotesk 72%, Libre Franklin 70%, Public Sans 68% — https://fontalternatives.com/alternatives/apercu/
+[4] FontAlternatives, Tiempos: Lora 85%, Source Serif Pro 82%, Literata 80%, Spectral 79%, Crimson Pro 78%, Libre Baskerville 76%, Merriweather 74%, Vollkorn 72%, Newsreader 72% — https://fontalternatives.com/alternatives/tiempos/
+[4] FontAlternatives, Canela: Fraunces 80%, Lora 77%, Crimson Pro 75%, Cormorant Garamond 73%, Libre Baskerville 72%, Source Serif Pro 70%, Literata 68%; notes no free font reproduces Canela's serif/sans hybrid — https://fontalternatives.com/alternatives/canela/
+[4] FontAlternatives, GT Sectra: Merriweather 78%, Lora 76%, Literata 75%, Crimson Pro 74%, Source Serif Pro 72%, EB Garamond 70%, Libre Baskerville 68%; notes no free font has Sectra's wedge terminals — https://fontalternatives.com/alternatives/gt-sectra/
+[4] FontAlternatives, Editorial New: Playfair Display 82%, Lora 79%, Cormorant Garamond 77%, EB Garamond 75%, Crimson Pro 73%, Fraunces 72%, Libre Caslon Text 70% — https://fontalternatives.com/alternatives/editorial-new/
+[4] FontAlternatives, Ogg: Playfair Display 80%, Cormorant Garamond 77%, Libre Bodoni 75%, Bodoni Moda 74%, Fraunces 73%, EB Garamond 72%, Libre Caslon Display 70%, Alegreya 68% — https://fontalternatives.com/alternatives/ogg/
+[4] FontAlternatives, Recoleta: Fraunces 82% ("similar warm retro serif"), Merriweather 75% — https://fontalternatives.com/alternatives/recoleta/
+[4] FontAlternatives, GT Alpina: Source Serif Pro 84%, Libre Caslon Text 80%, Crimson Pro 78%; GT Alpina Typewriter is not covered — https://fontalternatives.com/alternatives/gt-alpina/
+[4] Provenance notes from Google Fonts descriptions that make free faces stand-ins for classics: Libre Franklin is "a reinterpretation and expansion of a 1912 sans serif design by Morris Fuller Benton" (Franklin Gothic) — https://fonts.google.com/metadata/fonts/Libre%20Franklin
+[4] Fragment Mono is a monospaced face "derived from Nimbus Sans, itself based on Helvetica" (Wei Huang with URW) — https://fonts.google.com/metadata/fonts/Fragment%20Mono
+[4] Courier Prime is "a more refined version of IBM's 1956 Courier designed by Howard Kettler" — https://fonts.google.com/metadata/fonts/Courier%20Prime
+[4] Archivo is a grotesque "reminiscent of late 19th-century American typefaces" — https://fonts.google.com/metadata/fonts/Archivo
+[4] Besley is "an antique slab serif inspired by Robert Besley's Clarendon" — https://fonts.google.com/metadata/fonts/Besley
+[4] Young Serif is a heavy old-style serif "inspired by Plantin Infant and ITC Italian Old Style" — https://fonts.google.com/metadata/fonts/Young%20Serif
+[4] MY JUDGEMENT (not sourced): FontAlternatives' lists are dominated by the same few Google faces (Inter is first on 8 of the 9 sans pages fetched; Nimbus Sans first for Helvetica), so they measure category, not character; treat as weak evidence. Closer free stand-ins by eye: Söhne/Akkurat/Suisse → Schibsted Grotesk or Hanken Grotesk (quieter) rather than Inter; GT America → Archivo (has width axis, American gothic) or Libre Franklin; Founders Grotesk → Familjen Grotesk; Graphik → Schibsted Grotesk; Helvetica/Neue Haas → Nimbus Sans (URW; Adobe Fonts) or Fragment Mono for labels; Circular → none in this candidate list (Host Grotesk/Poppins are the nearest geometric feel); Tiempos/GT Sectra → Newsreader or Source Serif 4; Canela/Ogg/Editorial New → no close free match among candidates (Libre Caslon Display is the nearest high-contrast option); Recoleta → Young Serif or Fraunces; GT Alpina Typewriter → Courier Prime (bookish typewriter) or TT2020 (realistic, inked).
+
+## TASK 5a — Real handwriting vs handwriting fonts
+[5a] The OpenType spec itself frames the problem: the 'rand' (Randomize) feature exists "In order to emulate the irregularity and variety of handwritten text"; the application picks an alternate "by a pseudo-random algorithm" or by stepping through a stored sequence — https://learn.microsoft.com/en-us/typography/opentype/spec/features_pt
+[5a] Browser support for 'rand' was not verified here (unverified; my understanding is that browsers do not randomise). What browsers do apply by default is 'calt': MDN says font-variant-ligatures "normal" (the default) "usually activates" contextual alternates (calt) — https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures
+[5a] Glyphs tutorial (Rainer Erich Scheichelbauer, 2012, updated 2022) objects to "a font imitating handwriting but showing two identical glyphs when you type a double letter" and shows calt cycling that "goes 1-2-3-1-2-3", i.e. the variation is a fixed, predictable rotation — https://glyphsapp.com/learn/features-part-3-advanced-contextual-alternates
+[5a] Calligraphr: randomisation is "an attempt to simulate true handwriting"; free accounts get up to 2 variants per character, Pro up to 15; ligatures are a Pro feature; export is TTF/OTF — https://www.calligraphr.com/en/docs/faq/
+[5a] Calligraphr recommends "at least three to four variants" per character for "an authentic looking handwriting font", more for frequent letters like a and e — https://www.calligraphr.com/en/docs/tutorial2/
+[5a] Calligraphr licence for fonts made from your own hand: "Any creation you make with Calligraphr is your sole property", and you are "not required to give any credit to Calligraphr"; the FAQ does not separately address selling or web use (no restriction stated) — https://www.calligraphr.com/en/docs/faq/
+[5a] Calligraphr's site lists no separate terms-of-service page in its navigation (only FAQ, pricing, privacy), so the ownership statement above is the operative public text — https://www.calligraphr.com/
+[5a] Digitising real handwriting as SVG — Inkscape's Trace Bitmap (Path > Trace Bitmap) turns a scan into vector paths; "Brightness cutoff" makes filled silhouettes; "Centerline tracing (autotrace)" reduces a shape to an open path and is described as best for handwriting and line drawings — https://inkscape-manuals.readthedocs.io/en/latest/tracing-an-image.html
+[5a] Potrace (GPL) is the standard bitmap-to-smooth-vector tracer, with SVG output — https://potrace.sourceforge.net/
+[5a] Drawn-on handwriting animation uses stroke-dasharray/stroke-dashoffset, and "The shape must have a stroke" (Chris Coyier, CSS-Tricks, 2014) — so notes meant to "write themselves" need centreline (stroked) paths, while filled traced outlines can only fade/mask in — https://css-tricks.com/svg-line-animation-works/
+[5a] This project already treats the wordmark this way: "The wordmark is not a font: it is Ananya's own lettering, redrawn as SVG paths" (local file, not a URL) — C:\shashank\shashank\fnf\ananya_residency\studio_kavalu\website\src\fonts\LICENSE-fonts.md
+[5a] MY JUDGEMENT: for a handful of founder notes per page, scanned and traced SVGs of her real handwriting beat any font (no repeats, true pressure and baseline drift, no licence question); a Calligraphr font of her hand is the fallback only for notes that must be editable text, built with 3+ variants per frequent letter, and even then the calt cycle will show on longer lines.
+
+## TASK 1 supplement — ITF Free Font License (Switzer, Gambetta) wording
+[1] The FFL page is client-rendered: WebFetch of https://www.fontshare.com/licenses/itf-ffl returns only "Fontshare: Quality Fonts. Free.", so the wording below comes from search-engine extracts of that page plus the FFL.txt quoted in the project's own notes — https://www.fontshare.com/licenses/itf-ffl
+[1] Version: the page shows ITF Free Font License "Version 2.0", dated 17 Aug 2026 (search extract) — https://www.fontshare.com/licenses/itf-ffl
+[1] Web use: FFL §01 allows personal and commercial use on websites "including through standard webfont technologies such as CSS @font-face" (quoted from the FFL.txt in the download, recorded locally in website/src/fonts/LICENSE-fonts.md) — https://www.fontshare.com/licenses/itf-ffl
+[1] Self-hosting: Fontshare's FAQ says fonts can be used via the Fontshare API CSS embed, "downloaded as an offline kit for self-hosting", or installed for desktop (search extract) — https://www.fontshare.com/faq
+[1] Modification: "Creating a Derivative Work from the Font Software requires the prior written consent of the Licensor"; Derivative Work covers changes to OTF/TTF/WOFF/WOFF2 files incl. subsetting and format conversion, and the usage limits list "modifying or replacing glyphs, subsetting, format conversion, or altering font names, copyright information, ownership information or other metadata" (search extract) — https://www.fontshare.com/licenses/itf-ffl
+[1] A website built with the font is not a derivative work: the definition excludes "any logo, document, graphic, image, website, application or other creative work created through the normal use of the Font Software" (search extract) — https://www.fontshare.com/licenses/itf-ffl
+[1] Third-party serving: licensee may not "host, serve, embed or otherwise make the Font Software available for use by third parties through any website, application, online service, SaaS platform, design tool, template editor or similar service" (search extract) — https://www.fontshare.com/licenses/itf-ffl
+[1] Redistribution: FAQ says Closed Source fonts "cannot be redistributed or shared publicly" and must be downloaded from Fontshare (search extract); project notes add that the files must not go into a public repository — https://www.fontshare.com/faq
+[1] Practical upshot (judgement): serving the unmodified WOFF2 from the studio's own domain is fine; any build step that subsets or converts (e.g. a font optimiser, glyphhanger, or a CMS that re-encodes fonts) needs ITF's written consent; a public GitHub repo with the files breaches the licence.
+[1] Current faces Switzer and Gambetta have no ₹: U+20B9 maps to glyph 0 in both variable WOFF2 files (local offline check with a cmap parser; € and A map to real glyphs) — local files website/src/fonts/Switzer-Variable.woff2, Gambetta-Variable.woff2 (no URL)
+[1] Switzer was first released in 2015 as "Volkart" and renamed/moved to Fontshare in 2021 — https://fontsinuse.com/typefaces/40409/switzer
+[1] Method for ₹ on Google-hosted faces: fonts.google.com/metadata/fonts/<Family> returns real per-subset coverage as decimal codepoints; ₹ = 8377. Google's CSS unicode-range and Fontsource ranges are subset definitions, not coverage (Hanken lacks ₹ yet its range includes U+20AD-20C0) — https://fonts.google.com/metadata/fonts/Hanken%20Grotesk ; https://api.fontsource.org/v1/fonts/hanken-grotesk
+[1] Google's own glyph sets: GF_Latin_Core has no ₹; GF_Latin_Plus includes ₹ — so a "GF Latin Core" font usually lacks it — https://raw.githubusercontent.com/googlefonts/glyphsets/main/GLYPHSETS.md
+[1] Nudi fonts: no formal licence text found; the Karnataka government is quoted calling NUDI "a freeware" and saying "Most of the fonts with NUDI can be used for dynamic font embedding purposes"; U.B. Pavanaja alleged they are "unauthorized exact but renamed copies of Akruthi fonts" — https://luc.devroye.org/fonts-48386.html
+[1] Nudi is published by Kannada Ganaka Parishat with Karnataka government funding; Unicode from Nudi 6.0 — https://en.wikipedia.org/wiki/Nudi_(software)
+
+## TASK 5b — Clarendon/slab and grotesque letterforms in Indian vernacular lettering
+[5b] HandpaintedType: started 2011 by Hanif Kureshi "to preserve the typographic practices and styles of Indian street sign painters"; documented at least 18 roadside painters; a free digitised font came first, then a commercial release to support painters displaced by digital printing; presented at Typography Day (Ahmedabad) and ATypI Reykjavík 2011 — https://en.wikipedia.org/wiki/Hanif_Kureshi
+[5b] Hanif Kureshi (artist "Daku", co-founder of St+art India) died 22 Sept 2024 — https://en.wikipedia.org/wiki/Hanif_Kureshi
+[5b] handpaintedtype.com now shows only "Coming Soon" (fonts not currently obtainable there) — https://www.handpaintedtype.com/
+[5b] Pooja Saxena (Matra Type), "India Street Lettering: A Journey Through Typographic Craft and Culture", Blaft Publications (Chennai), December 2025, 300+ signs from 17 cities — https://www.stirworld.com/think-books-and-movies-india-street-lettering-explores-a-visual-art-that-is-always-looked-at-hardly-ever-seen
+[5b] Book page — https://blaft.com/products/india-street-lettering
+[5b] Bengaluru/Kannada: after studying in the UK, Saxena "began documenting expressive Kannada lettering signs" in Bangalore; she also leads type walks in New Delhi and Bangalore — https://www.stirworld.com/think-books-and-movies-india-street-lettering-explores-a-visual-art-that-is-always-looked-at-hardly-ever-seen
+[5b] Creative Boom review (Tom May, 10 Nov 2025): signs from "more than a dozen Indian cities" incl. Bengaluru (the lost Parade Café sign); Saxena: "Handmade lettering on signage is an invaluable typographic resource" — https://www.creativeboom.com/resources/why-indias-disappearing-street-lettering-is-unmissable-inspiration-for-designers/
+[5b] Saxena in Better Letters (17 Jul 2025): multiscript signs "apply harmonised typographic features, at others they'll co-ordinate colours, shades and banners" — https://bl.ag/indian-sign-painting-a-typeface-designers-take-on-the-craft/
+[5b] TDC essay on the project ("India Street Lettering: Building Missing Archives") exists, not opened — https://tdc.org/?p=11362
+[5b] Sahapedia (Chandrika Acharya, Delhi focus): demand for signboards rose in the early 20th century (WWI import shortages, swadeshi); painters drew on print culture — Blackletter, rounded serifs, sans serifs — and added 3D shadows and "satrangi" prismatic lettering; decline from the 1990s — https://www.sahapedia.org/hand-painted-signs-forgotten-markers-city-space
+[5b] Sahapedia gallery note: a Delhi serif sign in a "condensed" style with long verticals for legibility — https://www.sahapedia.org/street-graphics-art-hand-painted-signage
+[5b] Clarendon itself: registered 1845 by Robert Besley (Fann Street Foundry); later versions include Consort, New Clarendon, Eidenbenz/Haas Clarendon, Sentinel and the free Besley — the article does not mention India — https://en.wikipedia.org/wiki/Clarendon_(typeface)
+[5b] NOT FOUND: no source located that explicitly ties Clarendon/slab (or grotesque) models to Indian or Bengaluru/Kannada sign painting; the Clarendon–India link should be treated as unverified (search budget ran out before more targeted searches).
+
+## TASK 3 — Buckets (low < ~US$150 per site; mid US$150–600; high > US$600)
+[3] ASSUMPTIONS: one small studio site, one domain, entry traffic/company tier, the family's own listed price (not tax), EUR/CHF read roughly at par with USD; where a foundry hides prices behind a script or bot wall the bucket is marked unverified — sources per line
+[3] Commercial Type Graphik: MID for one family ($400 entry, perpetual); LOW for 1–2 styles ("styles from $50"); what the $400 entry tier covers is not stated on the page — https://commercialtype.com/catalog/graphik
+[3] Monotype/Linotype Neue Haas Grotesk via MyFonts: MID (Family Pack 16 fonts $344.99; Complete from $438.99; entry licence) — https://www.myfonts.com/collections/neue-haas-grotesk-font-linotype
+[3] Colophon Apercu via MyFonts: HIGH for the complete family ($768); MID for a 4-style set (4 × $60 = $240) — https://www.myfonts.com/collections/apercu-font-colophon-foundry
+[3] Displaay Roobert: MID–HIGH (full family 12 styles shown €264 and €660, probably sale/list); LOW for single styles (€55); priced by company size, perpetual — https://displaay.net/typeface/roobert/
+[3] Pangram Pangram Neue Montreal: MID (full family entry variant US$430) but the EULA makes it a one-year licence to renew — https://pangrampangram.com/products/neue-montreal.json ; https://pangrampangram.com/pages/eula
+[3] Swiss Typefaces Suisse Int'l: unverified (only a student offer of 500 CHF → 50 CHF for all 61 Suisse styles is shown) — https://www.swisstypefaces.com/fonts/suisse/
+[3] Klim (Founders Grotesk, Söhne, Tiempos, Pitch): unverified — prices load by script — https://klim.co.nz/buy/founders-grotesk/
+[3] Grilli Type (GT America, GT Alpina incl. Typewriter): unverified — tier prices not published on the information page — https://www.grillitype.com/information
+[3] Dinamo ABC Diatype: unverified — shop is script-driven; pricing by company size — https://abcdinamo.com/licenses
+[3] Lineto Akkurat: unverified (script-driven pricing page) — https://lineto.com/typefaces/akkurat/pricing
+[3] Optimo Plain: unverified (HTTP 403) — https://optimo.ch/typefaces/plain

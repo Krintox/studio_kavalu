@@ -1,0 +1,55 @@
+{
+ "rel": "nivritti/sign-street",
+ "method": "gpt-base",
+ "output": "research/images_hq/gpt/nivritti/sign-street.png",
+ "size": [
+  1740,
+  904
+ ],
+ "src_size": [
+  770,
+  400
+ ],
+ "ssim": 0.6668,
+ "ssim_half": 0.7766,
+ "ncc": 0.9341,
+ "dE_mean": 15.18,
+ "dE_p95": 29.82,
+ "rgb_bias": [
+  29.3,
+  30.5,
+  24.4
+ ],
+ "registration": {
+  "sx": 2.2595037140337557,
+  "sy": 2.2578677686886777,
+  "tx": 0.4158032667211705,
+  "ty": 1.5000950669529973,
+  "ncc_reg": 0.953,
+  "coverage": 1.0,
+  "anisotropy": 1.0007
+ },
+ "crop": {
+  "box": [
+   0.4,
+   1.5,
+   1740.2,
+   904.6
+  ],
+  "missing_px": {
+   "left": 0.0,
+   "top": 0.0,
+   "right": 0.2,
+   "bottom": 0.6
+  },
+  "out_size": [
+   1740,
+   904
+  ]
+ },
+ "raw": "research/images_hq/gpt/_work/nivritti/sign-street/base/raw_0.png",
+ "raw_size": [
+  1740,
+  904
+ ]
+}

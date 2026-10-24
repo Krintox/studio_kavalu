@@ -1,0 +1,508 @@
+.desk {
+  position: relative;
+  padding: clamp(3.5rem, 7vw, 6rem) var(--margin) 0;
+  color: var(--cream);
+}
+
+.head {
+  position: relative;
+  z-index: 2;
+  max-width: var(--max);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  font-family: var(--f-text);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--blue);
+}
+
+.title {
+  margin-top: 0.9rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-2);
+  line-height: 1;
+  letter-spacing: var(--track-d4);
+  color: var(--cream);
+}
+
+.title em {
+  color: var(--blue);
+}
+
+/* ---------- the board ---------- */
+
+.board {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max);
+  height: clamp(600px, 52vw, 760px);
+  margin: clamp(1rem, 3vw, 2.5rem) auto 0;
+}
+
+.road {
+  position: absolute;
+  inset: 4% 6% 18%;
+  width: 88%;
+  height: 78%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+/* a pencil-dotted road; it is revealed through a mask, so the dots stay dots while it draws */
+.road .dots {
+  fill: none;
+  stroke: rgb(171 205 214 / 0.42);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-dasharray: 1.5 6.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.road mask path {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 16;
+  stroke-linecap: butt;
+}
+
+.pin {
+  position: absolute;
+  translate: -50% -50%;
+  cursor: grab;
+}
+
+.pin:active {
+  cursor: grabbing;
+}
+
+.tilt {
+  rotate: var(--tilt);
+  transition: rotate var(--d-base) var(--e-settle);
+}
+
+.pin:hover .tilt {
+  rotate: calc(var(--tilt) * 0.3);
+}
+
+.deco :global(figcaption) {
+  color: rgb(243 243 231 / 0.7);
+}
+
+/* the working cards are light paper on the dark desk: their focus outline goes back to plum */
+.ticket,
+.card,
+.index {
+  --focus: var(--plum);
+}
+
+/* ---------- ticket: start a project ---------- */
+
+.ticketPin {
+  width: clamp(270px, 21vw, 330px);
+  z-index: 6;
+}
+
+.ticket {
+  --r: 6px;
+  position: relative;
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.5rem 1.5rem 1.35rem 2.3rem;
+  background: var(--blue);
+  color: var(--deep);
+  box-shadow: var(--shadow-desk);
+  /* a perforated stub edge on the left */
+  -webkit-mask:
+    radial-gradient(var(--r) at 0 50%, #0000 97%, #000) 0 0 / 100% calc(3 * var(--r)) repeat-y;
+  mask: radial-gradient(var(--r) at 0 50%, #0000 97%, #000) 0 0 / 100% calc(3 * var(--r)) repeat-y;
+  /* an object: its own inks, on any ground */
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --on-accent: var(--oxblood);
+}
+
+.hole {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--deep);
+  box-shadow: inset 0 1px 2px rgb(10 2 6 / 0.5);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.ticketKicker {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.ticketTitle {
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  font-size: var(--t-4);
+  line-height: 1;
+  letter-spacing: var(--track-h);
+}
+
+.ticketTitle em {
+}
+
+.ticketCta {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 3rem;
+  padding: 0 1.45rem;
+  border-radius: 999px;
+  background: var(--deep);
+  color: var(--cream);
+  font-size: 0.9375rem;
+  transition:
+    gap var(--d-base) var(--e-settle),
+    background-color var(--d-quick) ease,
+    transform var(--d-quick) var(--e-quick);
+}
+
+.ticketCta:hover {
+  gap: 0.95rem;
+  background: var(--plum);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.ticketCta:active {
+  transform: scale(0.97);
+}
+
+.ticketNote {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.02em;
+  opacity: 0.7;
+}
+
+/* ---------- contact card ---------- */
+
+.cardPin {
+  width: clamp(300px, 25vw, 380px);
+  z-index: 5;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.5rem 1.6rem 1.4rem;
+  background:
+    repeating-linear-gradient(transparent 0 calc(1.75rem - 1px), rgb(171 205 214 / 0.5) calc(1.75rem - 1px) 1.75rem) 0 3.2rem / 100% auto,
+    var(--paper);
+  color: var(--on);
+  box-shadow: var(--shadow-desk);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.cardLabel {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-faint);
+}
+
+.email {
+  justify-self: start;
+  text-align: left;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  letter-spacing: var(--track-h);
+  font-size: clamp(1.1rem, 0.9rem + 0.6vw, 1.4rem);
+  line-height: 1.15;
+  color: var(--on-strong);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.1rem;
+}
+
+.email:hover {
+  color: var(--oxblood);
+}
+
+.cardMeta {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: start;
+  gap: 0.2rem 1.4rem;
+  margin: 0.3rem 0 0;
+}
+
+.cardMeta dt {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-faint);
+}
+
+.cardMeta dd {
+  margin: 0.15rem 0 0;
+  font-size: var(--t-small);
+  color: var(--on);
+}
+
+.cardLinks {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--t-small);
+}
+
+.cardLinks a {
+  color: var(--on-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.postmark {
+  position: absolute;
+  right: -2.2rem;
+  top: -2.6rem;
+  width: 6.4rem;
+  aspect-ratio: 1;
+  rotate: -12deg;
+  color: rgb(73 28 23 / 0.75);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.postmark svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.postmark circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.postmark text {
+  fill: currentColor;
+  font-family: var(--f-mono);
+  font-size: 9.4px;
+  letter-spacing: 1.1px;
+}
+
+/* ---------- index card ---------- */
+
+.indexPin {
+  width: clamp(230px, 17vw, 270px);
+  z-index: 5;
+}
+
+.index {
+  position: relative;
+  padding: 1.35rem 1.4rem 1.2rem;
+  background: var(--cream-3);
+  color: var(--on-strong);
+  border-radius: 0 6px 6px 6px;
+  box-shadow: var(--shadow-desk);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.indexTab {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  padding: 0.3rem 1rem 0.25rem;
+  background: var(--cream-3);
+  border-radius: 8px 8px 0 0;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.index ol {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.index a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1.35rem;
+  line-height: 1.15;
+  transition: gap var(--d-base) var(--e-settle);
+}
+
+.index a:hover {
+  gap: 1rem;
+}
+
+.index a span {
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  color: var(--on-faint);
+}
+
+.hint {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  rotate: -4deg;
+  font-size: 0.95rem;
+  color: var(--blue);
+  pointer-events: none;
+}
+
+.hintSwipe {
+  display: none;
+}
+
+/* on the board the strip has no box of its own, so its pins sit on the board like the cards */
+.pins {
+  display: contents;
+}
+
+/* ---------- smaller screens: the working cards stacked, her pins in a strip to swipe ---------- */
+
+@media (max-width: 1099px) {
+  .board {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.75rem 1.5rem;
+    align-items: start;
+    padding-top: 1.5rem;
+  }
+  .road {
+    display: none;
+  }
+  .pin {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    translate: none;
+    width: auto !important;
+    min-width: 0;
+    cursor: default;
+  }
+  .ticketPin,
+  .cardPin {
+    max-width: 30rem;
+  }
+  .indexPin {
+    grid-column: 1 / -1;
+    max-width: 22rem;
+  }
+  .cardMeta {
+    grid-template-columns: repeat(2, max-content);
+    gap: 0.6rem 1.6rem;
+  }
+
+  .pins {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+    margin: -0.5rem calc(-1 * var(--margin)) 0;
+    padding: 1.75rem var(--margin) 2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--margin);
+    scrollbar-width: none;
+  }
+  .pins::-webkit-scrollbar {
+    display: none;
+  }
+  .pins > .pin {
+    flex: none;
+    scroll-snap-align: start;
+  }
+
+  .hint {
+    position: static;
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-top: -2.6rem;
+    rotate: -2deg;
+  }
+  .hintMove {
+    display: none;
+  }
+  .hintSwipe {
+    display: inline;
+  }
+}
+
+@media (max-width: 639px) {
+  .board {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+  .tilt {
+    rotate: calc(var(--tilt) * 0.5);
+  }
+  .card {
+    padding-inline: 1.3rem;
+  }
+  /* on a phone the card is full width, so the postmark stays inside the screen edge */
+  .postmark {
+    right: -0.3rem;
+    top: -2.2rem;
+    width: 5.4rem;
+  }
+}

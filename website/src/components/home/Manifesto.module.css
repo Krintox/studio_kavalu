@@ -1,0 +1,272 @@
+/* A sheet that slides over the last project spread, its top edge torn; its paper is the section's ground. */
+.manifesto {
+  position: relative;
+  z-index: 2;
+  margin-top: -100vh;
+  min-height: 100vh;
+  padding: var(--chapter-y) 0 var(--section-y); /* a new chapter after the spreads */
+  -webkit-mask: url("/textures/torn-top.svg") top / 100% 2.4rem no-repeat, linear-gradient(#000 0 0) 0 2.35rem / 100% 100% no-repeat;
+  mask: url("/textures/torn-top.svg") top / 100% 2.4rem no-repeat, linear-gradient(#000 0 0) 0 2.35rem / 100% 100% no-repeat;
+  box-shadow: 0 -30px 60px rgb(10 2 6 / 0.25);
+}
+
+.wrap {
+  display: grid;
+  gap: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+/* ---------- the sentence: still, set in four lines by design ---------- */
+
+.stage {
+  position: relative;
+}
+
+.sentence {
+  position: relative;
+  z-index: 1;
+  max-width: 15.5em;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-manifesto);
+  line-height: 1.14;
+  letter-spacing: var(--track-d3);
+  color: var(--on-strong);
+}
+
+.line {
+  display: block;
+}
+
+.choiceWrap {
+  transition: opacity var(--d-quick) ease;
+}
+
+/* pointing at one choice quiets the other three, never below 50% (3.28 : 1 on cream, BRAND_DESIGN.md §12) */
+.stage[data-active] .choiceWrap:not([data-on]) {
+  opacity: 0.5;
+  transition: opacity 240ms var(--e-settle);
+}
+
+.choice {
+  color: inherit;
+}
+
+.choice:focus-visible {
+  outline-offset: 6px;
+}
+
+/* a typed footnote number after each choice's comma, raised to the cap height like a reference mark;
+   inline, so a line never breaks between the comma and its number */
+.index {
+  margin-left: 0.1em;
+  font-family: var(--f-mono);
+  font-size: max(var(--t-label), 0.15em);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 0;
+  vertical-align: calc(var(--t-manifesto) * 0.42); /* about the cap height of the sentence, at every size */
+  color: var(--on-soft);
+}
+
+/* the hand-drawn roads under the choices (paths measured from the words in Manifesto.tsx) */
+.roads {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  fill: none;
+  stroke: var(--on-strong);
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.roads path {
+  transition:
+    stroke-width var(--d-base) var(--e-settle),
+    opacity var(--d-quick) ease;
+}
+
+.roads path[data-on] {
+  stroke-width: 2;
+}
+
+.stage[data-active] .roads path:not([data-on]) {
+  opacity: 0.5;
+}
+
+/* ---------- one print in the margin, for the choice pointed at ---------- */
+
+.margin {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: clamp(12rem, 15vw, 15rem);
+  translate: 0 -62%;
+  pointer-events: none;
+}
+
+.print {
+  position: absolute;
+  inset: 0 0 auto 0;
+  margin: 0;
+  padding: 0.55rem 0.55rem 0;
+  background: var(--paper);
+  box-shadow: var(--shadow-paper);
+  opacity: 0;
+  translate: 0 12px;
+  rotate: -2deg;
+  transition:
+    opacity 160ms ease,
+    translate var(--d-base) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.print[data-on] {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.tape {
+  position: absolute;
+  top: -0.7rem;
+  left: 50%;
+  z-index: 2;
+  width: 4.6rem;
+  height: 1.35rem;
+  translate: -50% 0;
+  rotate: 3deg;
+  background: rgb(171 205 214 / 0.66);
+  clip-path: polygon(3% 0, 97% 5%, 100% 52%, 96% 100%, 2% 95%, 0 46%);
+}
+
+.window {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--placeholder);
+}
+
+.window img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.print figcaption {
+  padding: 0.6rem 0.1rem 0.7rem;
+  font-family: var(--f-mono);
+  font-size: var(--t-tiny);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+}
+
+/* ---------- the footnotes: which road each number is ---------- */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem clamp(1.5rem, 3vw, 2.75rem);
+  font-family: var(--f-mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+}
+
+.legend li {
+  transition: color var(--d-quick) ease;
+}
+
+.legend span {
+  margin-right: 0.45em;
+  color: var(--on-faint);
+}
+
+.legend li[data-on] {
+  color: var(--on-strong);
+}
+
+/* ---------- what follows the line ---------- */
+
+.after {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  margin-top: clamp(2rem, 6vh, 4.5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.about {
+  max-width: 32rem;
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
+  line-height: 1.5;
+  color: var(--on);
+}
+
+.aim {
+  max-width: 30rem;
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: var(--track-h);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.9rem);
+  line-height: 1.25;
+  color: var(--on-strong);
+}
+
+.aim :global(.hand) {
+  display: block;
+  font-size: 0.72em;
+  margin-bottom: 0.4rem;
+  color: var(--on-accent);
+}
+
+.link {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+  font-size: 0.95rem;
+  color: var(--on-strong);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.15rem;
+  transition: gap var(--d-base) var(--e-settle);
+}
+
+.link:hover {
+  gap: 0.85rem;
+}
+
+/* the margin print needs a pointer that hovers and room beside the sentence */
+@media (hover: none), (max-width: 1099px) {
+  .margin {
+    display: none;
+  }
+}
+
+@media (max-width: 899px) {
+  .manifesto {
+    margin-top: 0;
+  }
+  .line {
+    display: inline;
+  }
+  .after {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .manifesto {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,147 @@
+.founder {
+  padding: var(--section-y) 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+}
+
+.visual {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 25rem);
+}
+
+/* a powder-blue poster panel holding a plum duotone circle, after the halftone-circle reference */
+.panel {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  padding: 12%;
+  background: var(--blue);
+  box-shadow: var(--shadow-paper);
+  rotate: -2deg;
+  display: grid;
+  align-content: start;
+  /* an object: its own inks, on any ground */
+  --on: var(--deep);
+  --on-strong: var(--plum);
+  --on-soft: var(--blue-ink-soft);
+  --on-faint: var(--blue-ink-faint);
+  --line: rgb(39 6 23 / 0.18);
+  --line-strong: rgb(39 6 23 / 0.36);
+  --on-accent: var(--oxblood);
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--grain-alpha);
+  background-size: 384px;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--plum);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: url("#duo-plum") contrast(1.08);
+}
+
+.caption {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: 7%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgb(39 6 23 / 0.35);
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--deep);
+}
+
+.sign {
+  position: absolute;
+  right: -12%;
+  bottom: 12%;
+  font-family: var(--f-sign);
+  font-size: clamp(4rem, 3rem + 3vw, 6.5rem);
+  line-height: 1;
+  color: var(--on-strong);
+  rotate: -8deg;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.copy {
+  display: grid;
+  gap: 1.4rem;
+  max-width: 40rem;
+}
+
+.quote {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-quote);
+  line-height: 1.06;
+  letter-spacing: var(--track-d4);
+  color: var(--on-strong);
+  text-wrap: balance;
+}
+
+.quote em {
+}
+
+.bio {
+  max-width: 32rem;
+  color: var(--on-soft);
+}
+
+.link {
+  justify-self: start;
+  display: inline-flex;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--on-strong);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.15rem;
+  transition: gap var(--d-base) var(--e-settle);
+}
+
+.link:hover {
+  gap: 0.85rem;
+}
+
+@media (max-width: 899px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .visual {
+    width: min(80%, 22rem);
+  }
+}

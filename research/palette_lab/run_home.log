@@ -1,0 +1,14 @@
+now          desktop plum  15.7  blue   6.5  cream  42.0  ox  2.5  other  33.3  | plum+blue  22.2% (of own colour  33.2%)  contrast fails 0
+now          mobile  plum  10.6  blue  11.4  cream  55.8  ox  0.7  other  21.5  | plum+blue  22.0% (of own colour  28.0%)  contrast fails 0
+A_plum_album desktop plum  57.9  blue  20.7  cream  11.6  ox  0.9  other   9.0  | plum+blue  78.6% (of own colour  86.3%)  contrast fails 0
+A_plum_album mobile  plum  40.6  blue  25.0  cream  23.3  ox  0.8  other  10.3  | plum+blue  65.6% (of own colour  73.1%)  contrast fails 0
+B_blue_album desktop plum  48.2  blue  30.6  cream  11.4  ox  0.9  other   8.9  | plum+blue  78.8% (of own colour  86.5%)  contrast fails 0
+B_blue_album mobile  plum  28.8  blue  37.2  cream  23.1  ox  0.8  other  10.1  | plum+blue  66.0% (of own colour  73.4%)  contrast fails 0
+C_dusk       desktop plum  45.0  blue  32.2  cream  11.4  ox  0.8  other  10.6  | plum+blue  77.2% (of own colour  86.4%)  contrast fails 0
+C_dusk       mobile  plum  34.6  blue  31.5  cream  22.9  ox  0.8  other  10.2  | plum+blue  66.1% (of own colour  73.6%)  contrast fails 0
+D_pictures_words desktop plum  45.1  blue  33.7  cream  11.4  ox  0.9  other   8.9  | plum+blue  78.8% (of own colour  86.5%)  contrast fails 0
+D_pictures_words mobile  plum  26.6  blue  39.4  cream  23.1  ox  0.8  other  10.0  | plum+blue  66.0% (of own colour  73.4%)  contrast fails 0
+E_plum_frame desktop plum  62.8  blue  15.7  cream  11.6  ox  0.9  other   9.0  | plum+blue  78.5% (of own colour  86.2%)  contrast fails 0
+E_plum_frame mobile  plum  45.0  blue  20.5  cream  23.4  ox  0.8  other  10.4  | plum+blue  65.5% (of own colour  73.0%)  contrast fails 0
+F_blue_frame desktop plum  28.7  blue  45.8  cream  11.3  ox  0.8  other  13.4  | plum+blue  74.5% (of own colour  86.0%)  contrast fails 0
+F_blue_frame mobile  plum  24.0  blue  42.3  cream  22.8  ox  0.6  other  10.3  | plum+blue  66.3% (of own colour  73.9%)  contrast fails 0

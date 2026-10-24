@@ -1,0 +1,53 @@
+FONT_GUIDE industry patterns (agent a2a), 2026-10-24
+Companion to a2a_industries.tsv. Bullets rest only on rows marked verified or partial.
+"census" = our own CSS census; for those rows the display/text split is inferred from the usual role of each family, not checked.
+Sources rarely state weights, case or sizes. Where a bullet mentions them, the source says so explicitly.
+No source in this set describes italics, so nothing here is claimed about italics.
+
+1. LUXURY AND FASHION
+- Geometric sans is the house voice of fashion websites: Jacquemus (Futura PT, census), ALAÏA (TT Norms only; AKQA calls it a geometric sans "with minimal, precise forms", 2026), Doodlage (Jost, census), Nicobar (Euclid Flex, census) and Céline's 2008-18 custom face, which was based on Semplicità.
+- Restraint itself reads as luxury. Balenciaga's 2017 site ran on plain Arial, Raw Mango pairs Assistant with D-DIN (census), and Mejuri (2025) uses only a grotesk (Syndicat Grotesk) plus a mono (Simon Mono). The neutrality is the point; nothing is ornamental.
+- Serifs appear as a heritage or couture signal rather than for body text: Nicobar's New Paris Text (Didone), Carolina Bucci's Cardinal and Portrait (Renaissance-rooted serifs over Neue Haas Unica, 2023), Irasva's TT Nooks (high-contrast display modern serif) and Gucci's archive custom serif. The Didone-fashion link also shows in editorial: Harper's Bazaar's NewParis.
+- At the top end the mark is custom and the web text face is licensed: Gucci (custom serif), Céline (custom family), Irasva (Landor & FITCH custom wordmark with TT Nooks), Mejuri (custom wordmark by Pauline Le Pape with Syndicat Grotesk).
+- Scale does the work instead of weight or decoration. Gucci's La Famiglia pushed its archive serif "through scale, line breaks and fragmentation", and ALAÏA's collection pages arrange bold claims "as visual statements". Text stays small and neutral.
+- India: the verified Indian fashion sites (Raw Mango, Doodlage, Nicobar) use free or off-the-shelf geometric and humanist sans. Nicobar's Didone text is the only serif. No source could be found for Sabyasachi or Péro.
+
+2. BEAUTY AND WELLNESS
+- The dominant pairing is a serif display face over a grotesk text face: Dior Fragrance & Beauty (Atacama old-style serif titles with Hellix body, c.2024), Jo Malone (custom Malone Serif with Lars Malone, on the website), Flamingo Estate (Ortica with Maison Neue, 2023), Kulfi Beauty (Flecha with Basis Grotesque), Namaskar Ayurved (Voyage sharp-serif display with Galano and Basis Grotesque, 2022) and Kama Ayurveda (Bell MT with Barlow and Open Sans, census).
+- Basis Grotesque is the recurring workhorse text face: Ceremonia, Kulfi Beauty, Namaskar Ayurved.
+- Brands positioned as modern or clinical go all-sans: Glossier (Apercu, 2016), Ceremonia (Nimbus Sans with Basis Grotesque), Bombay Perfumery (Assistant, census), FAE Beauty (Bw Gradual, picked for its "edgy" glyphs, with Mulish on the website). Phool uses Gotham Rounded (census), whose rounded geometric forms read soft and friendly.
+- A flared humanist sans can carry "apothecary" without a serif. Aesop pairs Suisse Int'l with Zapf Humanist, an Optima-style face (census).
+- Heritage houses invest in their own type: Jo Malone (bespoke Malone Serif plus a custom cut of Lars) and Dior (in-house move to Atacama and Hellix).
+- India: Ayurveda brands bring in sharp or transitional serifs for tradition (Namaskar Ayurved's Voyage; Kama's Bell MT, census, role inferred). Younger Indian brands go all-sans (FAE's Bw Gradual, Phool's Gotham Rounded). Forest Essentials is unverified: only a third-party logo guess exists.
+
+3. FOOD, DRINK, CRAFT AND LIFESTYLE
+- Soft, retro or "wonky" serifs are the signature display class: Bombay Sweet Shop (Fraunces), Fishwife (Recoleta), East Fork (Quincy), Blue Tokai (Cormorant), Diaspora Co. (P22 Mackinac), Graza (ITC Garamond Condensed with GT Alpina Typewriter). All census.
+- The text partner is usually a friendly geometric sans: Jost (Bombay Sweet Shop), Albert Sans (Fishwife), Circular (Brightland), Figtree (Diaspora Co.), Montserrat (Paper Boat), Gotham (ARAKU), Soleil (The Bombay Canteen), Galano Classic (East Fork), Brandon Grotesque (Blue Tokai). All census.
+- Warmth comes from rounded, handmade and nostalgic forms. Tramways Coffee, Kolkata, uses All Round Gothic for "rounded, slightly nostalgic letterforms" after the city's trams. Paper Boat uses Patrick Hand (census). Dosa Coffee's logo is a modified Rustica that nods to South Indian scripts without borrowing their letters.
+- Packaging-led brands use one bold display face against illustration: Little Lot (Mallory Narrow Black for product names), The Whole Truth (Obviously, census), Brightland (Advercase, census).
+- Mono and typewriter faces signal honest labelling and craft: The Whole Truth (IBM Plex Mono), Graza (GT Alpina Typewriter). Both census.
+- Indian brands plan for more than one script. Manam Chocolate mixes Latin faces (Heroine Pro, Infini, FS Meridian) with the Anek family for Indian scripts across packaging and signage.
+
+4. ARCHITECTURE AND INTERIORS
+- Practices favour single-family grotesk systems: Barrault Pressacco (Union, always "the same weight, the same size (9.2pt)"), Field Office Architecture (ABC Monument Grotesk on a grid), Nickl & Partner (Neue Frutiger), Geiger (Rothek), Feilden Fowles (custom Piloti).
+- Light weights and small sizes give a quiet, drawing-sheet tone: Feilden Fowles (Piloti is "a light sans-serif"), Edwards White (wordmark in Ionic No 5 Light), Barrault Pressacco (9.2pt throughout).
+- Interiors and home brands add a serif for warmth and materiality: In Common With (Stanley), Rebecca Atwood (Signifier), Hannun (Miller and LL Unica77, plus the script Mr Palker Dadson; roles not stated), De Bruyn Architecten (Tobias), Heath Ceramics (Century Schoolbook, census), Good Earth (custom display, census).
+- Wordmarks behave like a maker's mark, often in capitals or as a monogram: Conran and Partners (Styrene in uppercase with a custom C&P ampersand), Feilden Fowles (a bespoke FF ligature).
+- Type is drawn from the building or the archive: Frank Lloyd Wright Building Conservancy (Reply, linked to the typewriter Vogue Intertype that Wright favoured), Feilden Fowles (stone-carving cues in Piloti), Edwards White (a 19th-century Ionic news serif).
+- India: Good Earth (census) is the only verified example. Studio Mumbai and other Indian practices could not be researched before the search budget ran out.
+
+5. EDITORIAL AND MEDIA
+- Long-read and news sites use three voices: a display or headline face, a text serif, and a sans for small details. Examples are The Free Press (Galaxie Copernicus, Tiempos Text, American Grotesk), The Juggernaut (bespoke display, Sentient, Oli Grotesk), AFAR (Ayer, Cambon, Inter) and Vogue Business (Domaine Display, Georgia, GT Walsheim).
+- Newspapers commission proprietary serif or Egyptian families for authority: the FT (Financier, Klim, 2014 redesign), The Guardian (Guardian Egyptian headlines, Text Egyptian and Sans), Mid-Day (Sindelar for both text and headlines, with Benton Sans).
+- Fashion editorial keeps the Didone or high-contrast display: Harper's Bazaar (NewParis titling with SangBleu OG Serif text, 2021), Vogue Business (Domaine Display), Hole & Corner (GT Super, census).
+- Art and design titles go sans-only or sans-led and let the images lead: Flash Art (Studio Pro only, 2023), Apartamento (Futura PT only, census), It's Nice That (Labil Grotesk with Bradford, 2020).
+- South Asian identity sits in a custom display face while text stays international. The Juggernaut's bespoke face, by Bombay type designer Shiva Nallaperumal, draws on early-20th-century Indian sign painting and has a Tamil-like GG ligature. Sentient and Oli Grotesk do the reading and the details.
+- Text serifs are chosen for reading comfort: Tiempos Text, Sentient, SangBleu OG Serif, Sabon (Hole & Corner, census), Financier Text. Scroll and The Voice of Fashion are unverified.
+
+6. CULTURE, ARTS AND MUSEUMS
+- Institutions often own a bespoke face: KNMA Zubtrak (a stencil serif echoing jali apertures), the Philadelphia Museum of Art's Fairmount Serif (Ryan Bugden, 2025), MoMA Sans (Commercial Type, 2017) and TateNew.
+- Serif plus grotesk is the common pairing: PAMM (GT Alpina with Neue Haas Grotesk), The Huntington (Moulin, a flared glyphic face, with Messina Sans), Queensland Museum (Martina Plantijn with Metric), the Philadelphia Museum of Art (Fairmount Serif with Klarheit Grotesk at small sizes), Jhaveri Contemporary (Pirelli wordmark with MT Plantin). MAP Bengaluru reverses the order: Geometria sans primary, Leitura News serif secondary.
+- A neutral core can carry a rotating expressive layer. The Philadelphia Museum of Art keeps a curated display library (ITC Pioneer, Cooper Black, Purple Haze for Members, Megazoid for Kids). Factory International runs a ticker-tape system in Gräbenbach Mono, with Black-weight uppercase headlines, on the website and on the building.
+- Type references place and architecture: KNMA (jali-inspired stencil serif), Jhaveri Contemporary (inspired by Sudhakar Nadkarni's hand-rendered milk-kiosk lettering and post-independence sans; Pirelli chosen for its "irregularities, yet monoline structure"), Factory International (the same ticker on site and online), CSMVS (Baker Signet BT logotype with a Swis721 BT CSMVS mark, 2020).
+- Variable fonts support archive and dark-mode modes. Khoj Studios, Delhi, uses variable Roobert to separate past and present content and for the "thicker weights and looser leading needed for dark mode" (2021); Typewolf also lists Cooper.
+- India has the richest verified set of any category here: MAP, KNMA, CSMVS, Jhaveri Contemporary, Khoj. Serendipity Arts is unverified after three searches.

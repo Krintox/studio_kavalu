@@ -1,0 +1,119 @@
+{
+  "nivritti/sign-street": {
+    "w": 1740,
+    "h": 904,
+    "avg": "#544A47",
+    "hq": true
+  },
+  "nivritti/business-cards": {
+    "w": 770,
+    "h": 398,
+    "avg": "#0E1616"
+  },
+  "nivritti/packaging-box": {
+    "w": 290,
+    "h": 348,
+    "avg": "#C4B9A5"
+  },
+  "nivritti/cleanser-bottle": {
+    "w": 288,
+    "h": 348,
+    "avg": "#7D8EA9"
+  },
+  "nivritti/logo-orange": {
+    "w": 2013,
+    "h": 2400,
+    "avg": "#994215",
+    "hq": true
+  },
+  "nivritti/logo-navy": {
+    "w": 1998,
+    "h": 2400,
+    "avg": "#07253D",
+    "hq": true
+  },
+  "studio-anokhi/hero-wheel": {
+    "w": 1739,
+    "h": 899,
+    "avg": "#523A2F",
+    "hq": true
+  },
+  "studio-anokhi/wordmark-pattern": {
+    "w": 2400,
+    "h": 1323,
+    "avg": "#A75134",
+    "hq": true
+  },
+  "studio-anokhi/vases-wordmark": {
+    "w": 2016,
+    "h": 2400,
+    "avg": "#FAECCA",
+    "hq": true
+  },
+  "studio-anokhi/mark-orange": {
+    "w": 1980,
+    "h": 2400,
+    "avg": "#CE8A3F",
+    "hq": true
+  },
+  "studio-anokhi/mark-evolution": {
+    "w": 2400,
+    "h": 1218,
+    "avg": "#E5D7BD",
+    "hq": true
+  },
+  "studio-anokhi/word-search": {
+    "w": 220,
+    "h": 262,
+    "avg": "#422A1A"
+  },
+  "studio-anokhi/stationery-ochre": {
+    "w": 1980,
+    "h": 2400,
+    "avg": "#DCB58C",
+    "hq": true
+  },
+  "studio-anokhi/stationery-olive": {
+    "w": 2031,
+    "h": 2400,
+    "avg": "#888974",
+    "hq": true
+  },
+  "studio-anokhi/slow-making": {
+    "w": 1137,
+    "h": 1369,
+    "avg": "#734126",
+    "hq": true
+  },
+  "content/not-so-onam": {
+    "w": 164,
+    "h": 202,
+    "avg": "#A77D76"
+  },
+  "content/fillers-not-yet": {
+    "w": 322,
+    "h": 182,
+    "avg": "#3F1B0E"
+  },
+  "content/red-room-portrait": {
+    "w": 184,
+    "h": 244,
+    "avg": "#A32D02"
+  },
+  "content/red-saree-portrait": {
+    "w": 124,
+    "h": 222,
+    "avg": "#873932"
+  },
+  "studio-anokhi/collage-wheel": {
+    "w": 1119,
+    "h": 1397,
+    "avg": "#48362D",
+    "hq": true
+  },
+  "studio/ananya-portrait": {
+    "w": 174,
+    "h": 230,
+    "avg": "#887166"
+  }
+}

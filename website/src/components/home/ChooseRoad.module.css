@@ -1,0 +1,253 @@
+.wrap {
+  padding: var(--section-y) 0;
+}
+
+/* a sheet of writing paper laid on the cream page */
+.sheet {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background:
+    repeating-linear-gradient(transparent 0 calc(2.1rem - 1px), rgb(171 205 214 / 0.42) calc(2.1rem - 1px) 2.1rem) 0 1.4rem / 100% auto,
+    var(--paper);
+  box-shadow: var(--shadow-lift);
+  rotate: -0.4deg;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+/* a margin rule, as on a letter pad */
+.sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: clamp(1rem, 2.4vw, 2rem);
+  width: 1px;
+  background: rgb(164 32 31 / 0.25);
+}
+
+.title {
+  margin-top: 1rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-2);
+  line-height: 1;
+  letter-spacing: var(--track-d4);
+  color: var(--on-strong);
+}
+
+.title em {
+}
+
+.text {
+  margin-top: 1.25rem;
+  max-width: 28rem;
+  color: var(--on-soft);
+}
+
+.alt {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--on-soft);
+}
+
+.alt a {
+  color: var(--on-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.form {
+  display: grid;
+  gap: 1.4rem;
+  align-content: start;
+}
+
+.group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.legend {
+  padding: 0;
+  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--on-strong);
+}
+
+.chips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.chip {
+  position: relative;
+  display: block;
+}
+
+.chip:last-child {
+  grid-column: 1 / -1;
+}
+
+.chip input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chip span {
+  display: grid;
+  gap: 0.15rem;
+  height: 100%;
+  padding: 0.85rem 1rem 0.85rem 2.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--paper-note);
+  transition:
+    background-color var(--d-quick) ease,
+    border-color var(--d-quick) ease,
+    color var(--d-quick) ease;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.chip span::before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3px;
+  border: 1.5px solid var(--on-strong);
+  opacity: 0.55;
+}
+
+.chip b {
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1.15rem;
+  color: var(--on-strong);
+}
+
+.chip small {
+  font-size: 0.8125rem;
+  color: var(--on-soft);
+}
+
+.chip:hover span {
+  border-color: var(--on-strong);
+}
+
+.chip input:checked + span {
+  background: var(--plum);
+  border-color: var(--on-strong);
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.chip input:checked + span b,
+.chip input:checked + span small {
+  color: var(--cream);
+}
+
+.chip input:checked + span::before {
+  content: "✓";
+  display: grid;
+  place-items: center;
+  font-size: 0.72rem;
+  background: var(--cream);
+  color: var(--on-strong);
+  border-color: var(--cream);
+  opacity: 1;
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.chip input:focus-visible + span {
+  outline: 2px solid var(--on-strong);
+  outline-offset: 3px;
+}
+
+.go {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 3rem;
+  padding: 0 1.45rem;
+  border-radius: 999px;
+  background: var(--plum);
+  color: var(--cream);
+  font-size: 0.9375rem;
+  transition:
+    background-color var(--d-quick) ease,
+    gap var(--d-base) var(--e-settle),
+    transform var(--d-quick) var(--e-quick);
+}
+
+.go:hover {
+  background: var(--oxblood);
+  gap: 0.95rem;
+  /* an object: its own inks, on any ground */
+  --on: var(--cream);
+  --on-strong: var(--cream);
+  --on-soft: rgb(243 243 231 / 0.78);
+  --on-faint: rgb(243 243 231 / 0.62);
+  --line: rgb(243 243 231 / 0.16);
+  --line-strong: rgb(243 243 231 / 0.34);
+  --on-accent: var(--blue);
+}
+
+.go:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 899px) {
+  .sheet {
+    grid-template-columns: 1fr;
+    rotate: 0deg;
+  }
+}
+
+@media (max-width: 560px) {
+  .chips {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,164 @@
+/* Studio Kavalu design tokens (BRAND_DESIGN.md). The palette is the studio's existing one; do not
+   drift from it. Anything not here is not part of the system. */
+:root {
+  /* palette */
+  --cream: #f3f3e7;
+  --cream-2: #eceadb; /* a sheet laid on the cream */
+  --cream-3: #e3e0cd;
+  --oxblood: #491c17;
+  --plum: #390d26;
+  --deep: #270617;
+  --blue: #abcdd6;
+  --blue-2: #c9dfe5;
+  --rust: #51201b; /* the old site's rust tab; its case-study headings sample at #4f1f1b */
+  --ink: #241319; /* body text: plum-black, never pure black */
+  --ink-soft: #5d4a50;
+  --ink-faint: #6d5f62; /* the lightest ink allowed for text: 5.4:1 on cream, 4.6:1 on cream-3 (AA) */
+  --rule: rgb(57 13 38 / 0.16);
+  --rule-strong: rgb(57 13 38 / 0.32);
+  --blue-ink-soft: #50334a; /* soft inks on powder blue: 6.5:1 and 4.7:1 (AA) */
+  --blue-ink-faint: #5e4a5e;
+
+  /* paper and objects: real things keep their real colours (never pure white) */
+  --paper: #fbfaf2; /* bright paper: prints, stamps, cards, strips, polaroids */
+  --paper-note: #f8f5e8; /* writing paper: notes, ruled sheets, the letter, service cards */
+  --placeholder: #d8d1c1; /* behind an image while it loads */
+  --steel: #8d8a86; /* paper clips */
+  --steel-light: #d7d5d0;
+  --corner: #24131a; /* photo corners */
+  --error: #a4201f; /* form errors only */
+  --error-wash: #fbeee9;
+
+  /* type families (set by next/font in layout.tsx). Anek Kannada follows each Latin face, so Kannada
+     words and the ₹ sign inside any text set in Anek rather than a stray system font. */
+  --f-display: var(--font-grotesk), var(--font-kannada), "Helvetica Neue", Arial, sans-serif;
+  --f-text: var(--font-grotesk), var(--font-kannada), "Helvetica Neue", Arial, sans-serif;
+  --f-mono: var(--font-mono), var(--font-kannada), "Courier New", monospace;
+  --f-hand: var(--font-hand), var(--font-kannada), "Segoe Script", cursive;
+  --f-sign: var(--font-signature), var(--f-hand);
+  --f-kn: var(--font-kannada), "Noto Sans Kannada", sans-serif;
+
+  /* the display ladder (research/DESIGN_PRINCIPLES_v3.md §2.4): six steps about 1.4x apart at 1440 px and
+     1.25x on a phone, each linear from 360 to 1440 px and capped, and never growing more than 2.5x from
+     phone to desktop, so zoom always enlarges it (WCAG 1.4.4). D3-D5 sit 6% under the research's values:
+     Schibsted Grotesk's x-height is larger than the serif they were drawn for. Sizes at 1440: 160, 112,
+     79, 56, 38, 28. */
+  --d1: clamp(4rem, 2rem + 8.89vw, 10rem); /* the case-study title */
+  --d2: clamp(3.25rem, 2rem + 5.56vw, 7rem); /* page titles, a project spread's title */
+  --d3: clamp(2.35rem, 1.484rem + 3.85vw, 4.95rem); /* the home headline, the house view, the founder */
+  --d4: clamp(1.88rem, 1.332rem + 2.437vw, 3.525rem); /* section titles */
+  --d5: clamp(1.53rem, 1.257rem + 1.215vw, 2.35rem); /* headings on a sheet, quotes, sub-sections */
+  --h: clamp(1.375rem, 1.25rem + 0.556vw, 1.75rem); /* card titles */
+  --lead: clamp(1.125rem, 1rem + 0.37vw, 1.375rem); /* lead paragraphs */
+  /* Schibsted is set tighter as it grows (KAVALU_FONT_SHORTLIST.md §3), Medium for display, Semibold
+     below 40 px where Medium starts to look thin */
+  --track-d1: -0.04em;
+  --track-d2: -0.03em;
+  --track-d3: -0.025em;
+  --track-d4: -0.02em;
+  --track-d5: -0.01em;
+  --track-h: -0.005em;
+  --w-display: 500;
+  --w-display-small: 600;
+  /* the roles, named for what they set (each points at one step) */
+  --t-mega: var(--d1);
+  --t-spread: var(--d2);
+  --t-1: var(--d2);
+  --t-hero: var(--d3);
+  --t-manifesto: var(--d3);
+  --t-quote: var(--d4); /* the founder quote is its section's one display line */
+  --t-2: var(--d4);
+  --t-sheet: var(--d5);
+  --t-3: var(--d5);
+  --t-4: var(--h);
+  /* text and labels */
+  --t-body: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  --t-small: 0.875rem; /* interface text */
+  --t-micro: 0.75rem; /* eyebrows; typed sentences */
+  --t-label: 0.6875rem; /* labels */
+  --t-tiny: 0.625rem; /* small print on ephemera */
+
+  /* space (research/DESIGN_PRINCIPLES_v3.md §1.5): a short ladder, few steps far apart, fluid from a
+     phone (360) to a laptop (1440) and capped above. Inside a component: */
+  --s-3xs: 0.25rem; /* hairline gaps, icon to text */
+  --s-2xs: 0.5rem; /* label to value, chip padding */
+  --s-xs: 0.75rem; /* caption to print */
+  --s-s: clamp(1rem, 0.917rem + 0.37vw, 1.25rem); /* lines in a group; pill gaps */
+  --s-m: clamp(1.25rem, 1rem + 1.11vw, 2rem); /* eyebrow to title */
+  --s-l: clamp(2rem, 1.5rem + 2.22vw, 3.5rem); /* title to body; body to actions */
+  --s-xl: clamp(3rem, 2.167rem + 3.7vw, 5.5rem); /* between blocks inside a section */
+  --s-2xl: clamp(4rem, 2.667rem + 5.93vw, 8rem); /* a statement to its supporting copy */
+  /* between sections, tied to the screen's height as well as its width, so a short wide laptop never
+     gets a phone's gaps and a tall phone never gets a desktop's: 158 px and 246 px at 1440 x 900 */
+  --section-y: clamp(5rem, min(14vh, 9vw) + 2rem, 11rem); /* the top and bottom of every section */
+  --chapter-y: clamp(7rem, min(26vh, 16vw) + 1rem, 16rem); /* where the page changes chapter */
+  /* measures */
+  --measure-body: 62ch;
+  --measure-lead: 36ch;
+  --measure-caption: 44ch;
+
+  /* layout */
+  --gutter: clamp(1rem, 0.55rem + 2vw, 2.25rem);
+  --margin: clamp(1rem, -0.2rem + 4.2vw, 4.5rem);
+  --max: 1680px;
+  --nav-h: 4.75rem;
+
+  /* motion */
+  --e-settle: cubic-bezier(0.16, 1, 0.3, 1); /* arriving, lifting */
+  --e-travel: cubic-bezier(0.65, 0, 0.35, 1); /* moving between states, leaving */
+  --e-quick: cubic-bezier(0.2, 0.8, 0.2, 1); /* presses */
+  --d-quick: 180ms; /* press, colour */
+  --d-base: 420ms; /* lifts, nudges, small moves */
+  --d-move: 560ms; /* a sheet sliding in */
+  --d-slow: 900ms; /* paper arriving, images settling */
+
+  /* paper v3 (research/textures_v3): every ground is a sheet with its colour baked in, drawn for one
+     texture pixel per device pixel: the 1024 tile at 1024 px on 1x screens, 512 px on retina; phones
+     take the 512 tiles (calmer large clouds, a quarter of the bytes) */
+  --tex-cream: url("/textures/v3/paper-cream-1024.webp");
+  --tex-writing: url("/textures/v3/paper-writing-paper-1024.webp");
+  --tex-blue: url("/textures/v3/paper-powder-blue-1024.webp");
+  --tex-deep: url("/textures/v3/paper-deep-plum-1024.webp");
+  --tex-plum: url("/textures/v3/paper-plum-1024.webp");
+  --tex-oxblood: url("/textures/v3/paper-oxblood-1024.webp");
+  --tex-cardstock: url("/textures/v3/cardstock-overlay-1024.webp"); /* soft-light over any other colour */
+  --tex-neutral: url("/textures/v3/paper-neutral-light-1024.webp"); /* multiply over a lifted light colour */
+  --tex-size: 1024px;
+
+  /* paper */
+  --grain: url("/textures/paper-grain.png");
+  --grain-alpha: url("/textures/grain-alpha.png");
+  --worn: url("/textures/worn-light.png");
+  /* shadows are cast in deep plum on light surfaces and near-black on dark ones */
+  --shadow-paper: 0 1px 1px rgb(39 6 23 / 0.08), 0 6px 14px -6px rgb(39 6 23 / 0.22), 0 22px 40px -24px rgb(39 6 23 / 0.35);
+  --shadow-lift: 0 2px 2px rgb(39 6 23 / 0.08), 0 14px 26px -10px rgb(39 6 23 / 0.28), 0 40px 60px -30px rgb(39 6 23 / 0.4);
+  --shadow-desk: 0 2px 2px rgb(10 2 6 / 0.2), 0 22px 36px -18px rgb(10 2 6 / 0.55);
+  --shadow-stamp: drop-shadow(0 2px 2px rgb(39 6 23 / 0.12)) drop-shadow(0 14px 20px rgb(39 6 23 / 0.2));
+  --shadow-stamp-dark: drop-shadow(0 2px 2px rgb(10 2 6 / 0.25)) drop-shadow(0 14px 22px rgb(10 2 6 / 0.35));
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  :root {
+    --tex-size: 512px;
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    --tex-cream: url("/textures/v3/paper-cream-512.webp");
+    --tex-writing: url("/textures/v3/paper-writing-paper-512.webp");
+    --tex-blue: url("/textures/v3/paper-powder-blue-512.webp");
+    --tex-deep: url("/textures/v3/paper-deep-plum-512.webp");
+    --tex-plum: url("/textures/v3/paper-plum-512.webp");
+    --tex-oxblood: url("/textures/v3/paper-oxblood-512.webp");
+    --tex-cardstock: url("/textures/v3/cardstock-overlay-512.webp");
+    --tex-neutral: url("/textures/v3/paper-neutral-light-512.webp");
+    --tex-size: 512px;
+  }
+}
+
+@media (max-width: 639px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 639px) and (min-resolution: 1.5dppx) {
+  :root {
+    --tex-size: 256px;
+  }
+}

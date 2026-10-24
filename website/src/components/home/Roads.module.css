@@ -1,0 +1,217 @@
+.roads {
+  position: relative;
+  padding: var(--section-y) 0;
+}
+
+.head {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1.1rem;
+}
+
+.title {
+  font-family: var(--f-display);
+  font-weight: var(--w-display);
+  font-size: var(--t-2);
+  line-height: 1;
+  letter-spacing: var(--track-d4);
+  color: var(--on-strong);
+}
+
+.title em {
+}
+
+.lede {
+  max-width: 30rem;
+  color: var(--on-soft);
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 200;
+  margin-top: 2.5rem;
+  overflow: visible;
+}
+
+.map path {
+  fill: none;
+  stroke: var(--on-strong);
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+
+.map circle {
+  fill: var(--on-strong);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--gutter);
+  margin-top: -0.5rem;
+}
+
+.card {
+  --paper: var(--paper-note);
+  position: relative;
+  scroll-margin-top: 3rem; /* the house view links here (without smooth scrolling) */
+  rotate: var(--rest);
+  transition: rotate var(--d-base) var(--e-settle), translate var(--d-base) var(--e-settle);
+}
+
+.card:hover,
+.card:focus-within {
+  rotate: 0deg;
+  translate: 0 -8px;
+}
+
+.blue {
+  --paper: var(--blue-2);
+}
+
+.cardInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.4rem 1.35rem 1.25rem;
+  background:
+    linear-gradient(var(--line) 0 0) 0 4.1rem / 100% 1px no-repeat,
+    var(--paper);
+  box-shadow: var(--shadow-paper);
+  transition: box-shadow var(--d-base) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.card:hover .cardInner {
+  box-shadow: var(--shadow-lift);
+}
+
+/* the card a house-view choice led to straightens and lifts, so the eye lands on it */
+.card:target {
+  rotate: 0deg;
+}
+
+.card:target .cardInner {
+  box-shadow: var(--shadow-lift);
+}
+
+.choice {
+  font-family: var(--f-mono);
+  font-size: var(--t-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-soft);
+}
+
+.choice span {
+  color: var(--oxblood);
+  margin-right: 0.35rem;
+}
+
+.doodle {
+  position: absolute;
+  top: -1.6rem;
+  right: 0.9rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  color: var(--on-strong);
+  background: var(--paper);
+  border-radius: 50%;
+  padding: 0.55rem;
+  box-shadow: 0 0 0 1px var(--line), 0 6px 12px -6px rgb(39 6 23 / 0.35);
+  transition: rotate var(--d-base) var(--e-settle);
+  /* an object: its own inks, on any ground */
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
+  --on-accent: var(--oxblood);
+}
+
+.card:hover .doodle {
+  rotate: -10deg;
+}
+
+.cardTitle {
+  margin-top: 2.2rem;
+  font-family: var(--f-display);
+  font-weight: var(--w-display-small);
+  font-size: var(--t-4);
+  line-height: 1;
+  letter-spacing: var(--track-h);
+  color: var(--on-strong);
+}
+
+.line {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: var(--on);
+}
+
+.items {
+  margin-top: 1.1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--line-strong);
+  font-size: var(--t-small);
+  line-height: 1.75;
+  color: var(--on-soft);
+}
+
+.items li::before {
+  content: "—";
+  margin-right: 0.5rem;
+  color: var(--on-faint);
+}
+
+.start {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.4rem;
+  font-size: 0.9rem;
+  color: var(--on-strong);
+  transition: gap var(--d-base) var(--e-settle);
+}
+
+.start:hover {
+  gap: 0.85rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 1099px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 3.5rem;
+  }
+  .map {
+    display: none;
+  }
+  .cards {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    rotate: 0deg;
+  }
+}

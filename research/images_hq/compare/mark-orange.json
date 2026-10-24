@@ -1,0 +1,23 @@
+{
+  "rel": "studio-anokhi/mark-orange",
+  "method": "html",
+  "output": "research/images_hq/html/studio-anokhi/mark-orange.png",
+  "size": [
+    1980,
+    2400
+  ],
+  "src_size": [
+    216,
+    262
+  ],
+  "ssim": 0.8873,
+  "ssim_half": 0.9395,
+  "ncc": 0.9741,
+  "dE_mean": 3.95,
+  "dE_p95": 13.79,
+  "rgb_bias": [
+    0.9,
+    0.3,
+    -1.4
+  ]
+}

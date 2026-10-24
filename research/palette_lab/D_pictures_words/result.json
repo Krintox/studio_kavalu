@@ -1,0 +1,62 @@
+{
+ "iteration": "D_pictures_words",
+ "note": "pictures on plum, words on blue",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 45.1,
+    "blue": 33.7,
+    "cream": 11.4,
+    "oxblood": 0.9,
+    "other": 8.9
+   },
+   "plum_blue_all": 78.8,
+   "plum_blue_own": 86.5,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 45.1,
+      "blue": 33.7,
+      "cream": 11.4,
+      "oxblood": 0.9,
+      "other": 8.9
+     },
+     "screens": 13,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  },
+  "mobile": {
+   "share_all": {
+    "plum": 26.6,
+    "blue": 39.4,
+    "cream": 23.1,
+    "oxblood": 0.8,
+    "other": 10.0
+   },
+   "plum_blue_all": 66.0,
+   "plum_blue_own": 73.4,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 26.6,
+      "blue": 39.4,
+      "cream": 23.1,
+      "oxblood": 0.8,
+      "other": 10.0
+     },
+     "screens": 12,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

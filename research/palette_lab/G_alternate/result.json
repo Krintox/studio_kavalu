@@ -1,0 +1,152 @@
+{
+ "iteration": "G_alternate",
+ "note": "alternating pages: blue hero, plum spreads, blue statement, plum album, blue roads, plum founder, blue start",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 46.4,
+    "blue": 34.0,
+    "cream": 9.4,
+    "oxblood": 1.8,
+    "other": 8.4
+   },
+   "plum_blue_all": 80.4,
+   "plum_blue_own": 87.8,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 50.2,
+      "blue": 29.7,
+      "cream": 10.1,
+      "oxblood": 0.8,
+      "other": 9.2
+     },
+     "screens": 13,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/work": {
+     "share": {
+      "plum": 71.8,
+      "blue": 9.6,
+      "cream": 7.4,
+      "oxblood": 2.0,
+      "other": 9.3
+     },
+     "screens": 4,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/studio": {
+     "share": {
+      "plum": 43.0,
+      "blue": 43.6,
+      "cream": 8.8,
+      "oxblood": 0.9,
+      "other": 3.7
+     },
+     "screens": 8,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/work/studio-anokhi": {
+     "share": {
+      "plum": 32.7,
+      "blue": 42.3,
+      "cream": 9.7,
+      "oxblood": 4.1,
+      "other": 11.2
+     },
+     "screens": 9,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  },
+  "mobile": {
+   "share_all": {
+    "plum": 35.3,
+    "blue": 27.6,
+    "cream": 19.5,
+    "oxblood": 2.7,
+    "other": 15.0
+   },
+   "plum_blue_all": 62.9,
+   "plum_blue_own": 74.0,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 32.8,
+      "blue": 34.3,
+      "cream": 22.1,
+      "oxblood": 0.6,
+      "other": 10.1
+     },
+     "screens": 12,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/work": {
+     "share": {
+      "plum": 47.7,
+      "blue": 6.6,
+      "cream": 17.7,
+      "oxblood": 3.4,
+      "other": 24.7
+     },
+     "screens": 7,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/studio": {
+     "share": {
+      "plum": 41.8,
+      "blue": 35.7,
+      "cream": 14.7,
+      "oxblood": 0.4,
+      "other": 7.3
+     },
+     "screens": 10,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    },
+    "/work/studio-anokhi": {
+     "share": {
+      "plum": 24.2,
+      "blue": 26.4,
+      "cream": 21.9,
+      "oxblood": 6.4,
+      "other": 21.1
+     },
+     "screens": 11,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

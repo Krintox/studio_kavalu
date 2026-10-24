@@ -1,0 +1,62 @@
+{
+ "iteration": "E_plum_frame",
+ "note": "plum frame: deep and plum grounds, blue only for the manifesto and the start sheet",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 62.8,
+    "blue": 15.7,
+    "cream": 11.6,
+    "oxblood": 0.9,
+    "other": 9.0
+   },
+   "plum_blue_all": 78.5,
+   "plum_blue_own": 86.2,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 62.8,
+      "blue": 15.7,
+      "cream": 11.6,
+      "oxblood": 0.9,
+      "other": 9.0
+     },
+     "screens": 13,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  },
+  "mobile": {
+   "share_all": {
+    "plum": 45.0,
+    "blue": 20.5,
+    "cream": 23.4,
+    "oxblood": 0.8,
+    "other": 10.4
+   },
+   "plum_blue_all": 65.5,
+   "plum_blue_own": 73.0,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 45.0,
+      "blue": 20.5,
+      "cream": 23.4,
+      "oxblood": 0.8,
+      "other": 10.4
+     },
+     "screens": 12,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}

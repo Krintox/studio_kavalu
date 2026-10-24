@@ -1,0 +1,34 @@
+{
+ "iteration": "L2_blue_open",
+ "note": "blue hero, prints on cream spreads, blue house view, cream album, blue roads, cream founder",
+ "devices": {
+  "desktop": {
+   "share_all": {
+    "plum": 18.7,
+    "blue": 29.7,
+    "cream": 38.5,
+    "oxblood": 0.7,
+    "other": 12.4
+   },
+   "plum_blue_all": 48.4,
+   "plum_blue_own": 55.3,
+   "pages": {
+    "/": {
+     "share": {
+      "plum": 18.7,
+      "blue": 29.7,
+      "cream": 38.5,
+      "oxblood": 0.7,
+      "other": 12.4
+     },
+     "screens": 14,
+     "contrast": {
+      "checked": 0,
+      "failures": 0,
+      "bad": []
+     }
+    }
+   }
+  }
+ }
+}
