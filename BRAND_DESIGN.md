@@ -555,9 +555,14 @@ be dragged and lean without its rest angle drifting.
 3. **Captions** are typed strips below the print: one sentence, which types on as it arrives.
 4. **Proportions:** stamps 4:5, polaroids square, prints as shot. Never crop a logo or a face.
 5. **Portraits of Ananya** use the plum duotone.
-6. **Placeholders.** The current images are low-resolution stand-ins cut from the old site
-   (`placeholder: true`). When Ananya's originals arrive, they replace them in `public/work/` with
-   the same names. The full-bleed cover reveal then switches on by itself.
+6. **High quality, and the same picture.** The site's images began as low-resolution crops of the old
+   site. Each is being regenerated at high quality as **the same image, never a different one**
+   (brief 3): ChatGPT image generation, or an HTML recreation for flat graphics. Each is checked against
+   its source, downscaled to the source's size, for framing, text, logos and faces
+   (`research/images_hq/MANIFEST.md`). An output that changes anything is rejected; the Nivritti bottle
+   was rejected for changing its label. Faithful ones are marked `hq` in `content/image-meta.json`,
+   which turns off `placeholder`; for a cover, the full-bleed reveal then switches on by itself.
+   Ananya's originals, when they arrive, replace either kind in `public/work/` under the same names.
 7. **Alt text** describes what is in the picture and why it matters ("The Studio Anokhi mark on an
    ochre card"), never "image of".
 8. **Art direction for new shoots:** warm light, real materials (clay, paper, fabric), hands at work, the
@@ -666,8 +671,9 @@ these is cluttered, however it looks on its own:
    a stamp, a postmark, a fork dot.
 2. **Once.** Arrivals play once, the first time something comes into view. Reading back up doesn't
    replay them.
-3. **One moving thing per screen.** At most one thing moves on its own (the hero flip-book), and it can
-   be paused. Nothing else loops (WCAG 2.2.2).
+3. **One moving thing per screen.** At most one thing moves on its own, and it can be paused. The one
+   exception is the hero, where the flip-book has a faint reel behind it (§9.4b): the reel is at 9%
+   opacity, changes every 3.4 s, and the same pause button stops both (WCAG 2.2.2).
 4. **Scroll is the reader's.** Scenes follow the scroll (scrubbed); the page never takes the scroll away.
    Lenis smooths the wheel, touch stays native, and there is at most one pinned scene per page.
 5. **Felt, not watched.** If a motion asks to be noticed, it is too much.
@@ -709,7 +715,7 @@ This is the same split Carbon calls productive (quick, settle) and expressive (t
 | **Morph** | A stamp becomes the case-study cover between pages | Work → case study, next road |
 | **Develop** | A picture printed in plum duotone comes up into its own colours, once, gradually | The intro's last frame |
 | **Point** | A typed paper tag lands beside the pointer, straightening from −4° to 0° (300 ms, settle) | The cursor's "OPEN →" and "← DRAG →" |
-| **Drift (parallax)** | Paper and pictures only, scrubbed to the scroll: collage pieces rise at their own depth as their section leaves (`data-depth` 0.15–0.7, up to 84 px); pictures travel ±4% inside their mounts. It reverses exactly on the way back, and nothing leaves the collage | Hero, case-study prints (`lib/parallax.ts`) |
+| **Drift (parallax)** | The depth system (`lib/parallax.ts`, brief 6). Scrubbed to the scroll with a 0.8 s lag on top of Lenis, transforms only, every mover on its own compositor layer (on a phone only while it is on screen), off with reduced motion. Below 900 px every distance is halved, the album keeps still (a phone's strip shows two stamps at a time) and one-column rows don't stagger. **Media:** a picture sits 1.14–1.16× its window and travels 6–7% through it. **Layer:** a block drifts against the scroll at its own depth: the house view 26 px, the roads' heading 28, the letter 34, the founder's poster 64 and her quote 18. **Stagger:** neighbours in a row move at alternating speeds: the roads' four cards (46 px), the album's stamps (22), the work grid (40). **Spreads:** while a spread holds the screen its prints drift 36–130 px at their own depths and its words 34 px. **Footer:** the folders are laid down one on another (26 px apart, closing as the footer comes up) | Every page |
 
 ### 9.4 Rules for each kind
 
@@ -721,30 +727,51 @@ This is the same split Carbon calls productive (quick, settle) and expressive (t
 - **Page transitions** (View Transitions): the old page lifts away in 200 ms, the new one settles in over
   560 ms after 140 ms, the header never moves, and a stamp on both pages morphs (620 ms).
 
-### 9.4b The intro (first visit)
+### 9.4b The intro (every load of the home page)
 
 A studio ident before the hero, modelled on nvmbr.in's montage (recorded frame by frame in
-`research/motion_frames/intros/`). It is never a loading screen; it starts only once its pictures are
-decoded (at most 1.6 s).
+`research/motion_frames/intros/`), and since brief 6 on the landing page's own cream paper, sinking into
+the hero instead of lifting away. It is never a loading screen; it starts once its pictures are decoded
+(at most 1.6 s).
 
 | Beat | What happens | Timing |
 |---|---|---|
-| Reel | Her project pictures flash full-screen on deep-plum paper, hard cuts that accelerate, printed in plum duotone (`#kv-reel`) | 14 cuts: 240 → 50 ms (about 1.5 s) |
-| Zoom out | The last picture closes in to a 4:5 stamp window (`expo.inOut`) and develops from the duotone into its own colours; the perforated paper edge lands round it | 0.78 s |
-| Name | STUDIO / KAVALU (her lettering, powder blue) rises letter by letter under the stamp, then "ಸ್ಟುಡಿಯೋ ಕವಲು · by Ananya" | 0.62 s, 30 ms stagger |
-| Lift | The sheet lifts (`travel`) onto the hero; the hero's flip-book opens on the same picture | 0.78 s |
+| Reel | Her project pictures flash full-screen on cream paper, hard cuts that accelerate, printed in plum duotone (`#kv-reel`) at half strength | 14 cuts: 240 → 50 ms (about 1.5 s) |
+| Develop | The last picture develops into its own colours as the view pulls back (scale 1.12 → 1, `expo.out`) | 1.1 s |
+| Sink | The whole reel fades down until it is only a faint ground (opacity 0.5 → 0.09) | 0.85 s |
+| Name | STUDIO / KAVALU (her lettering, plum) rises letter by letter where the headline will be, then "ಸ್ಟುಡಿಯೋ ಕವಲು · by Ananya" | 0.62 s, 30 ms stagger |
+| Hand-over | The sheet fades out over the hero. The hero's own faint reel is already showing the same picture underneath, so the intro sinks into the hero's background; the headline rises and the album gathers round its stamp | 0.75 s |
 
 Rules:
-- First visit per session only.
-- Any click, key, wheel or touch skips straight to the lift.
-- Never under reduced motion, and never when the browser asks to save data (`navigator.connection.saveData`).
+- Every full load of the home page, refresh included (brief 6); never when moving between pages inside
+  the site, never with reduced motion or Save-Data, never with `?nointro`.
+- Any click, key, wheel or touch fast-forwards to the hand-over.
 - The reel uses only her own work, the same pictures the site shows.
-- **Flash-safe by construction (WCAG 2.3.1).** Cuts this fast in full colour would count as flashes:
-  more than three a second, over far more than the 341 × 256 px a "general flash" may cover. So every cut is
-  printed in a plum duotone held between deep plum (relative luminance 0.006) and `#7A4A5E` (0.098). No
-  change between two frames can reach the 10% that defines a flash, at any size or speed, and nothing in
-  it is a saturated red. Only the last picture develops into colour, once and gradually. Check a
-  recording in PEAT (the Trace Center's free flash analyser) whenever the reel changes.
+- **Flash-safe by construction (WCAG 2.3.1).** Cuts this fast in full colour would count as flashes. Every
+  cut is printed in a plum duotone held between relative luminance 0.006 and 0.098, at half strength over
+  cream, so no change between two frames comes near the 10% that defines a flash, at any size or speed,
+  and nothing in it is a saturated red. Only the last picture develops into colour, once and gradually.
+  Measured on a frame-by-frame recording; check one in PEAT whenever the reel changes.
+
+**The hero's faint reel.** Behind the hero, her work cross-fades at 9% opacity every 3.4 s with a slow
+push-in (`Hero.module.css .reel`). It is the intro's afterglow, so it keeps its own slow time rather than
+the flip-book's, and the flip-book's pause button stops it too (WCAG 2.2.2). Static under reduced motion.
+
+### 9.4c The hero's scroll scene (desktop)
+
+Brief 6 brought back the first version's scene, with brief 3's fix: it is scrubbed to the scroll, so it
+plays backwards exactly and the whole collage scatters back when the reader scrolls up.
+
+| Scroll (pinned for 1.5 screens, scrub 1 s) | What happens |
+|---|---|
+| 0–0.26 | The headline, text and buttons lift away; the faint reel fades; the centre stamp straightens |
+| 0.03–0.45 | Every picture on the page glides into the centre stamp, shrinking to 42% and straightening as it tucks in (`power3.inOut`, 12 ms apart), then fades behind it |
+| 0.46–0.84 | The stamp's picture takes over from the stamp and opens to the whole screen (the flip-book first snaps to the first project's cover, a full-resolution picture) |
+| 0.80–1 | The picture dissolves into the powder blue of the first project spread, out of which the spread deals its prints |
+
+Each piece has three layers (arrival, scene, resting tilt), so nothing the scene does fights the
+arrival or the paper's angle, and a refresh mid-scene still measures from rest. Phones have no pin: the
+pieces drift at their own depths instead.
 
 ### 9.5 Reduced motion
 
@@ -763,7 +790,29 @@ Nothing is hidden waiting for motion that won't come. This is checked on every p
 ### 9.6 Performance
 
 - Animate `transform`, `opacity` and `clip-path` only, never layout properties.
-- Scroll work runs on one loop (GSAP ticker drives Lenis and ScrollTrigger). Lenis `lerp` 0.09: a little glide, never floaty.
+- Scroll work runs on one loop (GSAP ticker drives Lenis and ScrollTrigger). Lenis `lerp` 0.085: a long,
+  even glide that every scrubbed scene sits on (never below 0.08).
+- Everything the scroll moves sits on its own compositor layer, so paper with masks, shadows and
+  textures is drawn once and only moved; the spreads' sheet and shade too, or the slide-over repaints the
+  whole screen every frame. But every layer is weighed again whenever anything repaints, so on a phone a
+  mover is promoted only while it is on screen (`live()` in `lib/parallax.ts`). A desktop keeps them:
+  promoting a batch as it came on screen was itself a hitch there.
+- Nothing is measured on the first frame of a scroll. Scroll tweens render their starting point the
+  moment they are made, and the hero scene is played to its end and back whenever the page is measured
+  (it had cost 30 ms in one frame on the first scroll).
+- No layout reads per frame: the nav hit-tests the ground under it only while it is showing.
+- The hero's pictures re-render only when their own props change (`memo`); the flip-book ticks every
+  420 ms.
+- **Measured, not eyeballed.** A production build (`next start -p 3211`, cache warmed with
+  `research/tools/warm.py`), traced by Chrome during a steady scroll (`research/tools/trace_scroll.py`,
+  which splits the main thread's work by kind and by section) and timed frame by frame
+  (`research/tools/smooth_check.py`, with a contact sheet). The dev server's numbers are inflated (a
+  first visit compiles the page; React's development build renders twice), so never judge on it.
+  Home page, 1440 × 900 at 144 Hz: 0.8% of frames over 20 ms, every section under 10.2 ms of main-thread
+  work per frame. Phone, 390 × 844, finger drag, processor slowed 4× (`KV_CPU=4 KV_TOUCH=1 … mobile`):
+  frames over 20 ms down from 66% to 29%; per section album 46 → 11 ms, hero 37 → 20, house view
+  31 → 19, roads 26 → 9. Touch scrolling itself is the browser's own, off the main thread, so a slow
+  phone still scrolls smoothly; only the depth updates less often.
 - At most one pinned scene per page and no WebGL.
 - The flip-book stops off-screen, during the scroll scene, under the drawer, and on hover or focus.
 
@@ -788,9 +837,9 @@ Don't add:
 - custom cursors, magnetic links on everything, images floating under the cursor;
 - scroll-jacking, snap sections, horizontal pinned galleries;
 - elastic or bouncy controls;
-- preloaders that hold back the page. The intro is first visit only, at most 3.3 s to a usable hero,
-  skippable by any input, drawn over a hero that is already painted, and absent with reduced motion or
-  Save-Data;
+- preloaders that hold back the page. The intro (every load of the home page, at the client's request)
+  is at most about 3.5 s to a usable hero, fast-forwarded by any input, drawn over a hero that is already
+  painted, and absent with reduced motion or Save-Data;
 - blur-everything, glass, liquid or RGB-split effects.
 
 ---

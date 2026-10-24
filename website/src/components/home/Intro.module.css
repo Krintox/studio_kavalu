@@ -1,40 +1,35 @@
+/* The intro sheet is the landing page's own cream paper (brief 6), so it can sink into the hero. */
 .intro {
   position: fixed;
   inset: 0;
   z-index: 200;
   display: none;
-  background-color: var(--deep);
-  clip-path: inset(0% 0% 0% 0%);
-  background-image: var(--tex-deep);
+  background-color: var(--cream);
+  background-image: var(--tex-cream);
   background-size: var(--tex-size);
   cursor: pointer;
   overflow: hidden;
   /* an object: its own inks, on any ground */
-  --on: var(--cream);
-  --on-strong: var(--cream);
-  --on-soft: rgb(243 243 231 / 0.78);
-  --on-faint: rgb(243 243 231 / 0.62);
-  --line: rgb(243 243 231 / 0.16);
-  --line-strong: rgb(243 243 231 / 0.34);
-  --on-accent: var(--blue);
+  --on: var(--ink);
+  --on-strong: var(--plum);
+  --on-soft: var(--ink-soft);
+  --on-faint: var(--ink-faint);
+  --line: var(--rule);
+  --line-strong: var(--rule-strong);
 }
 
-/* only when the head script decided this visit gets the intro */
+/* only when the head script decided this load gets the intro */
 :global(html[data-intro="play"]) .intro {
   display: block;
 }
 
-.inner {
-  position: absolute;
-  inset: 0;
-}
-
 /* ---------- the reel ---------- */
 
+/* printed on the cream at half strength while it cuts, then sunk to the hero's faint ground */
 .film {
   position: absolute;
   inset: 0;
-  clip-path: inset(0px 0px 0px 0px round 0px);
+  opacity: 0.5;
 }
 
 .frame {
@@ -42,7 +37,6 @@
   inset: 0;
   visibility: hidden;
   opacity: 0;
-  background: var(--deep);
 }
 
 .frame img {
@@ -54,61 +48,17 @@
   filter: url("#kv-reel");
 }
 
-/* ---------- the stamp it lands as ---------- */
-
-.stamp {
-  --r: 6px;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  filter: var(--shadow-stamp-dark);
-  rotate: -1.5deg;
-}
-
-.stamp::before {
-  content: "";
-  position: absolute;
-  inset: -14px -14px -14px -14px;
-  background: var(--paper);
-  -webkit-mask:
-    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) / calc(3 * var(--r)) calc(3 * var(--r)),
-    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
-  mask:
-    radial-gradient(var(--r), #0000 97%, #000) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) / calc(3 * var(--r)) calc(3 * var(--r)),
-    linear-gradient(#000 0 0) no-repeat 50% / calc(100% - 3 * var(--r)) calc(100% - 3 * var(--r));
-  /* an object: its own inks, on any ground */
-  --on: var(--ink);
-  --on-strong: var(--plum);
-  --on-soft: var(--ink-soft);
-  --on-faint: var(--ink-faint);
-  --line: var(--rule);
-  --line-strong: var(--rule-strong);
-  --on-accent: var(--oxblood);
-}
-
-.stampWindow {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  background: var(--placeholder);
-}
-
-.stampWindow img {
-  object-fit: cover;
-}
-
-/* ---------- her name ---------- */
+/* ---------- her name, where the headline will be ---------- */
 
 .name {
   position: absolute;
-  left: 50%;
-  /* just under the stamp: it is centred at 40vh and min(36vh, 62vw) tall */
-  top: calc(40vh + min(18vh, 31vw) + clamp(1.8rem, 4vh, 3rem));
-  width: min(44vw, 34rem);
-  translate: -50% 0;
+  left: var(--margin);
+  top: 50%;
+  width: min(40vw, 36rem);
+  translate: 0 -50%;
   display: grid;
   gap: 0.6rem;
-  color: var(--blue);
+  color: var(--plum);
 }
 
 /* STUDIO is set 2.66% narrower so both words share one cap height, as in her lockup */
@@ -129,10 +79,10 @@
 }
 
 .sub {
-  margin-top: 0.5rem;
-  text-align: center;
+  margin-top: 0.6rem;
   font-size: var(--t-small);
-  color: rgb(243 243 231 / 0.72);
+  font-weight: 500;
+  color: var(--ink-soft);
   visibility: hidden;
   opacity: 0;
 }
@@ -149,11 +99,12 @@
   font-weight: 500;
   font-size: 0.8125rem;
   letter-spacing: 0.01em;
-  color: rgb(243 243 231 / 0.45);
+  color: var(--ink-soft);
 }
 
 @media (max-width: 639px) {
   .name {
+    top: 42%;
     width: 74vw;
   }
 }

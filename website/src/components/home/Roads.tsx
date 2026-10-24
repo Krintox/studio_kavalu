@@ -5,6 +5,7 @@ import { Doodle } from "@/components/Doodles";
 import { StartLink } from "@/components/onboarding/OnboardingContext";
 import { services } from "@/content/site";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { layerParallax, staggerParallax } from "@/lib/parallax";
 import { ground, sheet } from "@/lib/surfaces";
 import styles from "./Roads.module.css";
 
@@ -43,6 +44,9 @@ export function Roads() {
         ease: "settle",
         scrollTrigger: { trigger: "[data-cards]", start: "top 90%" },
       });
+      const q = gsap.utils.selector(root);
+      layerParallax(q("[data-roads-head]")[0], 28);
+      staggerParallax(q("[data-card-inner]") as HTMLElement[], 46, q("[data-cards]")[0]);
     },
     { scope: root },
   );
@@ -50,7 +54,7 @@ export function Roads() {
   return (
     <section ref={root} className={styles.roads} {...ground("roads")} aria-labelledby="roads-title">
       <div className="container" {...sheet("roads")}>
-        <header className={styles.head}>
+        <header className={styles.head} data-roads-head>
           <p className="eyebrow">What we do</p>
           <h2 id="roads-title" className={styles.title}>
             Four choices, <em>four roads.</em>
@@ -77,7 +81,7 @@ export function Roads() {
               id={`road-${s.key}`}
               data-card
             >
-              <div className={styles.cardInner}>
+              <div className={styles.cardInner} data-card-inner>
                 <p className={styles.choice}>
                   <span>{String(k + 1).padStart(2, "0")}</span> {s.choice}
                 </p>

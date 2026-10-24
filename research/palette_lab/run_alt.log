@@ -1,6 +1,0 @@
-  ! only 4 screens on /work (desktop): measurement suspect
-G_alternate  desktop plum  46.4  blue  34.0  cream   9.4  ox  1.8  other   8.4  | plum+blue  80.4% (of own colour  87.8%)  contrast fails 0
-G_alternate  mobile  plum  35.3  blue  27.6  cream  19.5  ox  2.7  other  15.0  | plum+blue  62.9% (of own colour  74.0%)  contrast fails 0
-  ! only 4 screens on /work (desktop): measurement suspect
-H_alternate_plum desktop plum  51.4  blue  28.8  cream   9.5  ox  1.8  other   8.4  | plum+blue  80.2% (of own colour  87.6%)  contrast fails 0
-H_alternate_plum mobile  plum  39.3  blue  23.3  cream  19.6  ox  2.7  other  15.0  | plum+blue  62.6% (of own colour  73.7%)  contrast fails 0

@@ -51,11 +51,16 @@ any earlier decision. When a rule here conflicts with something already built, t
   inspiration for the look, not material to publish (they are other people's work).
 - She will share a **list of projects with notes**, **reference videos** and a **folder of scrapbook
   references** (still pending — use them when they arrive).
-- **The hero collage keeps all its photos at all times** (brief 3). Scrolling must never reduce it to
-  one photo, and scrolling back must show the same collage.
+- **The hero's scroll scene** (brief 6, refining brief 3): as you scroll, **all the hero's images merge
+  into the centre image, it expands, and the next section appears from it**, as the first version did.
+  **Scrolling back up must scatter every image back** to the full collage, never leave just one.
+  It must be really smooth.
 - **Images must be high quality** (brief 3): regenerate **the same images** at high quality, never
   different ones, with ChatGPT image generation in the persistent browser (`/converse-with-gpt`). If the
   GPT limit is reached, **recreate the image in HTML/code and screenshot it**.
+- **"Right now the images are really bad"** (brief 6): download every image already generated in the
+  ChatGPT chats (6–7 of them), generate more with ChatGPT **or Gemini**, and replace the site's images
+  with good, high-quality ones.
 
 ### 1.4 Motion
 - **Good, subtle and smooth scroll animations**: zoom in, zoom out, expand, and any other animations that
@@ -74,12 +79,20 @@ any earlier decision. When a rule here conflicts with something already built, t
   - they zoom out;
   - the name appears;
   - then the current hero, which stays.
+- **The intro, refined** (brief 6):
+  - it plays **every time the home page loads, refresh included** (not only the first visit);
+  - its colours **match the landing page** (not plum);
+  - the transition into the hero must be smooth: the reel **becomes less opaque and merges into the
+    background**, staying on as **a very light, low-opacity moving background of the hero**; the hero
+    itself stays as it is.
 - **"The house view"** ("A brand is a set of choices; what it says, how it looks, where it shows up, who
   it speaks to."): remove the current way of representing it, research how to represent it properly,
   and give it good, subtle motion design ("not some slop"). (brief 3)
 - **Everything smooth and subtle**, the scroll and everything else; **subtle smooth transition and
   scroll animations only**. (brief 3)
 - **Parallax** as well. (brief 3)
+- **Proper, professional, really smooth scroll and parallax effects** across the site, "not just some
+  formality" (brief 6).
 - **Cursor design**: a designed cursor in general and on hover, and **the cursor changes on specific
   sections**. (brief 3)
 
@@ -344,6 +357,44 @@ Agents never edit `website/`. They write to `research/`, and their results are i
       lockup and the Start pill). Re-swept in Q23 after the font, texture and spacing work.
 - [ ] **Q23 — Docs and final checks**: `BRAND_DESIGN.md`, rules and sources updated; type check, build and
       browser checks; report back.
+      → So far (24 Oct): BRAND_DESIGN 2.0 and the rules are up to date with briefs 3–5. Type check
+      passes. Every page at 9 widths (320–1920 px) has no overflow and nothing past the edge. Reduced
+      motion: no intro, no smooth scroll, nothing left hidden, on all four pages. Contrast: 0 AA failures
+      on every page at desktop and phone (palette lab). Still to run: the production build, which needs
+      about 2 GB of free memory (the machine had 1.4 GB), and a last pass once Q21's images are in.
+- [x] **Q26 — The hero's scroll scene back** (brief 6): the images merge into the centre image, it
+      expands, the next section appears from it; scrolling back re-scatters every image; really smooth.
+      → Done: rebuilt from the first version (recovered from the session transcript): pinned 1.5 screens,
+      scrubbed (1 s), the pictures glide into the centre stamp, its picture opens to full screen and
+      dissolves into the first spread's blue, which deals its prints out of it. Recorded down and back up:
+      every piece returns to its place and the flip-book resumes (`working-shots/v3/hero_scene/`).
+- [x] **Q27 — The intro, refined** (brief 6): every load of the home page; the landing page's colours;
+      the reel dims into a very light moving background of the hero; a smooth hand-over.
+      → Done: plays on every load of `/` (refresh included); cream paper; flash-safe duotone cuts at half
+      strength; the last picture develops; the reel sinks to 9% while her name rises in plum; the sheet
+      fades into the hero, whose own faint reel shows the same picture underneath (no wipe). Recorded
+      frame by frame (`motion_frames/intros/kavalu-v4-cream/`). BRAND_DESIGN §9.4b.
+- [x] **Q28 — Scroll and parallax, properly** (brief 6): a real, professional, smooth depth system across
+      every page, verified frame by frame.
+      → Done: `lib/parallax.ts` (media, layer, stagger), applied to the spreads, the house view, the album,
+      the roads, the founder, the letter, the footer folders, the work grid and the case studies; Lenis
+      0.085 with a 0.8 s scrub on every layer. Measured on the production build with Chrome traces:
+      0.8% of frames over 20 ms on desktop; on a phone with its processor slowed 4×, 29% (from 66%).
+      BRAND_DESIGN §9.3, §9.6.
+- [ ] **Q29 — Images, round 2** (brief 6; agent): download every image from the ChatGPT chats, generate the
+      rest with Gemini (and ChatGPT when its quota returns), check each against its source, then replace.
+      → Paused at the user's request (24 Oct). The chats held nothing new (5 project chats of 200). Now
+      in the site (19 of 21 pictures high quality; the old files in research/images_hq/originals/):
+      cleanser-bottle, business-cards and packaging-box, checked by eye against their sources; and, at
+      the user's choice, four with parts redrawn by AI: red-room-portrait (passed the check),
+      not-so-onam and red-saree-portrait (faces rebuilt from about 10 px, so they may not look like the
+      real people; the not-so-onam title sits a little right) and word-search (letters re-set in Arial).
+      Swap all four for Ananya's originals before launch. Not done: fillers-not-yet (Gemini refused a
+      public figure; ChatGPT's quota returns 25 Oct 13:14 IST) and the Ananya portrait.
+      images_hq/MANIFEST.md is out of date for round 2.
+      Gotcha: Next's image optimiser keeps its resizes for 4 hours, so a replaced picture still looked
+      old. `research/tools/purge_image_cache.py` drops only the resizes made from the replaced files
+      (matched by source size and time), safe while the dev server runs; run it after every swap.
 - [x] **Q25 — Less plum** (brief 5): plum about 20%, cream and blue 50–60%, the rest for the remaining
       colours; the hero and the first sections light. Render arrangements in the real site, measure them
       at desktop and mobile, choose, rebuild the grounds, update BRAND_DESIGN §4.5.
@@ -399,6 +450,16 @@ Agents never edit `website/`. They write to `research/`, and their results are i
   cards land. The footer wordmark "was not working": a frame recording showed its scrubbed arrival
   finished while only the mark's top edge was on screen. It now plays once, by itself, when the mark is
   well in view (`research/working-shots/v3/footer_watch/`).
+- 2026-10-24 (v3, brief 6 smoothness): judged on Chrome traces of the production build, not on the dev
+  server, whose numbers are inflated (a first visit compiles; React's development build renders twice) and
+  noisy (the persistent browser's other tabs share its processes). The traces named six causes, all fixed:
+  the spreads' sheet and shade repainted the whole screen every frame of a slide-over; the nav hit-tested
+  the page every frame; the hero re-rendered every picture on each flip-book tick; the hero scene and the
+  parallax measured the page on the first frame of a scroll (30 ms in one frame); about 220 permanent
+  layers made every re-layering slow on a phone; and a phone moved all 21 album stamps for depth no one
+  could see. Tools: `research/tools/trace_scroll.py`, `smooth_check.py`, `warm.py` (BRAND_DESIGN §9.6).
+  Gotcha: `will-change` is not free. Each layer is weighed again whenever anything repaints, so add one
+  only to what moves, and on a phone only while it is on screen.
 ---
 
 ## Appendix A — the client's first brief (verbatim)
@@ -499,3 +560,25 @@ Agents never edit `website/`. They write to `research/`, and their results are i
 > changed accounts. also the current website has too much plum. make the proprotion, 20% plum, 50-60%
 > cream and blue and the remaining rest. also make sure the hero and first sections does not have that
 > much plum.
+
+---
+
+## Appendix F — the client's sixth brief (verbatim, 24 Oct)
+
+> in the first section, it used to be like -> as you scroll, the all the images would merge to a center
+> image and then expand and then the next section would appear from it as we scroll. make ut like that
+> the one you did initially. but keep the fixes i.e. when scrolled back up all the images should be
+> scattered and not just one. also the smooth effect should be really smooth. right now the images are
+> also really bad. fix those. download from the gpt chats (if not already done). and ask it to generate
+> some more as well(if not already done). or you can ask gemini as well, it can also generate images(if
+> not already done). take good high quality images, download them adn replace them in the website(if not
+> already done). there are 6-7 chats already in chatgpt that has the images generated. download them(if
+> not already done). also make proper parallax and scrol effects, it should be really smooth. not just
+> some formality task or shit. do it properly and it should be really good and professional not just
+> some scroll effect. proper professional smooth, scroll and parallax effect. also when the site is
+> loaded for the first then only the video and bit by bit 1ms apart image series is being shown, the rest
+> of the time even if I refresh only the hero section comes. also match the colours of the initial video
+> like right now it is plum make it the same as landing page. also the that transition is also not that
+> smooth. to make it smooth do one thing, make it less opaque and then merge it into the BG make it a low
+> opaque background for the hero section. keep the current hero section with the above changes I
+> mentioned but with the video as bg but very light transparecy.

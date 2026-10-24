@@ -1,0 +1,25 @@
+# Made while building and checking the site. These stay on disk as working evidence; git keeps the site,
+# the docs and the tools. (website/.gitignore covers node_modules, .next and env files.)
+# Anything below that was committed earlier stays tracked until it is untracked with
+#   git rm -r --cached <path>     (the files stay on disk)
+
+# logs and Python caches
+*.log
+__pycache__/
+*.pyc
+
+# screenshots, frame recordings, contact sheets and lab runs: every check run makes new ones
+research/screens/
+research/motion_frames/
+research/working-shots/
+research/sheets/
+research/preview/
+research/preview_*.jpg
+research/palette_lab/
+
+# image generation: raw downloads, repairs, compare sheets, chat dumps and backups. The chosen pictures
+# are copied into website/public/work; the tools that made them are kept.
+research/images_hq/*
+!research/images_hq/tools/
+!research/images_hq/MANIFEST.md
+research/images_hq/tools/*.json

@@ -5,6 +5,7 @@ import { useOnboarding } from "@/components/onboarding/OnboardingContext";
 import { roads, type RoadKey } from "@/content/onboarding";
 import { site } from "@/content/site";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { layerParallax } from "@/lib/parallax";
 import { ground } from "@/lib/surfaces";
 import styles from "./ChooseRoad.module.css";
 
@@ -27,13 +28,14 @@ export function ChooseRoad() {
         duration: 1.1,
         scrollTrigger: { trigger: root.current, start: "top 75%" },
       });
+      layerParallax(gsap.utils.selector(root)("[data-letter]")[0], 34, root.current);
     },
     { scope: root },
   );
 
   return (
     <section ref={root} className={styles.wrap} {...ground("choose")} aria-labelledby="choose-title">
-      <div className="container">
+      <div className="container" data-letter>
         <div className={styles.sheet} data-sheet>
           <div className={styles.copy}>
             <p className="eyebrow">Start a project</p>

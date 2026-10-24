@@ -56,9 +56,10 @@ json.dump({"generated_by": "research/images_hq/tools/make_manifest.py", "images"
 fmt = lambda v, d=3: "" if v is None else (f"{v:.{d}f}" if isinstance(v, float) else str(v))
 lines = ["# High-quality versions of the work images",
          "",
-         "One row per source in `website/public/work/`. Outputs live in `research/images_hq/gpt/` (ChatGPT image generation, "
-         "aligned to the source framing and colour-matched to it) and `research/images_hq/html/` (HTML/SVG recreations "
-         "rendered at 3x, with their `.html` source beside them). Nothing in `website/` was changed.",
+         "One row per source in `website/public/work/`. Outputs live in `research/images_hq/gpt/` (ChatGPT image generation), "
+         "`research/images_hq/gemini/` (Gemini image generation; both aligned to the source framing and colour-matched to it) "
+         "and `research/images_hq/html/` (HTML/SVG recreations rendered at 3x, with their `.html` source beside them). "
+         "Nothing in `website/` was changed.",
          "",
          "**For integration:** use the `<name>.png` listed below. Files named `<name>.<layer>.png` beside the HTML outputs are "
          "intermediate layers (already embedded in the `.html`); `*.params.json` hold the measurements. The `.html` sources "
@@ -91,6 +92,13 @@ lines += ["", "## Summary", "",
           "", "## Method", "",
           "- `tools/gen_gpt.py`: one new ChatGPT chat per image in our own window of the persistent Chrome (CDP 9333): "
           "'Create image' tool, upload, a 'keep everything identical' prompt, wait, download the full-size file in-page.",
+          "- `tools/gen_gemini.py`: one new Gemini chat per image in our own window (signed-in Gemini Pro, '3.1 Pro' mode, "
+          "'Images' tool): upload via an intercepted file chooser, the same 'keep everything identical' prompt, then the "
+          "'Download full size image' file captured in-tab (the browser download is aborted). `tools/dewatermark.py` removes "
+          "Gemini's visible sparkle watermark by copying neighbouring texture over it (the sparkle is not in the sources).",
+          "- `gpt/_chats/`: every image in the project's ChatGPT chats, downloaded at full resolution through ChatGPT's file "
+          "API; `gpt/_chats/chats.json` lists chat id, title, source and file id. Each generated image there is byte-identical "
+          "to the one already used (one per chat; the three red-room chats were refusals with no image).",
           "- `tools/fidelity.py`: registers the GPT output to the source (scale + offset per axis), crops it to the source "
           "framing, fits a robust 2nd-order RGB colour transform back to the source's colours, scores, writes the sheet.",
           "- HTML builders `tools/build_*.py`: every shape, colour and position is measured from the source (potrace traces, "

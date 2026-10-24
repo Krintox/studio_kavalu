@@ -7,6 +7,7 @@ import { PaperClip } from "@/components/Ephemera";
 import { featured } from "@/content/projects";
 import type { Img, Project } from "@/content/types";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { mediaParallax, SMOOTH } from "@/lib/parallax";
 import { spreadGround } from "@/lib/surfaces";
 import styles from "./Spreads.module.css";
 
@@ -43,7 +44,7 @@ function Piece({ image, slot, index }: { image: Img; slot: (typeof SLOTS)[number
       <div className={styles.tilt}>
         {slot.t === "polaroid" && index % 2 ? <PaperClip className={styles.clip} /> : null}
         <div className={styles.paper}>
-          <div className={styles.window}>
+          <div className={styles.window} data-window>
             <Image src={image.src} alt={image.alt} width={image.w} height={image.h} sizes={`${Math.round(slot.w * 1.6)}vw`} />
           </div>
         </div>
@@ -109,7 +110,16 @@ export function Spreads() {
         const spreads = gsap.utils.toArray<HTMLElement>("[data-spread]", root.current);
         spreads.forEach((spread, idx) => {
           const pieces = gsap.utils.toArray<HTMLElement>("[data-deal]", spread);
+          const prints = gsap.utils.toArray<HTMLElement>("[data-deal] > *", spread);
           const inner = spread.querySelector<HTMLElement>("[data-inner]")!;
+          const text = spread.querySelector<HTMLElement>("[data-text]");
+          const shade = spread.querySelector<HTMLElement>("[data-shade]");
+
+          // Everything that moves here keeps a layer of its own, so it is only moved, never repainted: the
+          // dealt pieces, the prints under them, the words, and the sheet and its shade, which otherwise
+          // repaint the whole screen on every frame of the slide-over (BRAND_DESIGN.md §9.6).
+          gsap.set([inner, text, ...pieces, ...prints].filter(Boolean), { willChange: "transform" });
+          gsap.set(shade, { willChange: "opacity" });
 
           // Deal out: every picture starts in one pile at the centre and travels to its own place.
           gsap.timeline({
@@ -127,6 +137,21 @@ export function Spreads() {
             })
             .from(spread.querySelectorAll("[data-text] > *"), { y: 40, opacity: 0, stagger: 0.06, duration: 0.6, ease: "power2.out" }, 0.1);
 
+          // Depth while the spread holds the screen: each print drifts at its own speed (the layer under
+          // the dealt piece, so the deal is left alone), the words drift least, and every picture travels
+          // inside its window.
+          const depths = [70, 120, 46, 96, 36, 84, 130, 58];
+          gsap
+            .timeline({ scrollTrigger: { trigger: spread, start: "top top", end: "bottom bottom", scrub: SMOOTH } })
+            .fromTo(
+              prints,
+              { y: 0 },
+              { y: (k: number) => -depths[k % depths.length], ease: "none" },
+              0,
+            )
+            .fromTo(text, { y: 0 }, { y: -34, ease: "none" }, 0);
+          mediaParallax(spread.querySelectorAll("[data-deal] [data-window]"), 6, 1.14);
+
           // Zoom out as whatever comes next slides over this spread.
           const next = spreads[idx + 1] ?? spread.parentElement?.nextElementSibling;
           if (next) {
@@ -134,7 +159,7 @@ export function Spreads() {
               scrollTrigger: { trigger: next as Element, start: "top bottom", end: "top top", scrub: 0.3 },
             })
               .to(inner, { scale: 0.9, yPercent: -3, ease: "none" }, 0)
-              .to(spread.querySelector("[data-shade]"), { opacity: 0.55, ease: "none" }, 0);
+              .to(shade, { opacity: 0.55, ease: "none" }, 0);
           }
         });
       });

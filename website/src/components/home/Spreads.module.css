@@ -148,7 +148,6 @@
   top: var(--y);
   width: var(--w);
   translate: -50% -50%;
-  will-change: transform;
 }
 
 .tilt {

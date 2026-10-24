@@ -7,6 +7,7 @@ import { projects } from "@/content/projects";
 import { services, site } from "@/content/site";
 import type { Img } from "@/content/types";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { layerParallax } from "@/lib/parallax";
 import { ground, sheet } from "@/lib/surfaces";
 import styles from "./Manifesto.module.css";
 
@@ -94,6 +95,7 @@ export function Manifesto() {
         .to(paths, { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut", stagger: 0.22 })
         .to(marks, { autoAlpha: 1, duration: 0.25, ease: "settle", stagger: 0.22 }, 0.55)
         .from("[data-legend] li", { autoAlpha: 0, y: 6, duration: 0.5, ease: "settle", stagger: 0.06 }, 0.9);
+      layerParallax(stage.current, 26);
       gsap.from("[data-after] > *", {
         y: 24,
         autoAlpha: 0,

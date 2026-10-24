@@ -286,7 +286,7 @@ def run_score(rel: str, cand: Image.Image, method: str, out_path: str, extra: di
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", choices=["gpt", "html", "score"])
+    ap.add_argument("mode", choices=["gpt", "gemini", "html", "score"])
     ap.add_argument("rel")
     ap.add_argument("cand")
     ap.add_argument("--tag", default="")
@@ -296,14 +296,14 @@ def main() -> int:
     a = ap.parse_args()
     src = Image.open(src_path(a.rel)).convert("RGB")
     cand = Image.open(a.cand).convert("RGB")
-    if a.mode == "gpt":
+    if a.mode in ("gpt", "gemini"):
         reg = register(src, cand)
         out, info = crop_to_source(cand, src, reg)
-        out_path = os.path.join(HQ, "gpt", a.rel.replace("/", os.sep) + ".png")
+        out_path = os.path.join(HQ, a.mode, a.rel.replace("/", os.sep) + ".png")
         if a.out_name:
-            out_path = os.path.join(HQ, "gpt", "_work", a.rel.replace("/", os.sep), a.out_name + ".png")
+            out_path = os.path.join(HQ, a.mode, "_work", a.rel.replace("/", os.sep), a.out_name + ".png")
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        work = os.path.join(HQ, "gpt", "_work", a.rel.replace("/", os.sep))
+        work = os.path.join(HQ, a.mode, "_work", a.rel.replace("/", os.sep))
         os.makedirs(work, exist_ok=True)
         aligned_path = os.path.join(work, (a.out_name or a.tag or "base") + ".aligned.png")
         out.save(aligned_path, optimize=True)
@@ -316,7 +316,7 @@ def main() -> int:
             out = colour_apply(out, coef)
             extra["colour_match"] = "2nd-order RGB polynomial fitted to the source (robust), applied globally"
         out.save(out_path, optimize=True)
-        res = run_score(a.rel, out, a.method or f"gpt{('-' + a.tag) if a.tag else ''}", out_path, extra,
+        res = run_score(a.rel, out, a.method or f"{a.mode}{('-' + a.tag) if a.tag else ''}", out_path, extra,
                         name=(os.path.basename(a.rel) + (f".{a.out_name}" if a.out_name else "")))
     elif a.mode == "html":
         res = run_score(a.rel, cand, a.method or "html", a.cand, {})

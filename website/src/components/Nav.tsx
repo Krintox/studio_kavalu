@@ -29,6 +29,7 @@ export function Nav() {
   const [ground, setGround] = useState("cream");
   const [open, setOpen] = useState(false);
   const last = useRef(0);
+  const away = useRef(false);
   const sheet = useRef<HTMLDivElement>(null);
   const lenis = useLenis();
 
@@ -40,10 +41,14 @@ export function Nav() {
       const y = window.scrollY;
       const delta = y - last.current;
       if (Math.abs(delta) > 6) {
-        setHidden(delta > 0 && y > 160);
+        away.current = delta > 0 && y > 160;
+        setHidden(away.current);
         last.current = y;
       }
       setSolid(y > 24);
+      // while the bar is tucked away there is nothing to colour, so skip the hit test (it forces a layout
+      // on every frame of the scroll); the ground is read again the moment the bar comes back
+      if (away.current) return;
       const under = document
         .elementsFromPoint(window.innerWidth / 2, 30)
         .find((el) => !el.closest("[data-nav]") && el.closest("[data-tone]"));

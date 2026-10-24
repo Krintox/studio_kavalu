@@ -199,7 +199,7 @@ export function CaseStudy({ project: p, next }: { project: Project; next: Projec
         );
         // the picture settles a little larger than its window, which leaves room for it to drift
         const img = el.querySelector("img");
-        if (img) gsap.fromTo(img, { scale: 1.2 }, { scale: 1.09, duration: 1.6, ease: "settle", scrollTrigger: { trigger: el, start: "top 88%" } });
+        if (img) gsap.fromTo(img, { scale: 1.26 }, { scale: 1.16, duration: 1.6, ease: "settle", scrollTrigger: { trigger: el, start: "top 88%" } });
       });
       imageDrift(gsap.utils.toArray<HTMLElement>("[data-reveal]", root.current));
       // captions type on once their print has been uncovered; hand notes write themselves in

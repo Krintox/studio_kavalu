@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useMemo, useRef, useState, ViewTransition, type PointerEvent } from "react";
 import { services } from "@/content/site";
 import type { Project, ServiceKey } from "@/content/types";
-import { Flip, gsap, prefersReducedMotion } from "@/lib/gsap";
+import { Flip, gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { mediaParallax, staggerParallax } from "@/lib/parallax";
 import styles from "./WorkIndex.module.css";
 
 type View = "stamps" | "index";
@@ -37,6 +38,17 @@ export function WorkIndex({ projects }: { projects: Project[] }) {
     if (!el) return;
     gsap.to(el, { x: e.clientX, y: e.clientY, duration: prefersReducedMotion() ? 0 : 0.55, ease: "power3.out" });
   };
+
+  // Depth on the stamps: the columns breathe in alternation and each picture travels inside its
+  // stamp. Rebuilt whenever the grid changes (a filter or the view), so the columns are re-measured.
+  useGSAP(
+    () => {
+      if (view !== "stamps" || !grid.current) return;
+      staggerParallax(gsap.utils.toArray<HTMLElement>("[data-stamp-layer]", grid.current), 40, grid.current);
+      mediaParallax(gsap.utils.toArray<HTMLElement>("[data-window]", grid.current), 6, 1.14);
+    },
+    { scope: grid, dependencies: [view, road], revertOnUpdate: true },
+  );
 
   const href = (p: Project) => `/work/${p.slug}`;
 
@@ -72,8 +84,8 @@ export function WorkIndex({ projects }: { projects: Project[] }) {
             <li key={p.slug} data-flip data-flip-id={p.slug} className={styles.cell} style={{ ["--tilt" as string]: `${[-1.6, 1.2, -0.6, 1.8, -1.2][k % 5]}deg` }}>
               <Link href={href(p)} className={styles.card} data-cursor="view" data-cursor-label="Open">
                 <ViewTransition name={`cover-${p.slug}`} share="morph" default="none">
-                  <span className={styles.stamp} style={{ ["--tone" as string]: p.tone.bg }}>
-                    <span className={styles.window}>
+                  <span className={styles.stamp} style={{ ["--tone" as string]: p.tone.bg }} data-stamp-layer>
+                    <span className={styles.window} data-window>
                       <Image src={p.cover.src} alt={p.cover.alt} width={p.cover.w} height={p.cover.h} sizes="(max-width: 700px) 90vw, 30vw" />
                     </span>
                   </span>

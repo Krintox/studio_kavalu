@@ -6,19 +6,22 @@
     "hq": true
   },
   "nivritti/business-cards": {
-    "w": 770,
-    "h": 398,
-    "avg": "#0E1616"
+    "w": 2400,
+    "h": 1241,
+    "avg": "#171D1E",
+    "hq": true
   },
   "nivritti/packaging-box": {
-    "w": 290,
-    "h": 348,
-    "avg": "#C4B9A5"
+    "w": 1889,
+    "h": 2267,
+    "avg": "#B2AF9F",
+    "hq": true
   },
   "nivritti/cleanser-bottle": {
-    "w": 288,
-    "h": 348,
-    "avg": "#7D8EA9"
+    "w": 1890,
+    "h": 2284,
+    "avg": "#747B8A",
+    "hq": true
   },
   "nivritti/logo-orange": {
     "w": 2013,
@@ -63,9 +66,10 @@
     "hq": true
   },
   "studio-anokhi/word-search": {
-    "w": 220,
-    "h": 262,
-    "avg": "#422A1A"
+    "w": 1886,
+    "h": 2246,
+    "avg": "#412F23",
+    "hq": true
   },
   "studio-anokhi/stationery-ochre": {
     "w": 1980,
@@ -86,9 +90,10 @@
     "hq": true
   },
   "content/not-so-onam": {
-    "w": 164,
-    "h": 202,
-    "avg": "#A77D76"
+    "w": 1859,
+    "h": 2290,
+    "avg": "#9D747D",
+    "hq": true
   },
   "content/fillers-not-yet": {
     "w": 322,
@@ -96,14 +101,16 @@
     "avg": "#3F1B0E"
   },
   "content/red-room-portrait": {
-    "w": 184,
-    "h": 244,
-    "avg": "#A32D02"
+    "w": 1792,
+    "h": 2376,
+    "avg": "#88280C",
+    "hq": true
   },
   "content/red-saree-portrait": {
-    "w": 124,
-    "h": 222,
-    "avg": "#873932"
+    "w": 1340,
+    "h": 2400,
+    "avg": "#7D3F38",
+    "hq": true
   },
   "studio-anokhi/collage-wheel": {
     "w": 1119,

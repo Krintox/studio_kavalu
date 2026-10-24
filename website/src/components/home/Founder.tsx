@@ -6,6 +6,7 @@ import { useRef } from "react";
 import meta from "@/content/image-meta.json";
 import { site } from "@/content/site";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { layerParallax, mediaParallax } from "@/lib/parallax";
 import { ground } from "@/lib/surfaces";
 import styles from "./Founder.module.css";
 
@@ -26,6 +27,10 @@ export function Founder({ link = true }: { link?: boolean }) {
           0.45,
         )
         .from("[data-quote] > *", { y: 24, opacity: 0, filter: "blur(5px)", stagger: 0.1, duration: 0.9, clearProps: "filter" }, 0.2);
+      const q = gsap.utils.selector(root);
+      layerParallax(q("[data-visual]")[0], 64);
+      layerParallax(q("[data-quote]")[0], 18);
+      mediaParallax(q("[data-portrait]"), 6, 1.14);
     },
     { scope: root },
   );
@@ -33,9 +38,9 @@ export function Founder({ link = true }: { link?: boolean }) {
   return (
     <section ref={root} className={styles.founder} {...ground("founder")} aria-labelledby="founder-title">
       <div className={`container ${styles.grid}`}>
-        <div className={styles.visual}>
+        <div className={styles.visual} data-visual>
           <div className={styles.panel} data-panel>
-            <div className={styles.circle}>
+            <div className={styles.circle} data-portrait>
               <Image
                 src="/work/studio/ananya-portrait.jpg"
                 alt="Ananya, founder of Studio Kavalu"

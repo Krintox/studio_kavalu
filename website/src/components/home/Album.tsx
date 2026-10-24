@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRef, useState, type PointerEvent } from "react";
 import { allStamps, projects } from "@/content/projects";
 import { gsap, prefersReducedMotion, useGSAP } from "@/lib/gsap";
+import { mediaParallax, staggerParallax } from "@/lib/parallax";
 import { ground } from "@/lib/surfaces";
 import styles from "./Album.module.css";
 
@@ -27,6 +28,14 @@ export function Album() {
         stagger: 0.045,
         scrollTrigger: { trigger: row.current, start: "top 85%" },
       });
+      // Depth on a wide screen only: a phone's strip shows two stamps at a time, and moving all of them
+      // with the page cost every frame for depth no one could see (traced: the slowest section on a phone).
+      const mm = gsap.matchMedia();
+      mm.add("(min-width: 900px)", () => {
+        mediaParallax(gsap.utils.toArray<HTMLElement>("[data-album-stamp] [data-window]", root.current), 6, 1.14);
+        staggerParallax(gsap.utils.toArray<HTMLElement>("[data-album-stamp] > *", root.current), 22, row.current);
+      });
+      return () => mm.revert();
     },
     { scope: root },
   );
@@ -97,7 +106,7 @@ export function Album() {
             draggable={false}
           >
             <span className={styles.stamp}>
-              <span className={styles.window}>
+              <span className={styles.window} data-window>
                 <Image src={image.src} alt={image.alt} width={image.w} height={image.h} sizes="220px" draggable={false} />
               </span>
             </span>

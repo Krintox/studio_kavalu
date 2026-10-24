@@ -6,6 +6,7 @@ import { Word } from "@/components/brand/Wordmark";
 import { FooterDesk } from "@/components/footer/FooterDesk";
 import { site } from "@/content/site";
 import { gsap, prefersReducedMotion, ScrollTrigger, useGSAP } from "@/lib/gsap";
+import { live, SMOOTH } from "@/lib/parallax";
 import { StartLink } from "./onboarding/OnboardingContext";
 import styles from "./Footer.module.css";
 
@@ -42,6 +43,15 @@ export function Footer() {
       // scrolls that far (then the letters would wait off-screen for good)
       const at = () => Math.min(ScrollTrigger.maxScroll(window) - 1, mark.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.72);
       ScrollTrigger.create({ start: at, once: true, onEnter: () => tl.play() });
+
+      // the folders are laid down one on another as the footer comes up
+      gsap.utils.toArray<HTMLElement>("[data-folder]", root.current).forEach((f, k) =>
+        gsap.fromTo(
+          f,
+          { y: 26 * (k + 1) },
+          { y: 0, ease: "none", scrollTrigger: { trigger: root.current, start: "top bottom", end: "top 45%", scrub: SMOOTH, ...live(f) } },
+        ),
+      );
     },
     { scope: root },
   );
@@ -53,6 +63,7 @@ export function Footer() {
           <div
             key={f.href}
             className={`${styles.folder} ${f.light ? styles.light : ""}`}
+            data-folder
             style={{ ["--c" as string]: f.c, ["--t" as string]: f.t, ["--x" as string]: f.x }}
             data-tone={f.light ? "light" : "dark"}
           >
@@ -61,7 +72,7 @@ export function Footer() {
             </Link>
           </div>
         ))}
-        <div className={styles.folder} style={{ ["--c" as string]: "var(--deep)", ["--t" as string]: "var(--tex-deep)", ["--x" as string]: "26%" }} data-tone="dark">
+        <div className={styles.folder} style={{ ["--c" as string]: "var(--deep)", ["--t" as string]: "var(--tex-deep)", ["--x" as string]: "26%" }} data-tone="dark" data-folder>
           <StartLink className={styles.tab}>
             Start a project <small>choose a road</small>
           </StartLink>

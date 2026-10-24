@@ -19,9 +19,9 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (prefersReducedMotion()) return;
-    // lerp 0.09: a touch more glide than the default, still short of floaty (BRAND_DESIGN.md §9.6)
     // in-page links (the house view's four choices) glide to their target and stop a little short of it
-    const instance = new Lenis({ lerp: 0.09, autoRaf: false, anchors: { offset: -48 }, stopInertiaOnNavigate: true });
+    // lerp 0.085: a long, even glide that every scrubbed scene sits on (the research's floor is 0.08)
+    const instance = new Lenis({ lerp: 0.085, wheelMultiplier: 1, autoRaf: false, anchors: { offset: -48 }, stopInertiaOnNavigate: true });
     const raf = (time: number) => instance.raf(time * 1000);
     instance.on("scroll", ScrollTrigger.update);
     gsap.ticker.add(raf);
