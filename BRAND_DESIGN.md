@@ -225,11 +225,12 @@ palette colour behind it.
 
 ### 3.6 Motion
 
-The footer wordmark is the only logo that moves. As the footer arrives, STUDIO's letters come in from
-the left and KAVALU's from the right, each letter travelling further the further out it sits, at 20%
-opacity rising to full. They land exactly where they rest, scrubbed to the scroll
-(`Footer.tsx`). With reduced motion the wordmark is simply there. The lockup and the mark never move,
-tilt or animate.
+The footer wordmark is the only logo that moves. When the mark is well into view, STUDIO's letters
+come in from the left and KAVALU's from the right, each letter travelling further the further out it
+sits, at 20% opacity rising to full. They land exactly where they rest. It plays once, by itself, over
+1.5 s (`Footer.tsx`): scrubbed to the scroll, it had finished while only the mark's top edge was on
+screen. With reduced motion the wordmark is simply there. The lockup and the mark never move, tilt or
+animate.
 
 ### 3.7 Misuse
 
@@ -245,6 +246,28 @@ Don't:
 6. tilt or rotate it. Paper tilts; the name never does;
 7. place it on a busy photograph without a solid plate;
 8. use it smaller than the minimum sizes above.
+
+### 3.8 The social preview card
+
+What a shared link shows on WhatsApp, Instagram, LinkedIn, X and iMessage: a 1200 × 630 card made from
+the site itself (`website/src/app/opengraph-image.jpg` and `twitter-image.jpg`, with their `.alt.txt`).
+
+- **Composition:** cream paper; the lockup in plum, 596 px wide, left, with its full clear space (one
+  cap height, 55 px, on every side); under it, in small grotesk capitals, "Branding & content house ·
+  Bengaluru" and "by Ananya" in the hand; on the right a powder-blue note, taped and tilted 3°, that
+  defines ಕವಲು /ka·va·lu/ in the hero's words. Margins 88 px left and right; the note centred on the
+  lockup. Paper tilts, the lockup never does (§3.7).
+- **Made, not drawn by hand:** `research/tools/og_card.py` lays the card out in Chrome on the dev
+  server's own origin, so it uses the site's fonts (the Kannada shaped by the browser), textures and the
+  lockup copied from the live header, and its words come from `content/site.ts`. Run it after any change
+  to the logo, the palette, the fonts or those words. It renders at twice the size, scales down, and saves
+  a JPEG under 300 KB (WhatsApp drops larger previews; this one is 85 KB).
+- **Case studies:** a project shows its own cover when the cover is sharp and wide enough for the
+  1.91 : 1 frame (Studio Anokhi, Nivritti); a portrait or a placeholder would be cropped badly, so those
+  show the card (`app/work/[slug]/page.tsx`). Both are named for Open Graph and for X, so every platform
+  shows the same picture.
+- **Alt text:** `site.cardAlt` in `content/site.ts`, used by the card's `.alt.txt` files and by the case
+  studies that show it.
 
 ---
 

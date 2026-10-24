@@ -8,6 +8,9 @@ export const site = {
   word: "ಕವಲು",
   say: "ka·va·lu",
   definition: "a crossroads; a point where paths meet, split, and become something new.",
+  // the social preview card (app/opengraph-image.jpg, made by research/tools/og_card.py), described
+  cardAlt:
+    "Studio Kavalu by Ananya: the K mark and the STUDIO KAVALU wordmark in plum on cream paper, beside a powder-blue note that reads ಕವಲು (ka·va·lu), a crossroads; a point where paths meet, split, and become something new.",
   headline: ["Every brand hits a", "crossroads.", "We help you choose the", "road."],
   manifesto: "A brand is a set of choices; what it says, how it looks, where it shows up, who it speaks to.",
   about:

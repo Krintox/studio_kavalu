@@ -460,6 +460,13 @@ Agents never edit `website/`. They write to `research/`, and their results are i
   could see. Tools: `research/tools/trace_scroll.py`, `smooth_check.py`, `warm.py` (BRAND_DESIGN §9.6).
   Gotcha: `will-change` is not free. Each layer is weighed again whenever anything repaints, so add one
   only to what moves, and on a phone only while it is on screen.
+- 2026-10-24 (v3, request): "add a social preview for this. like using logo and the name". Added the
+  social preview card (BRAND_DESIGN §3.8): her lockup on cream paper with the line and "by Ananya", and a
+  powder-blue note defining ಕವಲು, made from the site by `research/tools/og_card.py` (85 KB JPEG, every
+  page; case studies with a sharp wide cover show that instead). Checked in the production build: every
+  page's og:image and twitter:image are absolute on https://studiokavalu.com. Gotcha: the persistent
+  Chrome keeps localhost:3210 at 90% zoom, which scales emulated screens (a 1440 px emulation is really
+  1600 CSS px); og_card.py measures the zoom and compensates.
 ---
 
 ## Appendix A — the client's first brief (verbatim)
