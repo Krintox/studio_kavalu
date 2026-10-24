@@ -10,10 +10,11 @@ import { OnboardingProvider } from "@/components/onboarding/OnboardingContext";
 import { SvgDefs } from "@/components/SvgDefs";
 import { site } from "@/content/site";
 import { introScript } from "@/lib/intro";
+import { siteUrl } from "@/lib/site-url";
 import { fontVars } from "./fonts";
 import "./globals.css";
 
-const url = process.env.NEXT_PUBLIC_SITE_URL ?? "https://studiokavalu.com";
+const url = siteUrl;
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),

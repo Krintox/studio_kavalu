@@ -1,7 +1,8 @@
+import { siteUrl } from "@/lib/site-url";
 import type { MetadataRoute } from "next";
 import { projects } from "@/content/projects";
 
-const url = process.env.NEXT_PUBLIC_SITE_URL ?? "https://studiokavalu.com";
+const url = siteUrl;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = ["", "/work", "/studio", "/start"].map((p) => ({
