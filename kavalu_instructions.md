@@ -330,6 +330,14 @@ Agents never edit `website/`. They write to `research/`, and their results are i
       (`research/working-shots/v3/review/`). BRAND_DESIGN §8.1 and §8.3.
 - [ ] **Q21 — Images**: the same images at high quality (ChatGPT in the persistent browser; HTML
       recreation if the limit is reached).
+      → In progress: 12 of 21 regenerated, checked against their sources and in the site
+      (`research/images_hq/MANIFEST.md`: 4 by ChatGPT, 8 recreated in HTML; `image-meta.json` marks them
+      `hq`, so the Anokhi case study now opens on its full-width cover). Rejected: the Nivritti cleanser
+      bottle (ChatGPT changed its label and logo). Still needed: 8 photographs of people and products,
+      which can't be recreated in code without inventing them. ChatGPT's free plan allows 5 images a day;
+      the quota resets 25 Oct, 13:14 IST, then the images agent continues (Ananya's portrait last). The
+      originals from Ananya would replace all of this. The old screenshot crops are kept in
+      `research/images_hq/originals/`.
 - [x] **Q22 — Responsive**: check and fix every page from 320 to 1920 px.
       → Done: 4 pages × 9 widths (320, 375, 414, 768, 834, 1024, 1280, 1536, 1920) with no page
       overflow and nothing loose past the edge. Fixed the cramped 320 px header (36 px now between the
